@@ -1,0 +1,1473 @@
+{
+  "traceEvents": [
+    {
+      "ph": "M",
+      "name": "process_name",
+      "pid": 1,
+      "args": {
+        "name": "baseline_unfused"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 1,
+      "args": {
+        "name": "CPU/framework"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 2,
+      "args": {
+        "name": "GPU memory"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 3,
+      "args": {
+        "name": "GPU compute stream 0"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 100,
+      "args": {
+        "name": "GPU idle stream 0"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 4,
+      "args": {
+        "name": "GPU compute stream 1"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 101,
+      "args": {
+        "name": "GPU idle stream 1"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 5,
+      "args": {
+        "name": "GPU compute stream 2"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 102,
+      "args": {
+        "name": "GPU idle stream 2"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 6,
+      "args": {
+        "name": "GPU compute stream 3"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 103,
+      "args": {
+        "name": "GPU idle stream 3"
+      }
+    },
+    {
+      "name": "router_topk",
+      "cat": "router",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 0.0,
+      "dur": 10.017,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "launch:expert_count_prefix_sum",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 10.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_count_prefix_sum",
+      "cat": "memory",
+      "ph": "X",
+      "pid": 1,
+      "tid": 2,
+      "ts": 10.017,
+      "dur": 10.004,
+      "args": {
+        "mode": "baseline_unfused",
+        "bytes": 4352
+      }
+    },
+    {
+      "name": "launch:dispatch_scatter",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 18.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "dispatch_scatter",
+      "cat": "memory",
+      "ph": "X",
+      "pid": 1,
+      "tid": 2,
+      "ts": 20.021,
+      "dur": 11.495,
+      "args": {
+        "mode": "baseline_unfused",
+        "bytes": 4194304
+      }
+    },
+    {
+      "name": "launch:expert_0_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 26.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_0_gemm1_m76",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 31.516,
+      "dur": 25.836,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 0,
+        "tokens": 76
+      }
+    },
+    {
+      "name": "launch:expert_0_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 34.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_0_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 57.352,
+      "dur": 9.213,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 0,
+        "tokens": 76
+      }
+    },
+    {
+      "name": "launch:expert_0_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 42.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_0_gemm2_m76",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 66.565,
+      "dur": 25.836,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 0,
+        "tokens": 76
+      }
+    },
+    {
+      "name": "launch:expert_1_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 50.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_1_gemm1_m63",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 31.516,
+      "dur": 25.819,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 1,
+        "tokens": 63
+      }
+    },
+    {
+      "name": "launch:expert_1_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 58.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_1_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 57.335,
+      "dur": 9.091,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 1,
+        "tokens": 63
+      }
+    },
+    {
+      "name": "launch:expert_1_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 66.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_1_gemm2_m63",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 66.426,
+      "dur": 25.819,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 1,
+        "tokens": 63
+      }
+    },
+    {
+      "name": "launch:expert_2_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 74.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_2_gemm1_m69",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 31.516,
+      "dur": 25.827,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 2,
+        "tokens": 69
+      }
+    },
+    {
+      "name": "launch:expert_2_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 82.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_2_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 57.343,
+      "dur": 9.148,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 2,
+        "tokens": 69
+      }
+    },
+    {
+      "name": "launch:expert_2_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 90.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_2_gemm2_m69",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 66.49,
+      "dur": 25.827,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 2,
+        "tokens": 69
+      }
+    },
+    {
+      "name": "launch:expert_3_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 98.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_3_gemm1_m72",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 31.516,
+      "dur": 25.831,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 3,
+        "tokens": 72
+      }
+    },
+    {
+      "name": "launch:expert_3_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 106.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_3_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 57.347,
+      "dur": 9.176,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 3,
+        "tokens": 72
+      }
+    },
+    {
+      "name": "launch:expert_3_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 114.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_3_gemm2_m72",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 66.522,
+      "dur": 25.831,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 3,
+        "tokens": 72
+      }
+    },
+    {
+      "name": "launch:expert_4_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 122.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_4_gemm1_m77",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 92.245,
+      "dur": 25.837,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 4,
+        "tokens": 77
+      }
+    },
+    {
+      "name": "launch:expert_4_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 130.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_4_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 118.082,
+      "dur": 9.223,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 4,
+        "tokens": 77
+      }
+    },
+    {
+      "name": "launch:expert_4_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 138.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_4_gemm2_m77",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 127.305,
+      "dur": 25.837,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 4,
+        "tokens": 77
+      }
+    },
+    {
+      "name": "launch:expert_5_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 146.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_5_gemm1_m61",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 92.317,
+      "dur": 25.816,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 5,
+        "tokens": 61
+      }
+    },
+    {
+      "name": "launch:expert_5_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 154.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_5_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 118.134,
+      "dur": 9.073,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 5,
+        "tokens": 61
+      }
+    },
+    {
+      "name": "launch:expert_5_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 162.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_5_gemm2_m61",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 127.206,
+      "dur": 25.816,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 5,
+        "tokens": 61
+      }
+    },
+    {
+      "name": "launch:expert_6_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 170.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_6_gemm1_m61",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 92.353,
+      "dur": 25.816,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 6,
+        "tokens": 61
+      }
+    },
+    {
+      "name": "launch:expert_6_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 178.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_6_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 118.169,
+      "dur": 9.073,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 6,
+        "tokens": 61
+      }
+    },
+    {
+      "name": "launch:expert_6_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 186.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_6_gemm2_m61",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 127.242,
+      "dur": 25.816,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 6,
+        "tokens": 61
+      }
+    },
+    {
+      "name": "launch:expert_7_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 194.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_7_gemm1_m61",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 92.401,
+      "dur": 25.816,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 7,
+        "tokens": 61
+      }
+    },
+    {
+      "name": "launch:expert_7_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 202.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_7_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 118.217,
+      "dur": 9.073,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 7,
+        "tokens": 61
+      }
+    },
+    {
+      "name": "launch:expert_7_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 210.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_7_gemm2_m61",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 127.29,
+      "dur": 25.816,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 7,
+        "tokens": 61
+      }
+    },
+    {
+      "name": "launch:expert_8_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 218.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_8_gemm1_m71",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 153.023,
+      "dur": 25.829,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 8,
+        "tokens": 71
+      }
+    },
+    {
+      "name": "launch:expert_8_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 226.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_8_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 178.852,
+      "dur": 9.166,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 8,
+        "tokens": 71
+      }
+    },
+    {
+      "name": "launch:expert_8_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 234.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_8_gemm2_m71",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 188.018,
+      "dur": 25.829,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 8,
+        "tokens": 71
+      }
+    },
+    {
+      "name": "launch:expert_9_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 242.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_9_gemm1_m52",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 153.058,
+      "dur": 25.805,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 9,
+        "tokens": 52
+      }
+    },
+    {
+      "name": "launch:expert_9_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 250.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_9_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 178.863,
+      "dur": 8.988,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 9,
+        "tokens": 52
+      }
+    },
+    {
+      "name": "launch:expert_9_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 258.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_9_gemm2_m52",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 187.852,
+      "dur": 25.805,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 9,
+        "tokens": 52
+      }
+    },
+    {
+      "name": "launch:expert_10_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 266.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_10_gemm1_m49",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 153.106,
+      "dur": 25.801,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 10,
+        "tokens": 49
+      }
+    },
+    {
+      "name": "launch:expert_10_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 274.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_10_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 178.907,
+      "dur": 8.96,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 10,
+        "tokens": 49
+      }
+    },
+    {
+      "name": "launch:expert_10_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 282.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_10_gemm2_m49",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 187.867,
+      "dur": 25.801,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 10,
+        "tokens": 49
+      }
+    },
+    {
+      "name": "launch:expert_11_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 290.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_11_gemm1_m58",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 153.142,
+      "dur": 25.813,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 11,
+        "tokens": 58
+      }
+    },
+    {
+      "name": "launch:expert_11_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 298.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_11_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 178.955,
+      "dur": 9.044,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 11,
+        "tokens": 58
+      }
+    },
+    {
+      "name": "launch:expert_11_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 306.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_11_gemm2_m58",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 187.999,
+      "dur": 25.813,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 11,
+        "tokens": 58
+      }
+    },
+    {
+      "name": "launch:expert_12_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 314.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_12_gemm1_m52",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 213.657,
+      "dur": 25.805,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 12,
+        "tokens": 52
+      }
+    },
+    {
+      "name": "launch:expert_12_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 322.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_12_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 239.462,
+      "dur": 8.988,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 12,
+        "tokens": 52
+      }
+    },
+    {
+      "name": "launch:expert_12_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 330.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_12_gemm2_m52",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 248.45,
+      "dur": 25.805,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 12,
+        "tokens": 52
+      }
+    },
+    {
+      "name": "launch:expert_13_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 338.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_13_gemm1_m59",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 213.668,
+      "dur": 25.814,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 13,
+        "tokens": 59
+      }
+    },
+    {
+      "name": "launch:expert_13_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 346.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_13_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 239.482,
+      "dur": 9.054,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 13,
+        "tokens": 59
+      }
+    },
+    {
+      "name": "launch:expert_13_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 354.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_13_gemm2_m59",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 248.536,
+      "dur": 25.814,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 13,
+        "tokens": 59
+      }
+    },
+    {
+      "name": "launch:expert_14_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 362.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_14_gemm1_m68",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 213.812,
+      "dur": 25.825,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 14,
+        "tokens": 68
+      }
+    },
+    {
+      "name": "launch:expert_14_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 370.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_14_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 239.637,
+      "dur": 9.138,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 14,
+        "tokens": 68
+      }
+    },
+    {
+      "name": "launch:expert_14_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 378.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_14_gemm2_m68",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 248.776,
+      "dur": 25.825,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 14,
+        "tokens": 68
+      }
+    },
+    {
+      "name": "launch:expert_15_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 386.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_15_gemm1_m75",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 213.848,
+      "dur": 25.834,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 15,
+        "tokens": 75
+      }
+    },
+    {
+      "name": "launch:expert_15_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 394.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_15_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 239.682,
+      "dur": 9.204,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 15,
+        "tokens": 75
+      }
+    },
+    {
+      "name": "launch:expert_15_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 402.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_15_gemm2_m75",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 248.886,
+      "dur": 25.834,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 15,
+        "tokens": 75
+      }
+    },
+    {
+      "name": "stream_0_idle_after_tail",
+      "cat": "idle",
+      "ph": "X",
+      "pid": 1,
+      "tid": 100,
+      "ts": 274.35,
+      "dur": 0.37,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "stream_1_idle_after_tail",
+      "cat": "idle",
+      "ph": "X",
+      "pid": 1,
+      "tid": 101,
+      "ts": 274.601,
+      "dur": 0.119,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "stream_3_idle_after_tail",
+      "cat": "idle",
+      "ph": "X",
+      "pid": 1,
+      "tid": 103,
+      "ts": 274.255,
+      "dur": 0.466,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "launch:combine_scatter_reduce",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 410.017,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "combine_scatter_reduce",
+      "cat": "memory",
+      "ph": "X",
+      "pid": 1,
+      "tid": 2,
+      "ts": 274.721,
+      "dur": 11.495,
+      "args": {
+        "mode": "baseline_unfused",
+        "bytes": 4194304
+      }
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "traceEvents": [
+    {
+      "ph": "M",
+      "name": "process_name",
+      "pid": 3,
+      "args": {
+        "name": "mega_fused"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 3,
+      "tid": 1,
+      "args": {
+        "name": "CPU/framework"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 3,
+      "tid": 2,
+      "args": {
+        "name": "GPU memory"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 3,
+      "tid": 3,
+      "args": {
+        "name": "GPU compute stream 0"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 3,
+      "tid": 100,
+      "args": {
+        "name": "GPU idle stream 0"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 3,
+      "tid": 4,
+      "args": {
+        "name": "GPU compute stream 1"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 3,
+      "tid": 101,
+      "args": {
+        "name": "GPU idle stream 1"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 3,
+      "tid": 5,
+      "args": {
+        "name": "GPU compute stream 2"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 3,
+      "tid": 102,
+      "args": {
+        "name": "GPU idle stream 2"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 3,
+      "tid": 6,
+      "args": {
+        "name": "GPU compute stream 3"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 3,
+      "tid": 103,
+      "args": {
+        "name": "GPU idle stream 3"
+      }
+    },
+    {
+      "name": "router_topk",
+      "cat": "router",
+      "ph": "X",
+      "pid": 3,
+      "tid": 1,
+      "ts": 0.0,
+      "dur": 10.371,
+      "args": {
+        "mode": "mega_fused"
+      }
+    },
+    {
+      "name": "launch:mega_moe_kernel",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 3,
+      "tid": 1,
+      "ts": 10.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "mega_fused"
+      }
+    },
+    {
+      "name": "mega_moe_kernel_fused_dispatch_compute_combine",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 3,
+      "tid": 3,
+      "ts": 10.371,
+      "dur": 10000.108,
+      "args": {
+        "mode": "mega_fused",
+        "routed_tokens": 8192
+      }
+    },
+    {
+      "name": "launch:final_write",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 3,
+      "tid": 1,
+      "ts": 18.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "mega_fused"
+      }
+    },
+    {
+      "name": "final_write",
+      "cat": "memory",
+      "ph": "X",
+      "pid": 3,
+      "tid": 2,
+      "ts": 10010.48,
+      "dur": 30.37,
+      "args": {
+        "mode": "mega_fused",
+        "bytes": 33554432
+      }
+    }
+  ]
+}

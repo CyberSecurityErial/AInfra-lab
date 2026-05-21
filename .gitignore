@@ -1,0 +1,11 @@
+__pycache__/
+.agents/
+.codex/
+.git/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/

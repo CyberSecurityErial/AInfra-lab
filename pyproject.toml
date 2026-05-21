@@ -1,0 +1,8 @@
+[project]
+name = "ainfra-lab"
+version = "0.1.0"
+description = "CPU-only AI infrastructure lab experiments."
+requires-python = ">=3.10"
+
+[tool.setuptools]
+packages = ["moe_trace_sim"]

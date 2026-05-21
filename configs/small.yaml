@@ -1,0 +1,51 @@
+experiment:
+  name: small_balanced
+  purpose: Fast sanity scenario with balanced routing.
+  expected_trace: Baseline shows many small expert launches; grouped and mega reduce fragmentation.
+
+assumptions:
+  timing_scope: Synthetic latency from an abstract cost model, not measured GPU time.
+  compute_latency: GEMM latency is estimated from FLOPs, configured peak_tflops, and a small-M utilization penalty.
+  memory_latency: Memory latency is estimated from bytes moved and configured mem_bandwidth_GBs.
+  launch_latency: Every kernel-like event pays a fixed launch_overhead_us.
+  routing_randomness: Expert assignment is randomized with a fixed seed and uniform weights.
+  baseline_prior: Unfused MoE materializes dispatch/combine and launches per-expert GEMM/activation work.
+  grouped_prior: Grouped GEMM reduces per-expert launch fragmentation but still pays dispatch/combine traffic.
+  mega_prior: Mega fused mode is idealized and assumes fewer launches plus less intermediate global-memory traffic.
+  not_modeled:
+    - real SM occupancy
+    - cache hierarchy and tensor-core tile details
+    - NCCL or multi-GPU all-to-all
+    - CUDA stream dependency overhead
+    - framework graph capture effects
+
+model:
+  num_tokens: 512
+  hidden_size: 1024
+  intermediate_size: 2816
+  num_experts: 16
+  top_k: 2
+  dtype_bytes: 2
+
+routing:
+  distribution: uniform
+  zipf_alpha: 1.1
+  seed: 7
+  capacity_factor: 1.25
+
+hardware_model:
+  peak_tflops: 80.0
+  mem_bandwidth_GBs: 1200.0
+  launch_overhead_us: 8.0
+  small_gemm_penalty: 0.55
+  min_gemm_m_for_good_util: 128
+  max_parallel_streams: 4
+
+simulation:
+  modes:
+    - baseline_unfused
+    - grouped_gemm
+    - mega_fused
+  trace_unit: us
+  emit_memory_events: true
+  emit_idle_events: true

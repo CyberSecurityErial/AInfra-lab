@@ -1,0 +1,239 @@
+{
+  "traceEvents": [
+    {
+      "ph": "M",
+      "name": "process_name",
+      "pid": 2,
+      "args": {
+        "name": "grouped_gemm"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 1,
+      "args": {
+        "name": "CPU/framework"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 2,
+      "args": {
+        "name": "GPU memory"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 3,
+      "args": {
+        "name": "GPU compute stream 0"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 100,
+      "args": {
+        "name": "GPU idle stream 0"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 4,
+      "args": {
+        "name": "GPU compute stream 1"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 101,
+      "args": {
+        "name": "GPU idle stream 1"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 5,
+      "args": {
+        "name": "GPU compute stream 2"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 102,
+      "args": {
+        "name": "GPU idle stream 2"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 6,
+      "args": {
+        "name": "GPU compute stream 3"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 103,
+      "args": {
+        "name": "GPU idle stream 3"
+      }
+    },
+    {
+      "name": "router_topk",
+      "cat": "router",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 0.0,
+      "dur": 13.669,
+      "args": {
+        "mode": "grouped_gemm"
+      }
+    },
+    {
+      "name": "launch:dispatch_pack",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 13.669,
+      "dur": 8.0,
+      "args": {
+        "mode": "grouped_gemm"
+      }
+    },
+    {
+      "name": "dispatch_pack",
+      "cat": "memory",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 13.669,
+      "dur": 293.213,
+      "args": {
+        "mode": "grouped_gemm",
+        "bytes": 456340275
+      }
+    },
+    {
+      "name": "launch:grouped_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 21.669,
+      "dur": 8.0,
+      "args": {
+        "mode": "grouped_gemm"
+      }
+    },
+    {
+      "name": "grouped_gemm1",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 306.882,
+      "dur": 5260.55,
+      "args": {
+        "mode": "grouped_gemm",
+        "groups": 128
+      }
+    },
+    {
+      "name": "launch:grouped_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 29.669,
+      "dur": 8.0,
+      "args": {
+        "mode": "grouped_gemm"
+      }
+    },
+    {
+      "name": "grouped_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 5567.431,
+      "dur": 1360.915,
+      "args": {
+        "mode": "grouped_gemm",
+        "tokens": 65536
+      }
+    },
+    {
+      "name": "launch:grouped_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 37.669,
+      "dur": 8.0,
+      "args": {
+        "mode": "grouped_gemm"
+      }
+    },
+    {
+      "name": "grouped_gemm2",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 6928.346,
+      "dur": 5260.55,
+      "args": {
+        "mode": "grouped_gemm",
+        "groups": 128
+      }
+    },
+    {
+      "name": "launch:combine_scatter_reduce",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 45.669,
+      "dur": 8.0,
+      "args": {
+        "mode": "grouped_gemm"
+      }
+    },
+    {
+      "name": "combine_scatter_reduce",
+      "cat": "memory",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 12188.896,
+      "dur": 293.213,
+      "args": {
+        "mode": "grouped_gemm",
+        "bytes": 456340275
+      }
+    }
+  ]
+}

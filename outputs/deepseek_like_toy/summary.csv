@@ -1,0 +1,4 @@
+mode,total_us,kernel_count,launch_overhead_us,memory_us,compute_us,idle_us
+baseline_unfused,16483.835,388,3104.000,3424.192,57150.071,124.311
+grouped_gemm,12482.109,6,48.000,3256.254,9177.854,0.000
+mega_fused,8006.897,3,24.000,190.218,7792.678,0.000

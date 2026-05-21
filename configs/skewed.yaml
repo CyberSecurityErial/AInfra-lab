@@ -1,0 +1,53 @@
+experiment:
+  name: zipf_skewed
+  purpose: Show routing imbalance, tail experts, idle bubbles, and launch fragmentation.
+  expected_trace: Baseline has visible dispatch/combine, many expert GEMMs, and idle bubbles after hot experts dominate the tail.
+
+assumptions:
+  timing_scope: Synthetic latency from an abstract cost model, not measured GPU time.
+  compute_latency: GEMM latency is estimated from FLOPs, configured peak_tflops, and a small-M utilization penalty.
+  memory_latency: Memory latency is estimated from bytes moved and configured mem_bandwidth_GBs.
+  launch_latency: Every kernel-like event pays a fixed launch_overhead_us.
+  routing_randomness: Expert assignment is randomized with a fixed seed and Zipf weights.
+  skew_prior: Zipf routing is used as a prior for hot experts and load imbalance; it is not learned router behavior.
+  baseline_prior: Unfused MoE materializes dispatch/combine and launches per-expert GEMM/activation work.
+  grouped_prior: Grouped GEMM reduces per-expert launch fragmentation but still pays dispatch/combine traffic and tail effects.
+  mega_prior: Mega fused mode is idealized and assumes fewer launches plus less intermediate global-memory traffic.
+  not_modeled:
+    - real SM occupancy
+    - cache hierarchy and tensor-core tile details
+    - NCCL or multi-GPU all-to-all
+    - CUDA stream dependency overhead
+    - framework graph capture effects
+    - expert capacity dropping or padding policy
+
+model:
+  num_tokens: 4096
+  hidden_size: 4096
+  intermediate_size: 14336
+  num_experts: 64
+  top_k: 2
+  dtype_bytes: 2
+
+routing:
+  distribution: zipf
+  zipf_alpha: 1.2
+  seed: 42
+  capacity_factor: 1.25
+
+hardware_model:
+  peak_tflops: 100.0
+  mem_bandwidth_GBs: 1500.0
+  launch_overhead_us: 8.0
+  small_gemm_penalty: 0.55
+  min_gemm_m_for_good_util: 256
+  max_parallel_streams: 4
+
+simulation:
+  modes:
+    - baseline_unfused
+    - grouped_gemm
+    - mega_fused
+  trace_unit: us
+  emit_memory_events: true
+  emit_idle_events: true

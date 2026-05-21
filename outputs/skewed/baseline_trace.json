@@ -1,0 +1,5217 @@
+{
+  "traceEvents": [
+    {
+      "ph": "M",
+      "name": "process_name",
+      "pid": 1,
+      "args": {
+        "name": "baseline_unfused"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 1,
+      "args": {
+        "name": "CPU/framework"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 2,
+      "args": {
+        "name": "GPU memory"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 3,
+      "args": {
+        "name": "GPU compute stream 0"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 100,
+      "args": {
+        "name": "GPU idle stream 0"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 4,
+      "args": {
+        "name": "GPU compute stream 1"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 101,
+      "args": {
+        "name": "GPU idle stream 1"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 5,
+      "args": {
+        "name": "GPU compute stream 2"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 102,
+      "args": {
+        "name": "GPU idle stream 2"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 6,
+      "args": {
+        "name": "GPU compute stream 3"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 1,
+      "tid": 103,
+      "args": {
+        "name": "GPU idle stream 3"
+      }
+    },
+    {
+      "name": "router_topk",
+      "cat": "router",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 0.0,
+      "dur": 10.371,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "launch:expert_count_prefix_sum",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 10.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_count_prefix_sum",
+      "cat": "memory",
+      "ph": "X",
+      "pid": 1,
+      "tid": 2,
+      "ts": 10.371,
+      "dur": 10.023,
+      "args": {
+        "mode": "baseline_unfused",
+        "bytes": 33792
+      }
+    },
+    {
+      "name": "launch:dispatch_scatter",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 18.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "dispatch_scatter",
+      "cat": "memory",
+      "ph": "X",
+      "pid": 1,
+      "tid": 2,
+      "ts": 20.394,
+      "dur": 97.478,
+      "args": {
+        "mode": "baseline_unfused",
+        "bytes": 134217728
+      }
+    },
+    {
+      "name": "launch:expert_0_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 26.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_0_gemm1_m2044",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 117.872,
+      "dur": 2434.189,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 0,
+        "tokens": 2044
+      }
+    },
+    {
+      "name": "launch:expert_0_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 34.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_0_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 2552.062,
+      "dur": 86.727,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 0,
+        "tokens": 2044
+      }
+    },
+    {
+      "name": "launch:expert_0_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 42.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_0_gemm2_m2044",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 2638.789,
+      "dur": 2434.189,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 0,
+        "tokens": 2044
+      }
+    },
+    {
+      "name": "launch:expert_1_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 50.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_1_gemm1_m1082",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 117.872,
+      "dur": 1299.683,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 1,
+        "tokens": 1082
+      }
+    },
+    {
+      "name": "launch:expert_1_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 58.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_1_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 1417.556,
+      "dur": 49.864,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 1,
+        "tokens": 1082
+      }
+    },
+    {
+      "name": "launch:expert_1_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 66.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_1_gemm2_m1082",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 1467.42,
+      "dur": 1299.683,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 1,
+        "tokens": 1082
+      }
+    },
+    {
+      "name": "launch:expert_2_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 74.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_2_gemm1_m693",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 117.872,
+      "dur": 840.928,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 2,
+        "tokens": 693
+      }
+    },
+    {
+      "name": "launch:expert_2_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 82.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_2_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 958.8,
+      "dur": 34.993,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 2,
+        "tokens": 693
+      }
+    },
+    {
+      "name": "launch:expert_2_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 90.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_2_gemm2_m693",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 993.793,
+      "dur": 840.928,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 2,
+        "tokens": 693
+      }
+    },
+    {
+      "name": "launch:expert_3_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 98.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_3_gemm1_m446",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 117.872,
+      "dur": 549.636,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 3,
+        "tokens": 446
+      }
+    },
+    {
+      "name": "launch:expert_3_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 106.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_3_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 667.508,
+      "dur": 25.55,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 3,
+        "tokens": 446
+      }
+    },
+    {
+      "name": "launch:expert_3_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 114.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_3_gemm2_m446",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 693.058,
+      "dur": 549.636,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 3,
+        "tokens": 446
+      }
+    },
+    {
+      "name": "launch:expert_4_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 122.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_4_gemm1_m351",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 1242.694,
+      "dur": 437.6,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 4,
+        "tokens": 351
+      }
+    },
+    {
+      "name": "launch:expert_4_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 130.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_4_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 1680.294,
+      "dur": 21.918,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 4,
+        "tokens": 351
+      }
+    },
+    {
+      "name": "launch:expert_4_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 138.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_4_gemm2_m351",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 1702.213,
+      "dur": 437.6,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 4,
+        "tokens": 351
+      }
+    },
+    {
+      "name": "launch:expert_5_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 146.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_5_gemm1_m295",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 1834.721,
+      "dur": 371.558,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 5,
+        "tokens": 295
+      }
+    },
+    {
+      "name": "launch:expert_5_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 154.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_5_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 2206.279,
+      "dur": 19.778,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 5,
+        "tokens": 295
+      }
+    },
+    {
+      "name": "launch:expert_5_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 162.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_5_gemm2_m295",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 2226.057,
+      "dur": 371.558,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 5,
+        "tokens": 295
+      }
+    },
+    {
+      "name": "launch:expert_6_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 170.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_6_gemm1_m289",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 2139.813,
+      "dur": 364.482,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 6,
+        "tokens": 289
+      }
+    },
+    {
+      "name": "launch:expert_6_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 178.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_6_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 2504.295,
+      "dur": 19.548,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 6,
+        "tokens": 289
+      }
+    },
+    {
+      "name": "launch:expert_6_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 186.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_6_gemm2_m289",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 2523.843,
+      "dur": 364.482,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 6,
+        "tokens": 289
+      }
+    },
+    {
+      "name": "launch:expert_7_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 194.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_7_gemm1_m221",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 2597.615,
+      "dur": 571.377,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 7,
+        "tokens": 221
+      }
+    },
+    {
+      "name": "launch:expert_7_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 202.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_7_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 3168.992,
+      "dur": 16.949,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 7,
+        "tokens": 221
+      }
+    },
+    {
+      "name": "launch:expert_7_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 210.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_7_gemm2_m221",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 3185.941,
+      "dur": 571.377,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 7,
+        "tokens": 221
+      }
+    },
+    {
+      "name": "launch:expert_8_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 218.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_8_gemm1_m190",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 2767.103,
+      "dur": 571.225,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 8,
+        "tokens": 190
+      }
+    },
+    {
+      "name": "launch:expert_8_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 226.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_8_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 3338.328,
+      "dur": 15.764,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 8,
+        "tokens": 190
+      }
+    },
+    {
+      "name": "launch:expert_8_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 234.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_8_gemm2_m190",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 3354.092,
+      "dur": 571.225,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 8,
+        "tokens": 190
+      }
+    },
+    {
+      "name": "launch:expert_9_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 242.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_9_gemm1_m147",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 2888.326,
+      "dur": 571.013,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 9,
+        "tokens": 147
+      }
+    },
+    {
+      "name": "launch:expert_9_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 250.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_9_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 3459.339,
+      "dur": 14.12,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 9,
+        "tokens": 147
+      }
+    },
+    {
+      "name": "launch:expert_9_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 258.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_9_gemm2_m147",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 3473.459,
+      "dur": 571.013,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 9,
+        "tokens": 147
+      }
+    },
+    {
+      "name": "launch:expert_10_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 266.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_10_gemm1_m146",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 3757.318,
+      "dur": 571.009,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 10,
+        "tokens": 146
+      }
+    },
+    {
+      "name": "launch:expert_10_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 274.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_10_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 4328.326,
+      "dur": 14.081,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 10,
+        "tokens": 146
+      }
+    },
+    {
+      "name": "launch:expert_10_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 282.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_10_gemm2_m146",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 4342.408,
+      "dur": 571.009,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 10,
+        "tokens": 146
+      }
+    },
+    {
+      "name": "launch:expert_11_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 290.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_11_gemm1_m146",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 3925.316,
+      "dur": 571.009,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 11,
+        "tokens": 146
+      }
+    },
+    {
+      "name": "launch:expert_11_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 298.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_11_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 4496.325,
+      "dur": 14.081,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 11,
+        "tokens": 146
+      }
+    },
+    {
+      "name": "launch:expert_11_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 306.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_11_gemm2_m146",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 4510.406,
+      "dur": 571.009,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 11,
+        "tokens": 146
+      }
+    },
+    {
+      "name": "launch:expert_12_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 314.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_12_gemm1_m114",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 4044.472,
+      "dur": 570.851,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 12,
+        "tokens": 114
+      }
+    },
+    {
+      "name": "launch:expert_12_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 322.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_12_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 4615.324,
+      "dur": 12.858,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 12,
+        "tokens": 114
+      }
+    },
+    {
+      "name": "launch:expert_12_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 330.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_12_gemm2_m114",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 4628.182,
+      "dur": 570.851,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 12,
+        "tokens": 114
+      }
+    },
+    {
+      "name": "launch:expert_13_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 338.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_13_gemm1_m99",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 4913.417,
+      "dur": 570.778,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 13,
+        "tokens": 99
+      }
+    },
+    {
+      "name": "launch:expert_13_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 346.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_13_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 5484.194,
+      "dur": 12.285,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 13,
+        "tokens": 99
+      }
+    },
+    {
+      "name": "launch:expert_13_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 354.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_13_gemm2_m99",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 5496.479,
+      "dur": 570.778,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 13,
+        "tokens": 99
+      }
+    },
+    {
+      "name": "launch:expert_14_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 362.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_14_gemm1_m111",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 5072.978,
+      "dur": 570.837,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 14,
+        "tokens": 111
+      }
+    },
+    {
+      "name": "launch:expert_14_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 370.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_14_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 5643.815,
+      "dur": 12.743,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 14,
+        "tokens": 111
+      }
+    },
+    {
+      "name": "launch:expert_14_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 378.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_14_gemm2_m111",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 5656.558,
+      "dur": 570.837,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 14,
+        "tokens": 111
+      }
+    },
+    {
+      "name": "launch:expert_15_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 386.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_15_gemm1_m90",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 5081.415,
+      "dur": 570.733,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 15,
+        "tokens": 90
+      }
+    },
+    {
+      "name": "launch:expert_15_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 394.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_15_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 5652.148,
+      "dur": 11.941,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 15,
+        "tokens": 90
+      }
+    },
+    {
+      "name": "launch:expert_15_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 402.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_15_gemm2_m90",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 5664.089,
+      "dur": 570.733,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 15,
+        "tokens": 90
+      }
+    },
+    {
+      "name": "launch:expert_16_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 410.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_16_gemm1_m84",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 5199.033,
+      "dur": 570.704,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 16,
+        "tokens": 84
+      }
+    },
+    {
+      "name": "launch:expert_16_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 418.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_16_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 5769.737,
+      "dur": 11.711,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 16,
+        "tokens": 84
+      }
+    },
+    {
+      "name": "launch:expert_16_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 426.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_16_gemm2_m84",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 5781.448,
+      "dur": 570.704,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 16,
+        "tokens": 84
+      }
+    },
+    {
+      "name": "launch:expert_17_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 434.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_17_gemm1_m90",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 6067.256,
+      "dur": 570.733,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 17,
+        "tokens": 90
+      }
+    },
+    {
+      "name": "launch:expert_17_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 442.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_17_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 6637.99,
+      "dur": 11.941,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 17,
+        "tokens": 90
+      }
+    },
+    {
+      "name": "launch:expert_17_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 450.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_17_gemm2_m90",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 6649.93,
+      "dur": 570.733,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 17,
+        "tokens": 90
+      }
+    },
+    {
+      "name": "launch:expert_18_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 458.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_18_gemm1_m65",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 6227.395,
+      "dur": 570.61,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 18,
+        "tokens": 65
+      }
+    },
+    {
+      "name": "launch:expert_18_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 466.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_18_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 6798.005,
+      "dur": 10.985,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 18,
+        "tokens": 65
+      }
+    },
+    {
+      "name": "launch:expert_18_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 474.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_18_gemm2_m65",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 6808.99,
+      "dur": 570.61,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 18,
+        "tokens": 65
+      }
+    },
+    {
+      "name": "launch:expert_19_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 482.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_19_gemm1_m82",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 6234.822,
+      "dur": 570.694,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 19,
+        "tokens": 82
+      }
+    },
+    {
+      "name": "launch:expert_19_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 490.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_19_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 6805.516,
+      "dur": 11.635,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 19,
+        "tokens": 82
+      }
+    },
+    {
+      "name": "launch:expert_19_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 498.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_19_gemm2_m82",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 6817.151,
+      "dur": 570.694,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 19,
+        "tokens": 82
+      }
+    },
+    {
+      "name": "launch:expert_20_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 506.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_20_gemm1_m65",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 6352.152,
+      "dur": 570.61,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 20,
+        "tokens": 65
+      }
+    },
+    {
+      "name": "launch:expert_20_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 514.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_20_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 6922.762,
+      "dur": 10.985,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 20,
+        "tokens": 65
+      }
+    },
+    {
+      "name": "launch:expert_20_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 522.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_20_gemm2_m65",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 6933.747,
+      "dur": 570.61,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 20,
+        "tokens": 65
+      }
+    },
+    {
+      "name": "launch:expert_21_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 530.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_21_gemm1_m60",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 7220.664,
+      "dur": 570.586,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 21,
+        "tokens": 60
+      }
+    },
+    {
+      "name": "launch:expert_21_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 538.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_21_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 7791.249,
+      "dur": 10.794,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 21,
+        "tokens": 60
+      }
+    },
+    {
+      "name": "launch:expert_21_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 546.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_21_gemm2_m60",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 7802.043,
+      "dur": 570.586,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 21,
+        "tokens": 60
+      }
+    },
+    {
+      "name": "launch:expert_22_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 554.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_22_gemm1_m68",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 7379.6,
+      "dur": 570.625,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 22,
+        "tokens": 68
+      }
+    },
+    {
+      "name": "launch:expert_22_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 562.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_22_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 7950.226,
+      "dur": 11.1,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 22,
+        "tokens": 68
+      }
+    },
+    {
+      "name": "launch:expert_22_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 570.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_22_gemm2_m68",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 7961.325,
+      "dur": 570.625,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 22,
+        "tokens": 68
+      }
+    },
+    {
+      "name": "launch:expert_23_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 578.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_23_gemm1_m61",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 7387.845,
+      "dur": 570.591,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 23,
+        "tokens": 61
+      }
+    },
+    {
+      "name": "launch:expert_23_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 586.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_23_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 7958.436,
+      "dur": 10.832,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 23,
+        "tokens": 61
+      }
+    },
+    {
+      "name": "launch:expert_23_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 594.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_23_gemm2_m61",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 7969.268,
+      "dur": 570.591,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 23,
+        "tokens": 61
+      }
+    },
+    {
+      "name": "launch:expert_24_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 602.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_24_gemm1_m69",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 7504.358,
+      "dur": 570.63,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 24,
+        "tokens": 69
+      }
+    },
+    {
+      "name": "launch:expert_24_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 610.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_24_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 8074.988,
+      "dur": 11.138,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 24,
+        "tokens": 69
+      }
+    },
+    {
+      "name": "launch:expert_24_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 618.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_24_gemm2_m69",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 8086.125,
+      "dur": 570.63,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 24,
+        "tokens": 69
+      }
+    },
+    {
+      "name": "launch:expert_25_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 626.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_25_gemm1_m49",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 8372.629,
+      "dur": 570.532,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 25,
+        "tokens": 49
+      }
+    },
+    {
+      "name": "launch:expert_25_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 634.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_25_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 8943.161,
+      "dur": 10.373,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 25,
+        "tokens": 49
+      }
+    },
+    {
+      "name": "launch:expert_25_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 642.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_25_gemm2_m49",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 8953.534,
+      "dur": 570.532,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 25,
+        "tokens": 49
+      }
+    },
+    {
+      "name": "launch:expert_26_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 650.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_26_gemm1_m49",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 8531.95,
+      "dur": 570.532,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 26,
+        "tokens": 49
+      }
+    },
+    {
+      "name": "launch:expert_26_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 658.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_26_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 9102.482,
+      "dur": 10.373,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 26,
+        "tokens": 49
+      }
+    },
+    {
+      "name": "launch:expert_26_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 666.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_26_gemm2_m49",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 9112.855,
+      "dur": 570.532,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 26,
+        "tokens": 49
+      }
+    },
+    {
+      "name": "launch:expert_27_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 674.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_27_gemm1_m33",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 8539.859,
+      "dur": 570.453,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 27,
+        "tokens": 33
+      }
+    },
+    {
+      "name": "launch:expert_27_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 682.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_27_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 9110.312,
+      "dur": 9.762,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 27,
+        "tokens": 33
+      }
+    },
+    {
+      "name": "launch:expert_27_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 690.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_27_gemm2_m33",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 9120.073,
+      "dur": 570.453,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 27,
+        "tokens": 33
+      }
+    },
+    {
+      "name": "launch:expert_28_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 698.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_28_gemm1_m40",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 8656.756,
+      "dur": 570.488,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 28,
+        "tokens": 40
+      }
+    },
+    {
+      "name": "launch:expert_28_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 706.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_28_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 9227.243,
+      "dur": 10.029,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 28,
+        "tokens": 40
+      }
+    },
+    {
+      "name": "launch:expert_28_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 714.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_28_gemm2_m40",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 9237.272,
+      "dur": 570.488,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 28,
+        "tokens": 40
+      }
+    },
+    {
+      "name": "launch:expert_29_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 722.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_29_gemm1_m37",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 9524.066,
+      "dur": 570.473,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 29,
+        "tokens": 37
+      }
+    },
+    {
+      "name": "launch:expert_29_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 730.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_29_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 10094.539,
+      "dur": 9.914,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 29,
+        "tokens": 37
+      }
+    },
+    {
+      "name": "launch:expert_29_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 738.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_29_gemm2_m37",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 10104.453,
+      "dur": 570.473,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 29,
+        "tokens": 37
+      }
+    },
+    {
+      "name": "launch:expert_30_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 746.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_30_gemm1_m31",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 9683.387,
+      "dur": 570.443,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 30,
+        "tokens": 31
+      }
+    },
+    {
+      "name": "launch:expert_30_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 754.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_30_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 10253.83,
+      "dur": 9.685,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 30,
+        "tokens": 31
+      }
+    },
+    {
+      "name": "launch:expert_30_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 762.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_30_gemm2_m31",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 10263.516,
+      "dur": 570.443,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 30,
+        "tokens": 31
+      }
+    },
+    {
+      "name": "launch:expert_31_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 770.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_31_gemm1_m33",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 9690.526,
+      "dur": 570.453,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 31,
+        "tokens": 33
+      }
+    },
+    {
+      "name": "launch:expert_31_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 778.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_31_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 10260.979,
+      "dur": 9.762,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 31,
+        "tokens": 33
+      }
+    },
+    {
+      "name": "launch:expert_31_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 786.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_31_gemm2_m33",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 10270.741,
+      "dur": 570.453,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 31,
+        "tokens": 33
+      }
+    },
+    {
+      "name": "launch:expert_32_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 794.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_32_gemm1_m39",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 9807.76,
+      "dur": 570.483,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 32,
+        "tokens": 39
+      }
+    },
+    {
+      "name": "launch:expert_32_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 802.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_32_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 10378.242,
+      "dur": 9.991,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 32,
+        "tokens": 39
+      }
+    },
+    {
+      "name": "launch:expert_32_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 810.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_32_gemm2_m39",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 10388.233,
+      "dur": 570.483,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 32,
+        "tokens": 39
+      }
+    },
+    {
+      "name": "launch:expert_33_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 818.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_33_gemm1_m33",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 10674.926,
+      "dur": 570.453,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 33,
+        "tokens": 33
+      }
+    },
+    {
+      "name": "launch:expert_33_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 826.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_33_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 11245.379,
+      "dur": 9.762,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 33,
+        "tokens": 33
+      }
+    },
+    {
+      "name": "launch:expert_33_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 834.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_33_gemm2_m33",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 11255.141,
+      "dur": 570.453,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 33,
+        "tokens": 33
+      }
+    },
+    {
+      "name": "launch:expert_34_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 842.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_34_gemm1_m34",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 10833.959,
+      "dur": 570.458,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 34,
+        "tokens": 34
+      }
+    },
+    {
+      "name": "launch:expert_34_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 850.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_34_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 11404.417,
+      "dur": 9.8,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 34,
+        "tokens": 34
+      }
+    },
+    {
+      "name": "launch:expert_34_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 858.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_34_gemm2_m34",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 11414.217,
+      "dur": 570.458,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 34,
+        "tokens": 34
+      }
+    },
+    {
+      "name": "launch:expert_35_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 866.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_35_gemm1_m36",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 10841.194,
+      "dur": 570.468,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 35,
+        "tokens": 36
+      }
+    },
+    {
+      "name": "launch:expert_35_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 874.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_35_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 11411.662,
+      "dur": 9.876,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 35,
+        "tokens": 36
+      }
+    },
+    {
+      "name": "launch:expert_35_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 882.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_35_gemm2_m36",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 11421.538,
+      "dur": 570.468,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 35,
+        "tokens": 36
+      }
+    },
+    {
+      "name": "launch:expert_36_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 890.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_36_gemm1_m26",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 10958.716,
+      "dur": 570.419,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 36,
+        "tokens": 26
+      }
+    },
+    {
+      "name": "launch:expert_36_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 898.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_36_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 11529.135,
+      "dur": 9.494,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 36,
+        "tokens": 26
+      }
+    },
+    {
+      "name": "launch:expert_36_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 906.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_36_gemm2_m26",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 11538.629,
+      "dur": 570.419,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 36,
+        "tokens": 26
+      }
+    },
+    {
+      "name": "launch:expert_37_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 914.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_37_gemm1_m30",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 11825.594,
+      "dur": 570.438,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 37,
+        "tokens": 30
+      }
+    },
+    {
+      "name": "launch:expert_37_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 922.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_37_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 12396.032,
+      "dur": 9.647,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 37,
+        "tokens": 30
+      }
+    },
+    {
+      "name": "launch:expert_37_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 930.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_37_gemm2_m30",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 12405.679,
+      "dur": 570.438,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 37,
+        "tokens": 30
+      }
+    },
+    {
+      "name": "launch:expert_38_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 938.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_38_gemm1_m30",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 11984.675,
+      "dur": 570.438,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 38,
+        "tokens": 30
+      }
+    },
+    {
+      "name": "launch:expert_38_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 946.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_38_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 12555.113,
+      "dur": 9.647,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 38,
+        "tokens": 30
+      }
+    },
+    {
+      "name": "launch:expert_38_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 954.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_38_gemm2_m30",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 12564.76,
+      "dur": 570.438,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 38,
+        "tokens": 30
+      }
+    },
+    {
+      "name": "launch:expert_39_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 962.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_39_gemm1_m24",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 11992.006,
+      "dur": 570.409,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 39,
+        "tokens": 24
+      }
+    },
+    {
+      "name": "launch:expert_39_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 970.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_39_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 12562.415,
+      "dur": 9.418,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 39,
+        "tokens": 24
+      }
+    },
+    {
+      "name": "launch:expert_39_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 978.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_39_gemm2_m24",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 12571.833,
+      "dur": 570.409,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 39,
+        "tokens": 24
+      }
+    },
+    {
+      "name": "launch:expert_40_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 986.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_40_gemm1_m34",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 12109.047,
+      "dur": 570.458,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 40,
+        "tokens": 34
+      }
+    },
+    {
+      "name": "launch:expert_40_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 994.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_40_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 12679.506,
+      "dur": 9.8,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 40,
+        "tokens": 34
+      }
+    },
+    {
+      "name": "launch:expert_40_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1002.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_40_gemm2_m34",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 12689.305,
+      "dur": 570.458,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 40,
+        "tokens": 34
+      }
+    },
+    {
+      "name": "launch:expert_41_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1010.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_41_gemm1_m27",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 12976.117,
+      "dur": 570.424,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 41,
+        "tokens": 27
+      }
+    },
+    {
+      "name": "launch:expert_41_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1018.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_41_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 13546.541,
+      "dur": 9.532,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 41,
+        "tokens": 27
+      }
+    },
+    {
+      "name": "launch:expert_41_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1026.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_41_gemm2_m27",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 13556.073,
+      "dur": 570.424,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 41,
+        "tokens": 27
+      }
+    },
+    {
+      "name": "launch:expert_42_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1034.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_42_gemm1_m31",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 13135.198,
+      "dur": 570.443,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 42,
+        "tokens": 31
+      }
+    },
+    {
+      "name": "launch:expert_42_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1042.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_42_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 13705.642,
+      "dur": 9.685,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 42,
+        "tokens": 31
+      }
+    },
+    {
+      "name": "launch:expert_42_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1050.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_42_gemm2_m31",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 13715.327,
+      "dur": 570.443,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 42,
+        "tokens": 31
+      }
+    },
+    {
+      "name": "launch:expert_43_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1058.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_43_gemm1_m31",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 13142.242,
+      "dur": 570.443,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 43,
+        "tokens": 31
+      }
+    },
+    {
+      "name": "launch:expert_43_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1066.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_43_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 13712.685,
+      "dur": 9.685,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 43,
+        "tokens": 31
+      }
+    },
+    {
+      "name": "launch:expert_43_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1074.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_43_gemm2_m31",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 13722.37,
+      "dur": 570.443,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 43,
+        "tokens": 31
+      }
+    },
+    {
+      "name": "launch:expert_44_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1082.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_44_gemm1_m29",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 13259.763,
+      "dur": 570.433,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 44,
+        "tokens": 29
+      }
+    },
+    {
+      "name": "launch:expert_44_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1090.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_44_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 13830.197,
+      "dur": 9.609,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 44,
+        "tokens": 29
+      }
+    },
+    {
+      "name": "launch:expert_44_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1098.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_44_gemm2_m29",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 13839.805,
+      "dur": 570.433,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 44,
+        "tokens": 29
+      }
+    },
+    {
+      "name": "launch:expert_45_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1106.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_45_gemm1_m22",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 14126.497,
+      "dur": 540.505,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 45,
+        "tokens": 22
+      }
+    },
+    {
+      "name": "launch:expert_45_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1114.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_45_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 14667.002,
+      "dur": 9.341,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 45,
+        "tokens": 22
+      }
+    },
+    {
+      "name": "launch:expert_45_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1122.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_45_gemm2_m22",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 14676.343,
+      "dur": 540.505,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 45,
+        "tokens": 22
+      }
+    },
+    {
+      "name": "launch:expert_46_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1130.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_46_gemm1_m20",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 14285.77,
+      "dur": 493.519,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 46,
+        "tokens": 20
+      }
+    },
+    {
+      "name": "launch:expert_46_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1138.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_46_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 14779.289,
+      "dur": 9.265,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 46,
+        "tokens": 20
+      }
+    },
+    {
+      "name": "launch:expert_46_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1146.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_46_gemm2_m20",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 14788.554,
+      "dur": 493.519,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 46,
+        "tokens": 20
+      }
+    },
+    {
+      "name": "launch:expert_47_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1154.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_47_gemm1_m20",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 14292.813,
+      "dur": 493.519,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 47,
+        "tokens": 20
+      }
+    },
+    {
+      "name": "launch:expert_47_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1162.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_47_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 14786.332,
+      "dur": 9.265,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 47,
+        "tokens": 20
+      }
+    },
+    {
+      "name": "launch:expert_47_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1170.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_47_gemm2_m20",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 14795.597,
+      "dur": 493.519,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 47,
+        "tokens": 20
+      }
+    },
+    {
+      "name": "launch:expert_48_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1178.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_48_gemm1_m29",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 14410.239,
+      "dur": 570.433,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 48,
+        "tokens": 29
+      }
+    },
+    {
+      "name": "launch:expert_48_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1186.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_48_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 14980.672,
+      "dur": 9.609,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 48,
+        "tokens": 29
+      }
+    },
+    {
+      "name": "launch:expert_48_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1194.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_48_gemm2_m29",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 14990.281,
+      "dur": 570.433,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 48,
+        "tokens": 29
+      }
+    },
+    {
+      "name": "launch:expert_49_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1202.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_49_gemm1_m27",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 15216.848,
+      "dur": 570.424,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 49,
+        "tokens": 27
+      }
+    },
+    {
+      "name": "launch:expert_49_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1210.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_49_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 15787.272,
+      "dur": 9.532,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 49,
+        "tokens": 27
+      }
+    },
+    {
+      "name": "launch:expert_49_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1218.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_49_gemm2_m27",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 15796.804,
+      "dur": 570.424,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 49,
+        "tokens": 27
+      }
+    },
+    {
+      "name": "launch:expert_50_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1226.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_50_gemm1_m24",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 15282.073,
+      "dur": 570.409,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 50,
+        "tokens": 24
+      }
+    },
+    {
+      "name": "launch:expert_50_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1234.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_50_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 15852.482,
+      "dur": 9.418,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 50,
+        "tokens": 24
+      }
+    },
+    {
+      "name": "launch:expert_50_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1242.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_50_gemm2_m24",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 15861.899,
+      "dur": 570.409,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 50,
+        "tokens": 24
+      }
+    },
+    {
+      "name": "launch:expert_51_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1250.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_51_gemm1_m23",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 15289.116,
+      "dur": 563.998,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 51,
+        "tokens": 23
+      }
+    },
+    {
+      "name": "launch:expert_51_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1258.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_51_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 15853.114,
+      "dur": 9.379,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 51,
+        "tokens": 23
+      }
+    },
+    {
+      "name": "launch:expert_51_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1266.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_51_gemm2_m23",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 15862.493,
+      "dur": 563.998,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 51,
+        "tokens": 23
+      }
+    },
+    {
+      "name": "launch:expert_52_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1274.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_52_gemm1_m27",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 15560.715,
+      "dur": 570.424,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 52,
+        "tokens": 27
+      }
+    },
+    {
+      "name": "launch:expert_52_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1282.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_52_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 16131.138,
+      "dur": 9.532,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 52,
+        "tokens": 27
+      }
+    },
+    {
+      "name": "launch:expert_52_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1290.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_52_gemm2_m27",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 16140.67,
+      "dur": 570.424,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 52,
+        "tokens": 27
+      }
+    },
+    {
+      "name": "launch:expert_53_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1298.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_53_gemm1_m20",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 16367.228,
+      "dur": 493.519,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 53,
+        "tokens": 20
+      }
+    },
+    {
+      "name": "launch:expert_53_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1306.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_53_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 16860.747,
+      "dur": 9.265,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 53,
+        "tokens": 20
+      }
+    },
+    {
+      "name": "launch:expert_53_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1314.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_53_gemm2_m20",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 16870.011,
+      "dur": 493.519,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 53,
+        "tokens": 20
+      }
+    },
+    {
+      "name": "launch:expert_54_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1322.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_54_gemm1_m24",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 16426.492,
+      "dur": 570.409,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 54,
+        "tokens": 24
+      }
+    },
+    {
+      "name": "launch:expert_54_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1330.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_54_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 16996.9,
+      "dur": 9.418,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 54,
+        "tokens": 24
+      }
+    },
+    {
+      "name": "launch:expert_54_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1338.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_54_gemm2_m24",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 17006.318,
+      "dur": 570.409,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 54,
+        "tokens": 24
+      }
+    },
+    {
+      "name": "launch:expert_55_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1346.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_55_gemm1_m19",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 16432.308,
+      "dur": 470.026,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 55,
+        "tokens": 19
+      }
+    },
+    {
+      "name": "launch:expert_55_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1354.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_55_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 16902.334,
+      "dur": 9.226,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 55,
+        "tokens": 19
+      }
+    },
+    {
+      "name": "launch:expert_55_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1362.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_55_gemm2_m19",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 16911.561,
+      "dur": 470.026,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 55,
+        "tokens": 19
+      }
+    },
+    {
+      "name": "launch:expert_56_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1370.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_56_gemm1_m14",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 16711.094,
+      "dur": 352.561,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 56,
+        "tokens": 14
+      }
+    },
+    {
+      "name": "launch:expert_56_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1378.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_56_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 17063.655,
+      "dur": 9.035,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 56,
+        "tokens": 14
+      }
+    },
+    {
+      "name": "launch:expert_56_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1386.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_56_gemm2_m14",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 17072.69,
+      "dur": 352.561,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 56,
+        "tokens": 14
+      }
+    },
+    {
+      "name": "launch:expert_57_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1394.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_57_gemm1_m18",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 17363.53,
+      "dur": 446.533,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 57,
+        "tokens": 18
+      }
+    },
+    {
+      "name": "launch:expert_57_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1402.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_57_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 17810.063,
+      "dur": 9.188,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 57,
+        "tokens": 18
+      }
+    },
+    {
+      "name": "launch:expert_57_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1410.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_57_gemm2_m18",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 17819.252,
+      "dur": 446.533,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 57,
+        "tokens": 18
+      }
+    },
+    {
+      "name": "launch:expert_58_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1418.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_58_gemm1_m21",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 17381.587,
+      "dur": 517.012,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 58,
+        "tokens": 21
+      }
+    },
+    {
+      "name": "launch:expert_58_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1426.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_58_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 17898.599,
+      "dur": 9.303,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 58,
+        "tokens": 21
+      }
+    },
+    {
+      "name": "launch:expert_58_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1434.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_58_gemm2_m21",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 17907.902,
+      "dur": 517.012,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 58,
+        "tokens": 21
+      }
+    },
+    {
+      "name": "launch:expert_59_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1442.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_59_gemm1_m18",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 17425.251,
+      "dur": 446.533,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 59,
+        "tokens": 18
+      }
+    },
+    {
+      "name": "launch:expert_59_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1450.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_59_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 17871.784,
+      "dur": 9.188,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 59,
+        "tokens": 18
+      }
+    },
+    {
+      "name": "launch:expert_59_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1458.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_59_gemm2_m18",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 17880.972,
+      "dur": 446.533,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 59,
+        "tokens": 18
+      }
+    },
+    {
+      "name": "launch:expert_60_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1466.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_60_gemm1_m17",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 17576.727,
+      "dur": 423.04,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 60,
+        "tokens": 17
+      }
+    },
+    {
+      "name": "launch:expert_60_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1474.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_60_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 17999.767,
+      "dur": 9.15,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 60,
+        "tokens": 17
+      }
+    },
+    {
+      "name": "launch:expert_60_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1482.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_60_gemm2_m17",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 4,
+      "ts": 18008.917,
+      "dur": 423.04,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 60,
+        "tokens": 17
+      }
+    },
+    {
+      "name": "launch:expert_61_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1490.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_61_gemm1_m27",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 18265.785,
+      "dur": 570.424,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 61,
+        "tokens": 27
+      }
+    },
+    {
+      "name": "launch:expert_61_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1498.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_61_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 18836.208,
+      "dur": 9.532,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 61,
+        "tokens": 27
+      }
+    },
+    {
+      "name": "launch:expert_61_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1506.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_61_gemm2_m27",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 5,
+      "ts": 18845.74,
+      "dur": 570.424,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 61,
+        "tokens": 27
+      }
+    },
+    {
+      "name": "launch:expert_62_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1514.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_62_gemm1_m21",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 18327.505,
+      "dur": 517.012,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 62,
+        "tokens": 21
+      }
+    },
+    {
+      "name": "launch:expert_62_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1522.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_62_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 18844.518,
+      "dur": 9.303,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 62,
+        "tokens": 21
+      }
+    },
+    {
+      "name": "launch:expert_62_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1530.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_62_gemm2_m21",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 6,
+      "ts": 18853.82,
+      "dur": 517.012,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 62,
+        "tokens": 21
+      }
+    },
+    {
+      "name": "launch:expert_63_gemm1",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1538.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_63_gemm1_m17",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 18424.914,
+      "dur": 423.04,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 63,
+        "tokens": 17
+      }
+    },
+    {
+      "name": "launch:expert_63_activation",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1546.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_63_activation",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 18847.954,
+      "dur": 9.15,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 63,
+        "tokens": 17
+      }
+    },
+    {
+      "name": "launch:expert_63_gemm2",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1554.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "expert_63_gemm2_m17",
+      "cat": "compute",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 18857.104,
+      "dur": 423.04,
+      "args": {
+        "mode": "baseline_unfused",
+        "expert": 63,
+        "tokens": 17
+      }
+    },
+    {
+      "name": "stream_0_idle_after_tail",
+      "cat": "idle",
+      "ph": "X",
+      "pid": 1,
+      "tid": 100,
+      "ts": 19280.144,
+      "dur": 136.02,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "stream_1_idle_after_tail",
+      "cat": "idle",
+      "ph": "X",
+      "pid": 1,
+      "tid": 101,
+      "ts": 18431.957,
+      "dur": 984.207,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "stream_3_idle_after_tail",
+      "cat": "idle",
+      "ph": "X",
+      "pid": 1,
+      "tid": 103,
+      "ts": 19370.832,
+      "dur": 45.332,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "launch:combine_scatter_reduce",
+      "cat": "framework",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 1562.371,
+      "dur": 8.0,
+      "args": {
+        "mode": "baseline_unfused"
+      }
+    },
+    {
+      "name": "combine_scatter_reduce",
+      "cat": "memory",
+      "ph": "X",
+      "pid": 1,
+      "tid": 2,
+      "ts": 19416.164,
+      "dur": 97.478,
+      "args": {
+        "mode": "baseline_unfused",
+        "bytes": 134217728
+      }
+    }
+  ]
+}
