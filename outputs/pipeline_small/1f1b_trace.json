@@ -45,6 +45,51 @@
       }
     },
     {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 900,
+      "args": {
+        "name": "pipeline total memory"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 1000,
+      "args": {
+        "name": "stage_0 memory"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 1001,
+      "args": {
+        "name": "stage_1 memory"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 1002,
+      "args": {
+        "name": "stage_2 memory"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 1003,
+      "args": {
+        "name": "stage_3 memory"
+      }
+    },
+    {
       "name": "F_mb0_s0_recv",
       "cat": "forward.recv",
       "ph": "X",
@@ -63,6 +108,76 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 0.0,
+      "args": {
+        "memory_mb": 2073.6,
+        "static_mb": 2073.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 0.0,
+      "args": {
+        "memory_mb": 512.0,
+        "static_mb": 512.0,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 0.0,
+      "args": {
+        "memory_mb": 563.2,
+        "static_mb": 563.2,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 0.0,
+      "args": {
+        "memory_mb": 460.8,
+        "static_mb": 460.8,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 0.0,
+      "args": {
+        "memory_mb": 537.6,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "F_mb0_s0_compute",
       "cat": "forward.compute",
       "ph": "X",
@@ -78,6 +193,34 @@
         "stage": 0,
         "op": "compute",
         "peer": 0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 10.0,
+      "args": {
+        "memory_mb": 2329.6,
+        "static_mb": 2073.6,
+        "activation_mb": 256.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 10.0,
+      "args": {
+        "memory_mb": 768.0,
+        "static_mb": 512.0,
+        "activation_mb": 256.0,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -203,6 +346,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 2585.6,
+        "static_mb": 2073.6,
+        "activation_mb": 512.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 2867.2,
+        "static_mb": 2073.6,
+        "activation_mb": 793.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 1024.0,
+        "static_mb": 512.0,
+        "activation_mb": 512.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 844.8,
+        "static_mb": 563.2,
+        "activation_mb": 281.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "F_mb1_s0_send",
       "cat": "forward.send",
       "ph": "X",
@@ -288,6 +487,34 @@
         "stage": 0,
         "op": "compute",
         "peer": 0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 210.0,
+      "args": {
+        "memory_mb": 3123.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1049.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 210.0,
+      "args": {
+        "memory_mb": 1280.0,
+        "static_mb": 512.0,
+        "activation_mb": 768.0,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -408,6 +635,62 @@
         "stage": 2,
         "op": "compute",
         "peer": 2
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 222.0,
+      "args": {
+        "memory_mb": 3404.8,
+        "static_mb": 2073.6,
+        "activation_mb": 1331.2,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 222.0,
+      "args": {
+        "memory_mb": 3635.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1561.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 222.0,
+      "args": {
+        "memory_mb": 1126.4,
+        "static_mb": 563.2,
+        "activation_mb": 563.2,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 222.0,
+      "args": {
+        "memory_mb": 691.2,
+        "static_mb": 460.8,
+        "activation_mb": 230.4,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -549,6 +832,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 310.0,
+      "args": {
+        "memory_mb": 3891.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1817.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 310.0,
+      "args": {
+        "memory_mb": 1536.0,
+        "static_mb": 512.0,
+        "activation_mb": 1024.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "F_mb1_s1_send",
       "cat": "forward.send",
       "ph": "X",
@@ -582,6 +893,34 @@
         "stage": 3,
         "op": "compute",
         "peer": 3
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 318.0,
+      "args": {
+        "memory_mb": 4160.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2086.4,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 318.0,
+      "args": {
+        "memory_mb": 806.4,
+        "static_mb": 537.6,
+        "activation_mb": 268.8,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -705,6 +1044,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 334.0,
+      "args": {
+        "memory_mb": 4441.6,
+        "static_mb": 2073.6,
+        "activation_mb": 2368.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 334.0,
+      "args": {
+        "memory_mb": 4672.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2598.4,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 334.0,
+      "args": {
+        "memory_mb": 1408.0,
+        "static_mb": 563.2,
+        "activation_mb": 844.8,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 334.0,
+      "args": {
+        "memory_mb": 921.6,
+        "static_mb": 460.8,
+        "activation_mb": 460.8,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "F_mb3_s0_send",
       "cat": "forward.send",
       "ph": "X",
@@ -790,6 +1185,34 @@
         "stage": 3,
         "op": "recv",
         "peer": "loss_grad"
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 412.0,
+      "args": {
+        "memory_mb": 4806.4,
+        "static_mb": 2073.6,
+        "activation_mb": 2598.4,
+        "gradient_mb": 134.4
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 412.0,
+      "args": {
+        "memory_mb": 940.8,
+        "static_mb": 537.6,
+        "activation_mb": 268.8,
+        "gradient_mb": 134.4
       }
     },
     {
@@ -879,6 +1302,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 548.0,
+      "args": {
+        "memory_mb": 4537.6,
+        "static_mb": 2073.6,
+        "activation_mb": 2329.6,
+        "gradient_mb": 134.4
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 548.0,
+      "args": {
+        "memory_mb": 672.0,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 134.4
+      }
+    },
+    {
       "name": "B_mb0_s2_recv",
       "cat": "backward.recv",
       "ph": "X",
@@ -963,6 +1414,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 558.0,
+      "args": {
+        "memory_mb": 4403.2,
+        "static_mb": 2073.6,
+        "activation_mb": 2329.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 558.0,
+      "args": {
+        "memory_mb": 4518.4,
+        "static_mb": 2073.6,
+        "activation_mb": 2329.6,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 558.0,
+      "args": {
+        "memory_mb": 1036.8,
+        "static_mb": 460.8,
+        "activation_mb": 460.8,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 558.0,
+      "args": {
+        "memory_mb": 537.6,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb0_s2_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -996,6 +1503,34 @@
         "stage": 3,
         "op": "compute",
         "peer": 3
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 568.0,
+      "args": {
+        "memory_mb": 4441.6,
+        "static_mb": 2073.6,
+        "activation_mb": 2368.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 568.0,
+      "args": {
+        "memory_mb": 806.4,
+        "static_mb": 537.6,
+        "activation_mb": 268.8,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -1035,6 +1570,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 662.0,
+      "args": {
+        "memory_mb": 4576.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2368.0,
+        "gradient_mb": 134.4
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 662.0,
+      "args": {
+        "memory_mb": 940.8,
+        "static_mb": 537.6,
+        "activation_mb": 268.8,
+        "gradient_mb": 134.4
+      }
+    },
+    {
       "name": "B_mb1_s3_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -1068,6 +1631,34 @@
         "stage": 2,
         "op": "send",
         "peer": 1
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 682.0,
+      "args": {
+        "memory_mb": 4288.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2099.2,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 682.0,
+      "args": {
+        "memory_mb": 806.4,
+        "static_mb": 460.8,
+        "activation_mb": 230.4,
+        "gradient_mb": 115.2
       }
     },
     {
@@ -1155,6 +1746,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 692.0,
+      "args": {
+        "memory_mb": 4172.8,
+        "static_mb": 2073.6,
+        "activation_mb": 2099.2,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 692.0,
+      "args": {
+        "memory_mb": 4313.6,
+        "static_mb": 2073.6,
+        "activation_mb": 2099.2,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 692.0,
+      "args": {
+        "memory_mb": 1548.8,
+        "static_mb": 563.2,
+        "activation_mb": 844.8,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 692.0,
+      "args": {
+        "memory_mb": 691.2,
+        "static_mb": 460.8,
+        "activation_mb": 230.4,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb0_s1_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -1188,6 +1835,34 @@
         "stage": 2,
         "op": "compute",
         "peer": 2
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 702.0,
+      "args": {
+        "memory_mb": 4121.6,
+        "static_mb": 2073.6,
+        "activation_mb": 2048.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 702.0,
+      "args": {
+        "memory_mb": 921.6,
+        "static_mb": 460.8,
+        "activation_mb": 460.8,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -1240,6 +1915,34 @@
         "stage": 3,
         "op": "send",
         "peer": 2
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 798.0,
+      "args": {
+        "memory_mb": 4307.2,
+        "static_mb": 2073.6,
+        "activation_mb": 2099.2,
+        "gradient_mb": 134.4
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 798.0,
+      "args": {
+        "memory_mb": 672.0,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 134.4
       }
     },
     {
@@ -1327,6 +2030,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 808.0,
+      "args": {
+        "memory_mb": 4172.8,
+        "static_mb": 2073.6,
+        "activation_mb": 2099.2,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 808.0,
+      "args": {
+        "memory_mb": 4236.8,
+        "static_mb": 2073.6,
+        "activation_mb": 2048.0,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 808.0,
+      "args": {
+        "memory_mb": 1036.8,
+        "static_mb": 460.8,
+        "activation_mb": 460.8,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 808.0,
+      "args": {
+        "memory_mb": 537.6,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb1_s2_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -1363,6 +2122,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 818.0,
+      "args": {
+        "memory_mb": 4160.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2086.4,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 818.0,
+      "args": {
+        "memory_mb": 806.4,
+        "static_mb": 537.6,
+        "activation_mb": 268.8,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb0_s1_send",
       "cat": "backward.send",
       "ph": "X",
@@ -1378,6 +2165,34 @@
         "stage": 1,
         "op": "send",
         "peer": 0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 840.0,
+      "args": {
+        "memory_mb": 4032.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1817.6,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 840.0,
+      "args": {
+        "memory_mb": 1267.2,
+        "static_mb": 563.2,
+        "activation_mb": 563.2,
+        "gradient_mb": 140.8
       }
     },
     {
@@ -1465,6 +2280,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 850.0,
+      "args": {
+        "memory_mb": 3891.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1817.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 850.0,
+      "args": {
+        "memory_mb": 4288.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2086.4,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 850.0,
+      "args": {
+        "memory_mb": 1664.0,
+        "static_mb": 512.0,
+        "activation_mb": 1024.0,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 850.0,
+      "args": {
+        "memory_mb": 1126.4,
+        "static_mb": 563.2,
+        "activation_mb": 563.2,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb0_s0_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -1498,6 +2369,34 @@
         "stage": 1,
         "op": "compute",
         "peer": 1
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 860.0,
+      "args": {
+        "memory_mb": 4185.6,
+        "static_mb": 2073.6,
+        "activation_mb": 2112.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 860.0,
+      "args": {
+        "memory_mb": 1408.0,
+        "static_mb": 563.2,
+        "activation_mb": 844.8,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -1537,6 +2436,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 912.0,
+      "args": {
+        "memory_mb": 4320.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2112.0,
+        "gradient_mb": 134.4
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 912.0,
+      "args": {
+        "memory_mb": 940.8,
+        "static_mb": 537.6,
+        "activation_mb": 268.8,
+        "gradient_mb": 134.4
+      }
+    },
+    {
       "name": "B_mb2_s3_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -1573,6 +2500,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 932.0,
+      "args": {
+        "memory_mb": 4006.4,
+        "static_mb": 2073.6,
+        "activation_mb": 1817.6,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 932.0,
+      "args": {
+        "memory_mb": 806.4,
+        "static_mb": 460.8,
+        "activation_mb": 230.4,
+        "gradient_mb": 115.2
+      }
+    },
+    {
       "name": "B_mb1_s2_to_s1",
       "cat": "gradient_flow",
       "ph": "s",
@@ -1586,6 +2541,34 @@
         "microbatch": 1,
         "src_stage": 2,
         "dst_stage": 1
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 942.0,
+      "args": {
+        "memory_mb": 3891.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1817.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 942.0,
+      "args": {
+        "memory_mb": 691.2,
+        "static_mb": 460.8,
+        "activation_mb": 230.4,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -1691,6 +2674,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 962.0,
+      "args": {
+        "memory_mb": 4057.6,
+        "static_mb": 2073.6,
+        "activation_mb": 1843.2,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 962.0,
+      "args": {
+        "memory_mb": 1548.8,
+        "static_mb": 563.2,
+        "activation_mb": 844.8,
+        "gradient_mb": 140.8
+      }
+    },
+    {
       "name": "B_mb1_s1_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -1727,6 +2738,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 972.0,
+      "args": {
+        "memory_mb": 3865.6,
+        "static_mb": 2073.6,
+        "activation_mb": 1792.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 972.0,
+      "args": {
+        "memory_mb": 921.6,
+        "static_mb": 460.8,
+        "activation_mb": 460.8,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb0_s0_send",
       "cat": "backward.send",
       "ph": "X",
@@ -1742,6 +2781,34 @@
         "stage": 0,
         "op": "send",
         "peer": "grad_sink"
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 980.0,
+      "args": {
+        "memory_mb": 4032.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1830.4,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 980.0,
+      "args": {
+        "memory_mb": 1408.0,
+        "static_mb": 512.0,
+        "activation_mb": 768.0,
+        "gradient_mb": 128.0
       }
     },
     {
@@ -1763,6 +2830,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 990.0,
+      "args": {
+        "memory_mb": 3904.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1830.4,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 990.0,
+      "args": {
+        "memory_mb": 1280.0,
+        "static_mb": 512.0,
+        "activation_mb": 768.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "F_mb4_s0_compute",
       "cat": "forward.compute",
       "ph": "X",
@@ -1778,6 +2873,34 @@
         "stage": 0,
         "op": "compute",
         "peer": 0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1000.0,
+      "args": {
+        "memory_mb": 4121.6,
+        "static_mb": 2073.6,
+        "activation_mb": 2048.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 1000.0,
+      "args": {
+        "memory_mb": 1536.0,
+        "static_mb": 512.0,
+        "activation_mb": 1024.0,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -1814,6 +2937,34 @@
         "stage": 3,
         "op": "send",
         "peer": 2
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1048.0,
+      "args": {
+        "memory_mb": 4051.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1843.2,
+        "gradient_mb": 134.4
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 1048.0,
+      "args": {
+        "memory_mb": 672.0,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 134.4
       }
     },
     {
@@ -1917,6 +3068,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1058.0,
+      "args": {
+        "memory_mb": 3916.8,
+        "static_mb": 2073.6,
+        "activation_mb": 1843.2,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1058.0,
+      "args": {
+        "memory_mb": 4236.8,
+        "static_mb": 2073.6,
+        "activation_mb": 2048.0,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 1058.0,
+      "args": {
+        "memory_mb": 1036.8,
+        "static_mb": 460.8,
+        "activation_mb": 460.8,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 1058.0,
+      "args": {
+        "memory_mb": 537.6,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb2_s2_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -1950,6 +3157,34 @@
         "stage": 3,
         "op": "compute",
         "peer": 3
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1068.0,
+      "args": {
+        "memory_mb": 4160.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2086.4,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 1068.0,
+      "args": {
+        "memory_mb": 806.4,
+        "static_mb": 537.6,
+        "activation_mb": 268.8,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -2002,6 +3237,34 @@
         "stage": 1,
         "op": "send",
         "peer": 0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1110.0,
+      "args": {
+        "memory_mb": 3776.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1561.6,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 1110.0,
+      "args": {
+        "memory_mb": 1267.2,
+        "static_mb": 563.2,
+        "activation_mb": 563.2,
+        "gradient_mb": 140.8
       }
     },
     {
@@ -2089,6 +3352,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1120.0,
+      "args": {
+        "memory_mb": 3635.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1561.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1120.0,
+      "args": {
+        "memory_mb": 4288.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2086.4,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 1120.0,
+      "args": {
+        "memory_mb": 1664.0,
+        "static_mb": 512.0,
+        "activation_mb": 1024.0,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 1120.0,
+      "args": {
+        "memory_mb": 1126.4,
+        "static_mb": 563.2,
+        "activation_mb": 563.2,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb1_s0_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -2122,6 +3441,34 @@
         "stage": 1,
         "op": "compute",
         "peer": 1
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1130.0,
+      "args": {
+        "memory_mb": 4185.6,
+        "static_mb": 2073.6,
+        "activation_mb": 2112.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 1130.0,
+      "args": {
+        "memory_mb": 1408.0,
+        "static_mb": 563.2,
+        "activation_mb": 844.8,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -2161,6 +3508,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1162.0,
+      "args": {
+        "memory_mb": 4320.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2112.0,
+        "gradient_mb": 134.4
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 1162.0,
+      "args": {
+        "memory_mb": 940.8,
+        "static_mb": 537.6,
+        "activation_mb": 268.8,
+        "gradient_mb": 134.4
+      }
+    },
+    {
       "name": "B_mb3_s3_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -2197,6 +3572,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1182.0,
+      "args": {
+        "memory_mb": 4006.4,
+        "static_mb": 2073.6,
+        "activation_mb": 1817.6,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 1182.0,
+      "args": {
+        "memory_mb": 806.4,
+        "static_mb": 460.8,
+        "activation_mb": 230.4,
+        "gradient_mb": 115.2
+      }
+    },
+    {
       "name": "B_mb2_s2_to_s1",
       "cat": "gradient_flow",
       "ph": "s",
@@ -2210,6 +3613,34 @@
         "microbatch": 2,
         "src_stage": 2,
         "dst_stage": 1
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1192.0,
+      "args": {
+        "memory_mb": 3891.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1817.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 1192.0,
+      "args": {
+        "memory_mb": 691.2,
+        "static_mb": 460.8,
+        "activation_mb": 230.4,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -2315,6 +3746,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1232.0,
+      "args": {
+        "memory_mb": 4057.6,
+        "static_mb": 2073.6,
+        "activation_mb": 1843.2,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 1232.0,
+      "args": {
+        "memory_mb": 1548.8,
+        "static_mb": 563.2,
+        "activation_mb": 844.8,
+        "gradient_mb": 140.8
+      }
+    },
+    {
       "name": "B_mb2_s1_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -2351,6 +3810,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1242.0,
+      "args": {
+        "memory_mb": 3865.6,
+        "static_mb": 2073.6,
+        "activation_mb": 1792.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 1242.0,
+      "args": {
+        "memory_mb": 921.6,
+        "static_mb": 460.8,
+        "activation_mb": 460.8,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb1_s0_send",
       "cat": "backward.send",
       "ph": "X",
@@ -2366,6 +3853,34 @@
         "stage": 0,
         "op": "send",
         "peer": "grad_sink"
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1250.0,
+      "args": {
+        "memory_mb": 4032.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1830.4,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 1250.0,
+      "args": {
+        "memory_mb": 1408.0,
+        "static_mb": 512.0,
+        "activation_mb": 768.0,
+        "gradient_mb": 128.0
       }
     },
     {
@@ -2387,6 +3902,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1260.0,
+      "args": {
+        "memory_mb": 3904.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1830.4,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 1260.0,
+      "args": {
+        "memory_mb": 1280.0,
+        "static_mb": 512.0,
+        "activation_mb": 768.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "F_mb5_s0_compute",
       "cat": "forward.compute",
       "ph": "X",
@@ -2402,6 +3945,34 @@
         "stage": 0,
         "op": "compute",
         "peer": 0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1270.0,
+      "args": {
+        "memory_mb": 4121.6,
+        "static_mb": 2073.6,
+        "activation_mb": 2048.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 1270.0,
+      "args": {
+        "memory_mb": 1536.0,
+        "static_mb": 512.0,
+        "activation_mb": 1024.0,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -2423,6 +3994,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1298.0,
+      "args": {
+        "memory_mb": 4051.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1843.2,
+        "gradient_mb": 134.4
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 1298.0,
+      "args": {
+        "memory_mb": 672.0,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 134.4
+      }
+    },
+    {
       "name": "B_mb3_s3_to_s2",
       "cat": "gradient_flow",
       "ph": "s",
@@ -2436,6 +4035,34 @@
         "microbatch": 3,
         "src_stage": 3,
         "dst_stage": 2
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1308.0,
+      "args": {
+        "memory_mb": 3916.8,
+        "static_mb": 2073.6,
+        "activation_mb": 1843.2,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 1308.0,
+      "args": {
+        "memory_mb": 537.6,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -2541,6 +4168,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1328.0,
+      "args": {
+        "memory_mb": 4236.8,
+        "static_mb": 2073.6,
+        "activation_mb": 2048.0,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 1328.0,
+      "args": {
+        "memory_mb": 1036.8,
+        "static_mb": 460.8,
+        "activation_mb": 460.8,
+        "gradient_mb": 115.2
+      }
+    },
+    {
       "name": "B_mb3_s2_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -2574,6 +4229,34 @@
         "stage": 3,
         "op": "compute",
         "peer": 3
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1338.0,
+      "args": {
+        "memory_mb": 4160.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2086.4,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 1338.0,
+      "args": {
+        "memory_mb": 806.4,
+        "static_mb": 537.6,
+        "activation_mb": 268.8,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -2626,6 +4309,34 @@
         "stage": 1,
         "op": "send",
         "peer": 0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1380.0,
+      "args": {
+        "memory_mb": 3776.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1561.6,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 1380.0,
+      "args": {
+        "memory_mb": 1267.2,
+        "static_mb": 563.2,
+        "activation_mb": 563.2,
+        "gradient_mb": 140.8
       }
     },
     {
@@ -2713,6 +4424,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1390.0,
+      "args": {
+        "memory_mb": 3635.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1561.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1390.0,
+      "args": {
+        "memory_mb": 4288.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2086.4,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 1390.0,
+      "args": {
+        "memory_mb": 1664.0,
+        "static_mb": 512.0,
+        "activation_mb": 1024.0,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 1390.0,
+      "args": {
+        "memory_mb": 1126.4,
+        "static_mb": 563.2,
+        "activation_mb": 563.2,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb2_s0_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -2746,6 +4513,34 @@
         "stage": 1,
         "op": "compute",
         "peer": 1
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1400.0,
+      "args": {
+        "memory_mb": 4185.6,
+        "static_mb": 2073.6,
+        "activation_mb": 2112.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 1400.0,
+      "args": {
+        "memory_mb": 1408.0,
+        "static_mb": 563.2,
+        "activation_mb": 844.8,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -2785,6 +4580,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1432.0,
+      "args": {
+        "memory_mb": 4320.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2112.0,
+        "gradient_mb": 134.4
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 1432.0,
+      "args": {
+        "memory_mb": 940.8,
+        "static_mb": 537.6,
+        "activation_mb": 268.8,
+        "gradient_mb": 134.4
+      }
+    },
+    {
       "name": "B_mb4_s3_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -2821,6 +4644,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1452.0,
+      "args": {
+        "memory_mb": 4006.4,
+        "static_mb": 2073.6,
+        "activation_mb": 1817.6,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 1452.0,
+      "args": {
+        "memory_mb": 806.4,
+        "static_mb": 460.8,
+        "activation_mb": 230.4,
+        "gradient_mb": 115.2
+      }
+    },
+    {
       "name": "B_mb3_s2_to_s1",
       "cat": "gradient_flow",
       "ph": "s",
@@ -2834,6 +4685,34 @@
         "microbatch": 3,
         "src_stage": 2,
         "dst_stage": 1
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1462.0,
+      "args": {
+        "memory_mb": 3891.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1817.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 1462.0,
+      "args": {
+        "memory_mb": 691.2,
+        "static_mb": 460.8,
+        "activation_mb": 230.4,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -2939,6 +4818,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1502.0,
+      "args": {
+        "memory_mb": 4057.6,
+        "static_mb": 2073.6,
+        "activation_mb": 1843.2,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 1502.0,
+      "args": {
+        "memory_mb": 1548.8,
+        "static_mb": 563.2,
+        "activation_mb": 844.8,
+        "gradient_mb": 140.8
+      }
+    },
+    {
       "name": "B_mb3_s1_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -2975,6 +4882,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1512.0,
+      "args": {
+        "memory_mb": 3865.6,
+        "static_mb": 2073.6,
+        "activation_mb": 1792.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 1512.0,
+      "args": {
+        "memory_mb": 921.6,
+        "static_mb": 460.8,
+        "activation_mb": 460.8,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb2_s0_send",
       "cat": "backward.send",
       "ph": "X",
@@ -2990,6 +4925,34 @@
         "stage": 0,
         "op": "send",
         "peer": "grad_sink"
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1520.0,
+      "args": {
+        "memory_mb": 4032.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1830.4,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 1520.0,
+      "args": {
+        "memory_mb": 1408.0,
+        "static_mb": 512.0,
+        "activation_mb": 768.0,
+        "gradient_mb": 128.0
       }
     },
     {
@@ -3011,6 +4974,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1530.0,
+      "args": {
+        "memory_mb": 3904.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1830.4,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 1530.0,
+      "args": {
+        "memory_mb": 1280.0,
+        "static_mb": 512.0,
+        "activation_mb": 768.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "F_mb6_s0_compute",
       "cat": "forward.compute",
       "ph": "X",
@@ -3026,6 +5017,34 @@
         "stage": 0,
         "op": "compute",
         "peer": 0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1540.0,
+      "args": {
+        "memory_mb": 4121.6,
+        "static_mb": 2073.6,
+        "activation_mb": 2048.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 1540.0,
+      "args": {
+        "memory_mb": 1536.0,
+        "static_mb": 512.0,
+        "activation_mb": 1024.0,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -3047,6 +5066,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1568.0,
+      "args": {
+        "memory_mb": 4051.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1843.2,
+        "gradient_mb": 134.4
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 1568.0,
+      "args": {
+        "memory_mb": 672.0,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 134.4
+      }
+    },
+    {
       "name": "B_mb4_s3_to_s2",
       "cat": "gradient_flow",
       "ph": "s",
@@ -3060,6 +5107,34 @@
         "microbatch": 4,
         "src_stage": 3,
         "dst_stage": 2
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1578.0,
+      "args": {
+        "memory_mb": 3916.8,
+        "static_mb": 2073.6,
+        "activation_mb": 1843.2,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 1578.0,
+      "args": {
+        "memory_mb": 537.6,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -3165,6 +5240,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1598.0,
+      "args": {
+        "memory_mb": 4236.8,
+        "static_mb": 2073.6,
+        "activation_mb": 2048.0,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 1598.0,
+      "args": {
+        "memory_mb": 1036.8,
+        "static_mb": 460.8,
+        "activation_mb": 460.8,
+        "gradient_mb": 115.2
+      }
+    },
+    {
       "name": "B_mb4_s2_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -3198,6 +5301,34 @@
         "stage": 3,
         "op": "compute",
         "peer": 3
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1608.0,
+      "args": {
+        "memory_mb": 4160.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2086.4,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 1608.0,
+      "args": {
+        "memory_mb": 806.4,
+        "static_mb": 537.6,
+        "activation_mb": 268.8,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -3250,6 +5381,34 @@
         "stage": 1,
         "op": "send",
         "peer": 0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1650.0,
+      "args": {
+        "memory_mb": 3776.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1561.6,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 1650.0,
+      "args": {
+        "memory_mb": 1267.2,
+        "static_mb": 563.2,
+        "activation_mb": 563.2,
+        "gradient_mb": 140.8
       }
     },
     {
@@ -3337,6 +5496,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1660.0,
+      "args": {
+        "memory_mb": 3635.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1561.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1660.0,
+      "args": {
+        "memory_mb": 4288.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2086.4,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 1660.0,
+      "args": {
+        "memory_mb": 1664.0,
+        "static_mb": 512.0,
+        "activation_mb": 1024.0,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 1660.0,
+      "args": {
+        "memory_mb": 1126.4,
+        "static_mb": 563.2,
+        "activation_mb": 563.2,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb3_s0_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -3370,6 +5585,34 @@
         "stage": 1,
         "op": "compute",
         "peer": 1
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1670.0,
+      "args": {
+        "memory_mb": 4185.6,
+        "static_mb": 2073.6,
+        "activation_mb": 2112.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 1670.0,
+      "args": {
+        "memory_mb": 1408.0,
+        "static_mb": 563.2,
+        "activation_mb": 844.8,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -3409,6 +5652,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1702.0,
+      "args": {
+        "memory_mb": 4320.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2112.0,
+        "gradient_mb": 134.4
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 1702.0,
+      "args": {
+        "memory_mb": 940.8,
+        "static_mb": 537.6,
+        "activation_mb": 268.8,
+        "gradient_mb": 134.4
+      }
+    },
+    {
       "name": "B_mb5_s3_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -3445,6 +5716,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1722.0,
+      "args": {
+        "memory_mb": 4006.4,
+        "static_mb": 2073.6,
+        "activation_mb": 1817.6,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 1722.0,
+      "args": {
+        "memory_mb": 806.4,
+        "static_mb": 460.8,
+        "activation_mb": 230.4,
+        "gradient_mb": 115.2
+      }
+    },
+    {
       "name": "B_mb4_s2_to_s1",
       "cat": "gradient_flow",
       "ph": "s",
@@ -3458,6 +5757,34 @@
         "microbatch": 4,
         "src_stage": 2,
         "dst_stage": 1
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1732.0,
+      "args": {
+        "memory_mb": 3891.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1817.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 1732.0,
+      "args": {
+        "memory_mb": 691.2,
+        "static_mb": 460.8,
+        "activation_mb": 230.4,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -3563,6 +5890,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1772.0,
+      "args": {
+        "memory_mb": 4057.6,
+        "static_mb": 2073.6,
+        "activation_mb": 1843.2,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 1772.0,
+      "args": {
+        "memory_mb": 1548.8,
+        "static_mb": 563.2,
+        "activation_mb": 844.8,
+        "gradient_mb": 140.8
+      }
+    },
+    {
       "name": "B_mb4_s1_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -3599,6 +5954,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1782.0,
+      "args": {
+        "memory_mb": 3865.6,
+        "static_mb": 2073.6,
+        "activation_mb": 1792.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 1782.0,
+      "args": {
+        "memory_mb": 921.6,
+        "static_mb": 460.8,
+        "activation_mb": 460.8,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb3_s0_send",
       "cat": "backward.send",
       "ph": "X",
@@ -3614,6 +5997,34 @@
         "stage": 0,
         "op": "send",
         "peer": "grad_sink"
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1790.0,
+      "args": {
+        "memory_mb": 4032.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1830.4,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 1790.0,
+      "args": {
+        "memory_mb": 1408.0,
+        "static_mb": 512.0,
+        "activation_mb": 768.0,
+        "gradient_mb": 128.0
       }
     },
     {
@@ -3635,6 +6046,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1800.0,
+      "args": {
+        "memory_mb": 3904.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1830.4,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 1800.0,
+      "args": {
+        "memory_mb": 1280.0,
+        "static_mb": 512.0,
+        "activation_mb": 768.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "F_mb7_s0_compute",
       "cat": "forward.compute",
       "ph": "X",
@@ -3650,6 +6089,34 @@
         "stage": 0,
         "op": "compute",
         "peer": 0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1810.0,
+      "args": {
+        "memory_mb": 4121.6,
+        "static_mb": 2073.6,
+        "activation_mb": 2048.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 1810.0,
+      "args": {
+        "memory_mb": 1536.0,
+        "static_mb": 512.0,
+        "activation_mb": 1024.0,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -3671,6 +6138,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1838.0,
+      "args": {
+        "memory_mb": 4051.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1843.2,
+        "gradient_mb": 134.4
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 1838.0,
+      "args": {
+        "memory_mb": 672.0,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 134.4
+      }
+    },
+    {
       "name": "B_mb5_s3_to_s2",
       "cat": "gradient_flow",
       "ph": "s",
@@ -3684,6 +6179,34 @@
         "microbatch": 5,
         "src_stage": 3,
         "dst_stage": 2
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1848.0,
+      "args": {
+        "memory_mb": 3916.8,
+        "static_mb": 2073.6,
+        "activation_mb": 1843.2,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 1848.0,
+      "args": {
+        "memory_mb": 537.6,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -3789,6 +6312,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1868.0,
+      "args": {
+        "memory_mb": 4236.8,
+        "static_mb": 2073.6,
+        "activation_mb": 2048.0,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 1868.0,
+      "args": {
+        "memory_mb": 1036.8,
+        "static_mb": 460.8,
+        "activation_mb": 460.8,
+        "gradient_mb": 115.2
+      }
+    },
+    {
       "name": "B_mb5_s2_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -3822,6 +6373,34 @@
         "stage": 3,
         "op": "compute",
         "peer": 3
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1878.0,
+      "args": {
+        "memory_mb": 4160.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2086.4,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 1878.0,
+      "args": {
+        "memory_mb": 806.4,
+        "static_mb": 537.6,
+        "activation_mb": 268.8,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -3874,6 +6453,34 @@
         "stage": 1,
         "op": "send",
         "peer": 0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1920.0,
+      "args": {
+        "memory_mb": 3776.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1561.6,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 1920.0,
+      "args": {
+        "memory_mb": 1267.2,
+        "static_mb": 563.2,
+        "activation_mb": 563.2,
+        "gradient_mb": 140.8
       }
     },
     {
@@ -3961,6 +6568,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1930.0,
+      "args": {
+        "memory_mb": 3635.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1561.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1930.0,
+      "args": {
+        "memory_mb": 4288.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2086.4,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 1930.0,
+      "args": {
+        "memory_mb": 1664.0,
+        "static_mb": 512.0,
+        "activation_mb": 1024.0,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 1930.0,
+      "args": {
+        "memory_mb": 1126.4,
+        "static_mb": 563.2,
+        "activation_mb": 563.2,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb4_s0_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -3994,6 +6657,34 @@
         "stage": 1,
         "op": "compute",
         "peer": 1
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1940.0,
+      "args": {
+        "memory_mb": 4185.6,
+        "static_mb": 2073.6,
+        "activation_mb": 2112.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 1940.0,
+      "args": {
+        "memory_mb": 1408.0,
+        "static_mb": 563.2,
+        "activation_mb": 844.8,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -4033,6 +6724,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1972.0,
+      "args": {
+        "memory_mb": 4320.0,
+        "static_mb": 2073.6,
+        "activation_mb": 2112.0,
+        "gradient_mb": 134.4
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 1972.0,
+      "args": {
+        "memory_mb": 940.8,
+        "static_mb": 537.6,
+        "activation_mb": 268.8,
+        "gradient_mb": 134.4
+      }
+    },
+    {
       "name": "B_mb6_s3_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -4069,6 +6788,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 1992.0,
+      "args": {
+        "memory_mb": 4006.4,
+        "static_mb": 2073.6,
+        "activation_mb": 1817.6,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 1992.0,
+      "args": {
+        "memory_mb": 806.4,
+        "static_mb": 460.8,
+        "activation_mb": 230.4,
+        "gradient_mb": 115.2
+      }
+    },
+    {
       "name": "B_mb5_s2_to_s1",
       "cat": "gradient_flow",
       "ph": "s",
@@ -4082,6 +6829,34 @@
         "microbatch": 5,
         "src_stage": 2,
         "dst_stage": 1
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2002.0,
+      "args": {
+        "memory_mb": 3891.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1817.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 2002.0,
+      "args": {
+        "memory_mb": 691.2,
+        "static_mb": 460.8,
+        "activation_mb": 230.4,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -4187,6 +6962,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2042.0,
+      "args": {
+        "memory_mb": 4057.6,
+        "static_mb": 2073.6,
+        "activation_mb": 1843.2,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 2042.0,
+      "args": {
+        "memory_mb": 1548.8,
+        "static_mb": 563.2,
+        "activation_mb": 844.8,
+        "gradient_mb": 140.8
+      }
+    },
+    {
       "name": "B_mb5_s1_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -4223,6 +7026,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2052.0,
+      "args": {
+        "memory_mb": 3865.6,
+        "static_mb": 2073.6,
+        "activation_mb": 1792.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 2052.0,
+      "args": {
+        "memory_mb": 921.6,
+        "static_mb": 460.8,
+        "activation_mb": 460.8,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb4_s0_send",
       "cat": "backward.send",
       "ph": "X",
@@ -4238,6 +7069,62 @@
         "stage": 0,
         "op": "send",
         "peer": "grad_sink"
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2060.0,
+      "args": {
+        "memory_mb": 4032.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1830.4,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 2060.0,
+      "args": {
+        "memory_mb": 1408.0,
+        "static_mb": 512.0,
+        "activation_mb": 768.0,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2070.0,
+      "args": {
+        "memory_mb": 3904.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1830.4,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 2070.0,
+      "args": {
+        "memory_mb": 1280.0,
+        "static_mb": 512.0,
+        "activation_mb": 768.0,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -4259,6 +7146,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2108.0,
+      "args": {
+        "memory_mb": 4051.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1843.2,
+        "gradient_mb": 134.4
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 2108.0,
+      "args": {
+        "memory_mb": 672.0,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 134.4
+      }
+    },
+    {
       "name": "B_mb6_s3_to_s2",
       "cat": "gradient_flow",
       "ph": "s",
@@ -4272,6 +7187,34 @@
         "microbatch": 6,
         "src_stage": 3,
         "dst_stage": 2
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2118.0,
+      "args": {
+        "memory_mb": 3916.8,
+        "static_mb": 2073.6,
+        "activation_mb": 1843.2,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 2118.0,
+      "args": {
+        "memory_mb": 537.6,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -4377,6 +7320,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2138.0,
+      "args": {
+        "memory_mb": 3980.8,
+        "static_mb": 2073.6,
+        "activation_mb": 1792.0,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 2138.0,
+      "args": {
+        "memory_mb": 1036.8,
+        "static_mb": 460.8,
+        "activation_mb": 460.8,
+        "gradient_mb": 115.2
+      }
+    },
+    {
       "name": "B_mb6_s2_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -4413,6 +7384,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2148.0,
+      "args": {
+        "memory_mb": 3904.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1830.4,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 2148.0,
+      "args": {
+        "memory_mb": 806.4,
+        "static_mb": 537.6,
+        "activation_mb": 268.8,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb5_s1_send",
       "cat": "backward.send",
       "ph": "X",
@@ -4428,6 +7427,34 @@
         "stage": 1,
         "op": "send",
         "peer": 0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2190.0,
+      "args": {
+        "memory_mb": 3776.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1561.6,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 2190.0,
+      "args": {
+        "memory_mb": 1267.2,
+        "static_mb": 563.2,
+        "activation_mb": 563.2,
+        "gradient_mb": 140.8
       }
     },
     {
@@ -4478,6 +7505,62 @@
         "microbatch": 5,
         "src_stage": 1,
         "dst_stage": 0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2200.0,
+      "args": {
+        "memory_mb": 3635.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1561.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2200.0,
+      "args": {
+        "memory_mb": 4032.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1830.4,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 2200.0,
+      "args": {
+        "memory_mb": 1408.0,
+        "static_mb": 512.0,
+        "activation_mb": 768.0,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 2200.0,
+      "args": {
+        "memory_mb": 1126.4,
+        "static_mb": 563.2,
+        "activation_mb": 563.2,
+        "gradient_mb": 0.0
       }
     },
     {
@@ -4535,6 +7618,34 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2242.0,
+      "args": {
+        "memory_mb": 3782.4,
+        "static_mb": 2073.6,
+        "activation_mb": 1574.4,
+        "gradient_mb": 134.4
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 2242.0,
+      "args": {
+        "memory_mb": 940.8,
+        "static_mb": 537.6,
+        "activation_mb": 268.8,
+        "gradient_mb": 134.4
+      }
+    },
+    {
       "name": "B_mb7_s3_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -4568,6 +7679,34 @@
         "stage": 2,
         "op": "send",
         "peer": 1
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2262.0,
+      "args": {
+        "memory_mb": 3750.4,
+        "static_mb": 2073.6,
+        "activation_mb": 1561.6,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 2262.0,
+      "args": {
+        "memory_mb": 806.4,
+        "static_mb": 460.8,
+        "activation_mb": 230.4,
+        "gradient_mb": 115.2
       }
     },
     {
@@ -4621,6 +7760,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2272.0,
+      "args": {
+        "memory_mb": 3635.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1561.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2272.0,
+      "args": {
+        "memory_mb": 3520.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1305.6,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 2272.0,
+      "args": {
+        "memory_mb": 1267.2,
+        "static_mb": 563.2,
+        "activation_mb": 563.2,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 2272.0,
+      "args": {
+        "memory_mb": 691.2,
+        "static_mb": 460.8,
+        "activation_mb": 230.4,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb6_s1_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -4657,6 +7852,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2330.0,
+      "args": {
+        "memory_mb": 3776.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1574.4,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 2330.0,
+      "args": {
+        "memory_mb": 1152.0,
+        "static_mb": 512.0,
+        "activation_mb": 512.0,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2340.0,
+      "args": {
+        "memory_mb": 3648.0,
+        "static_mb": 2073.6,
+        "activation_mb": 1574.4,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 2340.0,
+      "args": {
+        "memory_mb": 1024.0,
+        "static_mb": 512.0,
+        "activation_mb": 512.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb7_s3_send",
       "cat": "backward.send",
       "ph": "X",
@@ -4672,6 +7923,34 @@
         "stage": 3,
         "op": "send",
         "peer": 2
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2378.0,
+      "args": {
+        "memory_mb": 3513.6,
+        "static_mb": 2073.6,
+        "activation_mb": 1305.6,
+        "gradient_mb": 134.4
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 2378.0,
+      "args": {
+        "memory_mb": 672.0,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 134.4
       }
     },
     {
@@ -4725,6 +8004,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2388.0,
+      "args": {
+        "memory_mb": 3379.2,
+        "static_mb": 2073.6,
+        "activation_mb": 1305.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2388.0,
+      "args": {
+        "memory_mb": 3212.8,
+        "static_mb": 2073.6,
+        "activation_mb": 1024.0,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 2388.0,
+      "args": {
+        "memory_mb": 806.4,
+        "static_mb": 460.8,
+        "activation_mb": 230.4,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 2388.0,
+      "args": {
+        "memory_mb": 537.6,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb7_s2_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -4758,6 +8093,34 @@
         "stage": 1,
         "op": "send",
         "peer": 0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2420.0,
+      "args": {
+        "memory_mb": 3238.4,
+        "static_mb": 2073.6,
+        "activation_mb": 1024.0,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 2420.0,
+      "args": {
+        "memory_mb": 985.6,
+        "static_mb": 563.2,
+        "activation_mb": 281.6,
+        "gradient_mb": 140.8
       }
     },
     {
@@ -4811,6 +8174,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2430.0,
+      "args": {
+        "memory_mb": 3097.6,
+        "static_mb": 2073.6,
+        "activation_mb": 1024.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2430.0,
+      "args": {
+        "memory_mb": 2995.2,
+        "static_mb": 2073.6,
+        "activation_mb": 793.6,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 2430.0,
+      "args": {
+        "memory_mb": 1152.0,
+        "static_mb": 512.0,
+        "activation_mb": 512.0,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 2430.0,
+      "args": {
+        "memory_mb": 844.8,
+        "static_mb": 563.2,
+        "activation_mb": 281.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb6_s0_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -4844,6 +8263,34 @@
         "stage": 2,
         "op": "send",
         "peer": 1
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2512.0,
+      "args": {
+        "memory_mb": 2982.4,
+        "static_mb": 2073.6,
+        "activation_mb": 793.6,
+        "gradient_mb": 115.2
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 2512.0,
+      "args": {
+        "memory_mb": 576.0,
+        "static_mb": 460.8,
+        "activation_mb": 0.0,
+        "gradient_mb": 115.2
       }
     },
     {
@@ -4897,6 +8344,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2522.0,
+      "args": {
+        "memory_mb": 2867.2,
+        "static_mb": 2073.6,
+        "activation_mb": 793.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2522.0,
+      "args": {
+        "memory_mb": 2752.0,
+        "static_mb": 2073.6,
+        "activation_mb": 537.6,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 2522.0,
+      "args": {
+        "memory_mb": 985.6,
+        "static_mb": 563.2,
+        "activation_mb": 281.6,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 2522.0,
+      "args": {
+        "memory_mb": 460.8,
+        "static_mb": 460.8,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb7_s1_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -4933,6 +8436,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2560.0,
+      "args": {
+        "memory_mb": 2739.2,
+        "static_mb": 2073.6,
+        "activation_mb": 537.6,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 2560.0,
+      "args": {
+        "memory_mb": 896.0,
+        "static_mb": 512.0,
+        "activation_mb": 256.0,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2570.0,
+      "args": {
+        "memory_mb": 2611.2,
+        "static_mb": 2073.6,
+        "activation_mb": 537.6,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 2570.0,
+      "args": {
+        "memory_mb": 768.0,
+        "static_mb": 512.0,
+        "activation_mb": 256.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb7_s1_send",
       "cat": "backward.send",
       "ph": "X",
@@ -4948,6 +8507,34 @@
         "stage": 1,
         "op": "send",
         "peer": 0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2670.0,
+      "args": {
+        "memory_mb": 2470.4,
+        "static_mb": 2073.6,
+        "activation_mb": 256.0,
+        "gradient_mb": 140.8
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 2670.0,
+      "args": {
+        "memory_mb": 704.0,
+        "static_mb": 563.2,
+        "activation_mb": 0.0,
+        "gradient_mb": 140.8
       }
     },
     {
@@ -5001,6 +8588,62 @@
       }
     },
     {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2680.0,
+      "args": {
+        "memory_mb": 2329.6,
+        "static_mb": 2073.6,
+        "activation_mb": 256.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2680.0,
+      "args": {
+        "memory_mb": 2457.6,
+        "static_mb": 2073.6,
+        "activation_mb": 256.0,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 2680.0,
+      "args": {
+        "memory_mb": 896.0,
+        "static_mb": 512.0,
+        "activation_mb": 256.0,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 2680.0,
+      "args": {
+        "memory_mb": 563.2,
+        "static_mb": 563.2,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
       "name": "B_mb7_s0_compute",
       "cat": "backward.compute",
       "ph": "X",
@@ -5034,6 +8677,132 @@
         "stage": 0,
         "op": "send",
         "peer": "grad_sink"
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2810.0,
+      "args": {
+        "memory_mb": 2201.6,
+        "static_mb": 2073.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 2810.0,
+      "args": {
+        "memory_mb": 640.0,
+        "static_mb": 512.0,
+        "activation_mb": 0.0,
+        "gradient_mb": 128.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2820.0,
+      "args": {
+        "memory_mb": 2073.6,
+        "static_mb": 2073.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "pipeline_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 900,
+      "ts": 2820.0,
+      "args": {
+        "memory_mb": 2073.6,
+        "static_mb": 2073.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 2820.0,
+      "args": {
+        "memory_mb": 512.0,
+        "static_mb": 512.0,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_0_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1000,
+      "ts": 2820.0,
+      "args": {
+        "memory_mb": 512.0,
+        "static_mb": 512.0,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_1_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1001,
+      "ts": 2820.0,
+      "args": {
+        "memory_mb": 563.2,
+        "static_mb": 563.2,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_2_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1002,
+      "ts": 2820.0,
+      "args": {
+        "memory_mb": 460.8,
+        "static_mb": 460.8,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
+      }
+    },
+    {
+      "name": "stage_3_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 2,
+      "tid": 1003,
+      "ts": 2820.0,
+      "args": {
+        "memory_mb": 537.6,
+        "static_mb": 537.6,
+        "activation_mb": 0.0,
+        "gradient_mb": 0.0
       }
     }
   ]

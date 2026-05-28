@@ -13,6 +13,14 @@ class Task:
     microbatch: int
 
 
+@dataclass(frozen=True)
+class TaskTiming:
+    recv_start: float
+    compute_start: float
+    send_start: float
+    end: float
+
+
 @dataclass
 class PipelineSummary:
     mode: str
@@ -23,6 +31,8 @@ class PipelineSummary:
     send_us: float
     bubble_us: float
     utilization: float
+    peak_memory_mb: float
+    peak_stage_memory_mb: float
 
 
 class Accumulator:
@@ -84,8 +94,9 @@ def _one_f_one_b_orders(cfg: Config) -> list[list[Task]]:
 def _schedule(mode: str, cfg: Config, pid: int, orders: list[list[Task]]) -> tuple[Trace, PipelineSummary]:
     stages = cfg.pipeline.stages
     microbatches = cfg.pipeline.microbatches
-    trace = Trace(mode, pid, stages)
+    trace = Trace(mode, pid, stages, _memory_thread_names(stages))
     acc = Accumulator()
+    memory = MemoryTracker(trace, cfg) if cfg.simulation.emit_memory_counters else None
     stage_ready = [0.0] * stages
     cursors = [0] * stages
     f_send_done: list[list[float | None]] = _empty_matrix(stages, microbatches)
@@ -106,21 +117,26 @@ def _schedule(mode: str, cfg: Config, pid: int, orders: list[list[Task]]) -> tup
             raise RuntimeError("Pipeline scheduler deadlocked; check task order and dependencies")
 
         start, stage, task = min(candidates, key=lambda item: (item[0], item[1]))
-        recv_start, _, _, end = _emit_task(trace, acc, cfg, task, start)
+        timing = _emit_task(trace, acc, cfg, task, start)
+
+        if memory is not None:
+            memory.record_task(task, timing)
 
         if cfg.simulation.emit_flow_events:
-            flow_id = _emit_dependency_flow(trace, cfg, task, recv_start, f_send_done, b_send_done, flow_id)
+            flow_id = _emit_dependency_flow(trace, cfg, task, timing.recv_start, f_send_done, b_send_done, flow_id)
 
         if task.phase == "forward":
-            f_send_done[task.stage][task.microbatch] = end
+            f_send_done[task.stage][task.microbatch] = timing.end
         else:
-            b_send_done[task.stage][task.microbatch] = end
+            b_send_done[task.stage][task.microbatch] = timing.end
 
-        stage_ready[stage] = end
+        stage_ready[stage] = timing.end
         cursors[stage] += 1
         remaining -= 1
 
     total = max(stage_ready, default=0.0)
+    if memory is not None:
+        memory.finish(total)
     bubble = max(total * stages - acc.occupied, 0.0)
     util = acc.occupied / (total * stages) if total > 0 else 0.0
     summary = PipelineSummary(
@@ -132,6 +148,8 @@ def _schedule(mode: str, cfg: Config, pid: int, orders: list[list[Task]]) -> tup
         send_us=acc.send,
         bubble_us=bubble,
         utilization=util,
+        peak_memory_mb=memory.peak_total if memory is not None else 0.0,
+        peak_stage_memory_mb=memory.peak_stage if memory is not None else 0.0,
     )
     return trace, summary
 
@@ -186,7 +204,7 @@ def _emit_task(
     cfg: Config,
     task: Task,
     start: float,
-) -> tuple[float, float, float, float]:
+) -> TaskTiming:
     recv_us, compute_us, send_us = _durations(cfg, task)
     recv_start = start
     compute_start = recv_start + recv_us
@@ -220,7 +238,101 @@ def _emit_task(
     acc.add("recv", recv_us)
     acc.add("compute", compute_us)
     acc.add("send", send_us)
-    return recv_start, compute_start, send_start, end
+    return TaskTiming(recv_start, compute_start, send_start, end)
+
+
+class MemoryTracker:
+    def __init__(self, trace: Trace, cfg: Config):
+        self.trace = trace
+        self.cfg = cfg
+        self.static = [_scaled(cfg.memory.static_mb_per_stage, cfg, stage) for stage in range(cfg.pipeline.stages)]
+        self.activation = [0.0] * cfg.pipeline.stages
+        self.gradient = [0.0] * cfg.pipeline.stages
+        self.peak_total = 0.0
+        self.peak_stage = 0.0
+        for stage in range(cfg.pipeline.stages):
+            self._emit_stage(stage, 0.0)
+        self._emit_total(0.0)
+
+    def record_task(self, task: Task, timing: TaskTiming) -> None:
+        if task.phase == "forward":
+            activation_mb = _scaled(self.cfg.memory.activation_mb_per_microbatch, self.cfg, task.stage)
+            self._add_activation(task.stage, activation_mb, timing.compute_start)
+            return
+
+        gradient_mb = _scaled(self.cfg.memory.gradient_mb_per_microbatch, self.cfg, task.stage)
+        activation_mb = _scaled(self.cfg.memory.activation_mb_per_microbatch, self.cfg, task.stage)
+        self._add_gradient(task.stage, gradient_mb, timing.recv_start)
+        self._add_activation(task.stage, -activation_mb, timing.send_start)
+        self._add_gradient(task.stage, -gradient_mb, timing.end)
+
+    def finish(self, ts: float) -> None:
+        for stage in range(self.cfg.pipeline.stages):
+            self._emit_stage(stage, ts)
+        self._emit_total(ts)
+
+    def _add_activation(self, stage: int, delta: float, ts: float) -> None:
+        self.activation[stage] = max(self.activation[stage] + delta, 0.0)
+        self._emit_stage(stage, ts)
+        self._emit_total(ts)
+
+    def _add_gradient(self, stage: int, delta: float, ts: float) -> None:
+        self.gradient[stage] = max(self.gradient[stage] + delta, 0.0)
+        self._emit_stage(stage, ts)
+        self._emit_total(ts)
+
+    def _stage_total(self, stage: int) -> float:
+        return self.static[stage] + self.activation[stage] + self.gradient[stage]
+
+    def _total(self) -> float:
+        return sum(self._stage_total(stage) for stage in range(self.cfg.pipeline.stages))
+
+    def _emit_stage(self, stage: int, ts: float) -> None:
+        total = self._stage_total(stage)
+        self.peak_stage = max(self.peak_stage, total)
+        self.trace.emit_counter(
+            _stage_memory_tid(stage),
+            f"stage_{stage}_memory_mb",
+            ts,
+            total,
+            static_mb=round(self.static[stage], 3),
+            activation_mb=round(self.activation[stage], 3),
+            gradient_mb=round(self.gradient[stage], 3),
+        )
+
+    def _emit_total(self, ts: float) -> None:
+        total = self._total()
+        self.peak_total = max(self.peak_total, total)
+        self.trace.emit_counter(
+            _total_memory_tid(),
+            "pipeline_total_memory_mb",
+            ts,
+            total,
+            static_mb=round(sum(self.static), 3),
+            activation_mb=round(sum(self.activation), 3),
+            gradient_mb=round(sum(self.gradient), 3),
+        )
+
+
+def _scaled(value: float, cfg: Config, stage: int) -> float:
+    if not cfg.memory.stage_memory_scale:
+        return value
+    return value * cfg.memory.stage_memory_scale[stage]
+
+
+def _memory_thread_names(stages: int) -> dict[int, str]:
+    names = {_total_memory_tid(): "pipeline total memory"}
+    for stage in range(stages):
+        names[_stage_memory_tid(stage)] = f"stage_{stage} memory"
+    return names
+
+
+def _total_memory_tid() -> int:
+    return 900
+
+
+def _stage_memory_tid(stage: int) -> int:
+    return 1000 + stage
 
 
 def _durations(cfg: Config, task: Task) -> tuple[float, float, float]:

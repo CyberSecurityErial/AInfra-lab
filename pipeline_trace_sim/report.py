@@ -20,6 +20,8 @@ def write_summary_csv(path: str | Path, summaries: list[PipelineSummary]) -> Non
                 "send_us",
                 "bubble_us",
                 "utilization",
+                "peak_memory_mb",
+                "peak_stage_memory_mb",
             ]
         )
         for s in summaries:
@@ -33,13 +35,15 @@ def write_summary_csv(path: str | Path, summaries: list[PipelineSummary]) -> Non
                     f"{s.send_us:.3f}",
                     f"{s.bubble_us:.3f}",
                     f"{s.utilization:.4f}",
+                    f"{s.peak_memory_mb:.3f}",
+                    f"{s.peak_stage_memory_mb:.3f}",
                 ]
             )
 
 
 def write_report(path: str | Path, cfg: Config, summaries: list[PipelineSummary]) -> None:
     rows = "\n".join(
-        f"| {s.mode} | {s.total_us:.2f} | {s.event_count} | {s.recv_us:.2f} | {s.compute_us:.2f} | {s.send_us:.2f} | {s.bubble_us:.2f} | {s.utilization:.1%} |"
+        f"| {s.mode} | {s.total_us:.2f} | {s.event_count} | {s.recv_us:.2f} | {s.compute_us:.2f} | {s.send_us:.2f} | {s.bubble_us:.2f} | {s.utilization:.1%} | {s.peak_memory_mb:.2f} | {s.peak_stage_memory_mb:.2f} |"
         for s in summaries
     )
     experiment = _format_mapping(cfg.experiment)
@@ -55,22 +59,27 @@ def write_report(path: str | Path, cfg: Config, summaries: list[PipelineSummary]
 - stage_compute_scale: {cfg.pipeline.stage_compute_scale or "uniform"}
 - forward recv/compute/send us: {cfg.timing.forward_recv_us} / {cfg.timing.forward_compute_us} / {cfg.timing.forward_send_us}
 - backward recv/compute/send us: {cfg.timing.backward_recv_us} / {cfg.timing.backward_compute_us} / {cfg.timing.backward_send_us}
+- static memory MB per stage: {cfg.memory.static_mb_per_stage}
+- activation memory MB per microbatch: {cfg.memory.activation_mb_per_microbatch}
+- gradient memory MB per microbatch: {cfg.memory.gradient_mb_per_microbatch}
+- stage_memory_scale: {cfg.memory.stage_memory_scale or "uniform"}
 
 ## Simulation Assumptions And Reality Gap
 {assumptions}
 
 ## Runtime Summary
-| mode | total_us | event_count | recv_us | compute_us | send_us | bubble_us | utilization |
-|---|---:|---:|---:|---:|---:|---:|---:|
+| mode | total_us | event_count | recv_us | compute_us | send_us | bubble_us | utilization | peak_memory_mb | peak_stage_memory_mb |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 {rows}
 
 ## Findings
 1. `gpipe` runs all forward microbatches first, then flushes backward work after a full-forward barrier.
 2. `1f1b` warms up each stage with forward work, alternates forward/backward tasks in steady state, then drains remaining backward work.
 3. Pipeline bubbles are visible as gaps on stage lanes; lower `bubble_us` generally means better stage occupancy under this synthetic timing model.
+4. Memory counters show retained activation growth and release timing. `memory_trace.json` keeps only total memory curves so GPipe and 1F1B can be compared without aligning separate files by hand.
 
 ## How to View
-Open `gpipe_trace.json` and `1f1b_trace.json` in Perfetto UI or Chrome trace viewer.
+Open `gpipe_trace.json`, `1f1b_trace.json`, and `memory_trace.json` in Perfetto UI or Chrome trace viewer.
 
 This is a teaching simulator, not a framework benchmark. All timings come from the configured abstract event model.
 """

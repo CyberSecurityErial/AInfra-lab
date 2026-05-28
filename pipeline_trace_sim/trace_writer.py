@@ -53,12 +53,34 @@ class FlowEvent:
         }
 
 
+@dataclass
+class CounterEvent:
+    name: str
+    cat: str
+    pid: int
+    tid: int
+    ts: float
+    args: dict[str, Any] = field(default_factory=dict)
+
+    def to_json(self) -> dict[str, Any]:
+        return {
+            "name": self.name,
+            "cat": self.cat,
+            "ph": "C",
+            "pid": self.pid,
+            "tid": self.tid,
+            "ts": round(self.ts, 3),
+            "args": self.args,
+        }
+
+
 class Trace:
-    def __init__(self, mode: str, pid: int, stage_count: int):
+    def __init__(self, mode: str, pid: int, stage_count: int, extra_threads: dict[int, str] | None = None):
         self.mode = mode
         self.pid = pid
         self.stage_count = stage_count
-        self.events: list[CompleteEvent | FlowEvent] = []
+        self.extra_threads = extra_threads or {}
+        self.events: list[CompleteEvent | FlowEvent | CounterEvent] = []
 
     def emit(self, tid: int, name: str, cat: str, start: float, dur: float, **args: Any) -> None:
         self.events.append(CompleteEvent(name, cat, self.pid, tid, start, dur, {"mode": self.mode, **args}))
@@ -78,6 +100,10 @@ class Trace:
         self.events.append(FlowEvent(name, cat, self.pid, src_tid, src_ts, "s", flow_id, flow_args))
         self.events.append(FlowEvent(name, cat, self.pid, dst_tid, dst_ts, "t", flow_id, flow_args))
 
+    def emit_counter(self, tid: int, name: str, start: float, value: float, **args: Any) -> None:
+        counter_args = {"memory_mb": round(value, 3), **args}
+        self.events.append(CounterEvent(name, "memory", self.pid, tid, start, counter_args))
+
     def write(self, path: str | Path) -> None:
         metadata = [
             {"ph": "M", "name": "process_name", "pid": self.pid, "args": {"name": self.mode}},
@@ -90,6 +116,16 @@ class Trace:
                     "pid": self.pid,
                     "tid": stage + 1,
                     "args": {"name": f"stage_{stage}"},
+                }
+            )
+        for tid, name in sorted(self.extra_threads.items()):
+            metadata.append(
+                {
+                    "ph": "M",
+                    "name": "thread_name",
+                    "pid": self.pid,
+                    "tid": tid,
+                    "args": {"name": name},
                 }
             )
         events = sorted(self.events, key=lambda event: (event.ts, event.tid))

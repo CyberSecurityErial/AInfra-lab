@@ -10,6 +10,7 @@ Open these files in Perfetto UI or Chrome trace viewer:
 
 - `outputs/pipeline_small/gpipe_trace.json`
 - `outputs/pipeline_small/1f1b_trace.json`
+- `outputs/pipeline_small/memory_trace.json`
 
 Look for:
 
@@ -17,5 +18,7 @@ Look for:
 - The `gpipe` full-forward barrier before backward starts.
 - The `1f1b` warmup, steady forward/backward alternation, and backward drain.
 - Flow arrows between stage lanes when `emit_flow_events` is enabled.
+- Per-stage and pipeline total memory counter tracks in the strategy traces.
+- The focused GPipe-vs-1F1B total-memory comparison in `memory_trace.json`.
 
 The sample config includes `experiment` and `assumptions` sections. Read them before interpreting the trace; the generated `report.md` repeats them so the output directory is self-contained.

@@ -4,6 +4,7 @@ import argparse
 from pathlib import Path
 
 from .config import load_config
+from .memory_trace import write_memory_comparison_trace
 from .report import write_report, write_summary_csv
 from .scheduler import schedule
 
@@ -19,12 +20,16 @@ def main() -> None:
     out.mkdir(parents=True, exist_ok=True)
 
     summaries = []
+    traces = []
     pid_map = {"gpipe": 1, "1f1b": 2}
     for mode in cfg.simulation.modes:
         trace, summary = schedule(mode, cfg, pid_map.get(mode, len(summaries) + 1))
         trace.write(out / f"{mode}_trace.json")
+        traces.append(trace)
         summaries.append(summary)
 
+    if cfg.simulation.emit_memory_counters and cfg.simulation.write_memory_trace:
+        write_memory_comparison_trace(out / "memory_trace.json", traces)
     write_summary_csv(out / "summary.csv", summaries)
     write_report(out / "report.md", cfg, summaries)
     print(f"Wrote pipeline trace simulation outputs to {out}")

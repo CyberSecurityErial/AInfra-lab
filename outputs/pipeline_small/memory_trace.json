@@ -1,0 +1,2890 @@
+{
+  "traceEvents": [
+    {
+      "ph": "M",
+      "name": "process_name",
+      "pid": 100,
+      "args": {
+        "name": "memory_compare"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 100,
+      "tid": 1,
+      "args": {
+        "name": "gpipe total memory"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 100,
+      "tid": 2,
+      "args": {
+        "name": "1f1b total memory"
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 0.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 0.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 10.0,
+      "args": {
+        "memory_mb": 2329.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 10.0,
+      "args": {
+        "memory_mb": 2329.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 2585.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 2867.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 2585.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 2867.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 210.0,
+      "args": {
+        "memory_mb": 3123.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 210.0,
+      "args": {
+        "memory_mb": 3123.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 222.0,
+      "args": {
+        "memory_mb": 3404.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 222.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 222.0,
+      "args": {
+        "memory_mb": 3404.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 222.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 310.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 310.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 318.0,
+      "args": {
+        "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 318.0,
+      "args": {
+        "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 334.0,
+      "args": {
+        "memory_mb": 4441.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 334.0,
+      "args": {
+        "memory_mb": 4672.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 334.0,
+      "args": {
+        "memory_mb": 4441.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 334.0,
+      "args": {
+        "memory_mb": 4672.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 410.0,
+      "args": {
+        "memory_mb": 4928.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 412.0,
+      "args": {
+        "memory_mb": 4806.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 430.0,
+      "args": {
+        "memory_mb": 5196.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 446.0,
+      "args": {
+        "memory_mb": 5478.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 446.0,
+      "args": {
+        "memory_mb": 5708.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 510.0,
+      "args": {
+        "memory_mb": 5964.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 542.0,
+      "args": {
+        "memory_mb": 6233.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 548.0,
+      "args": {
+        "memory_mb": 4537.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 558.0,
+      "args": {
+        "memory_mb": 6515.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 558.0,
+      "args": {
+        "memory_mb": 6745.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 558.0,
+      "args": {
+        "memory_mb": 4403.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 558.0,
+      "args": {
+        "memory_mb": 4518.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 568.0,
+      "args": {
+        "memory_mb": 4441.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 610.0,
+      "args": {
+        "memory_mb": 7001.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 654.0,
+      "args": {
+        "memory_mb": 7270.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 662.0,
+      "args": {
+        "memory_mb": 4576.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 670.0,
+      "args": {
+        "memory_mb": 7552.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 670.0,
+      "args": {
+        "memory_mb": 7782.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 682.0,
+      "args": {
+        "memory_mb": 4288.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 692.0,
+      "args": {
+        "memory_mb": 4172.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 692.0,
+      "args": {
+        "memory_mb": 4313.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 702.0,
+      "args": {
+        "memory_mb": 4121.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 710.0,
+      "args": {
+        "memory_mb": 8038.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 766.0,
+      "args": {
+        "memory_mb": 8307.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 782.0,
+      "args": {
+        "memory_mb": 8588.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 782.0,
+      "args": {
+        "memory_mb": 8819.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 798.0,
+      "args": {
+        "memory_mb": 4307.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 808.0,
+      "args": {
+        "memory_mb": 4172.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 808.0,
+      "args": {
+        "memory_mb": 4236.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 818.0,
+      "args": {
+        "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 840.0,
+      "args": {
+        "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 850.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 850.0,
+      "args": {
+        "memory_mb": 4288.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 860.0,
+      "args": {
+        "memory_mb": 4185.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 878.0,
+      "args": {
+        "memory_mb": 9088.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 894.0,
+      "args": {
+        "memory_mb": 9369.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 894.0,
+      "args": {
+        "memory_mb": 9600.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 912.0,
+      "args": {
+        "memory_mb": 4320.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 932.0,
+      "args": {
+        "memory_mb": 4006.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 942.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 962.0,
+      "args": {
+        "memory_mb": 4057.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 972.0,
+      "args": {
+        "memory_mb": 3865.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 980.0,
+      "args": {
+        "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 990.0,
+      "args": {
+        "memory_mb": 9868.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 990.0,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1000.0,
+      "args": {
+        "memory_mb": 4121.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1006.0,
+      "args": {
+        "memory_mb": 10099.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1048.0,
+      "args": {
+        "memory_mb": 4051.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1058.0,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1058.0,
+      "args": {
+        "memory_mb": 4236.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1068.0,
+      "args": {
+        "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1102.0,
+      "args": {
+        "memory_mb": 10368.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1110.0,
+      "args": {
+        "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1120.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1120.0,
+      "args": {
+        "memory_mb": 4288.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1130.0,
+      "args": {
+        "memory_mb": 4185.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1162.0,
+      "args": {
+        "memory_mb": 4320.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1182.0,
+      "args": {
+        "memory_mb": 4006.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1192.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1196.0,
+      "args": {
+        "memory_mb": 10502.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1232.0,
+      "args": {
+        "memory_mb": 4057.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1242.0,
+      "args": {
+        "memory_mb": 3865.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1250.0,
+      "args": {
+        "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1260.0,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1270.0,
+      "args": {
+        "memory_mb": 4121.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1298.0,
+      "args": {
+        "memory_mb": 4051.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1308.0,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1328.0,
+      "args": {
+        "memory_mb": 4236.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1332.0,
+      "args": {
+        "memory_mb": 10233.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1338.0,
+      "args": {
+        "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1342.0,
+      "args": {
+        "memory_mb": 10099.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1342.0,
+      "args": {
+        "memory_mb": 10214.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1342.0,
+      "args": {
+        "memory_mb": 10003.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1380.0,
+      "args": {
+        "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1390.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1390.0,
+      "args": {
+        "memory_mb": 4288.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1400.0,
+      "args": {
+        "memory_mb": 4185.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1432.0,
+      "args": {
+        "memory_mb": 4320.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1452.0,
+      "args": {
+        "memory_mb": 4006.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1462.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1466.0,
+      "args": {
+        "memory_mb": 9984.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1476.0,
+      "args": {
+        "memory_mb": 9868.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1476.0,
+      "args": {
+        "memory_mb": 9740.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1478.0,
+      "args": {
+        "memory_mb": 9734.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1488.0,
+      "args": {
+        "memory_mb": 9600.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1488.0,
+      "args": {
+        "memory_mb": 9433.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1488.0,
+      "args": {
+        "memory_mb": 9222.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1502.0,
+      "args": {
+        "memory_mb": 4057.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1512.0,
+      "args": {
+        "memory_mb": 3865.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1520.0,
+      "args": {
+        "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1530.0,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1540.0,
+      "args": {
+        "memory_mb": 4121.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1568.0,
+      "args": {
+        "memory_mb": 4051.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1578.0,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1598.0,
+      "args": {
+        "memory_mb": 4236.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1608.0,
+      "args": {
+        "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1612.0,
+      "args": {
+        "memory_mb": 9203.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1622.0,
+      "args": {
+        "memory_mb": 9088.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1624.0,
+      "args": {
+        "memory_mb": 9459.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1624.0,
+      "args": {
+        "memory_mb": 8953.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1634.0,
+      "args": {
+        "memory_mb": 9318.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1634.0,
+      "args": {
+        "memory_mb": 8819.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1634.0,
+      "args": {
+        "memory_mb": 8947.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1634.0,
+      "args": {
+        "memory_mb": 8704.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1634.0,
+      "args": {
+        "memory_mb": 8396.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1634.0,
+      "args": {
+        "memory_mb": 8185.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1650.0,
+      "args": {
+        "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1660.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1660.0,
+      "args": {
+        "memory_mb": 4288.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1670.0,
+      "args": {
+        "memory_mb": 4185.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1702.0,
+      "args": {
+        "memory_mb": 4320.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1722.0,
+      "args": {
+        "memory_mb": 4006.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1732.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1758.0,
+      "args": {
+        "memory_mb": 8166.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1764.0,
+      "args": {
+        "memory_mb": 8691.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1768.0,
+      "args": {
+        "memory_mb": 8051.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1770.0,
+      "args": {
+        "memory_mb": 7916.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1772.0,
+      "args": {
+        "memory_mb": 4057.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1774.0,
+      "args": {
+        "memory_mb": 8563.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1780.0,
+      "args": {
+        "memory_mb": 7782.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1780.0,
+      "args": {
+        "memory_mb": 7897.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1780.0,
+      "args": {
+        "memory_mb": 7686.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1782.0,
+      "args": {
+        "memory_mb": 8422.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1782.0,
+      "args": {
+        "memory_mb": 3865.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1790.0,
+      "args": {
+        "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1792.0,
+      "args": {
+        "memory_mb": 8281.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1792.0,
+      "args": {
+        "memory_mb": 7411.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1792.0,
+      "args": {
+        "memory_mb": 7168.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1800.0,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1810.0,
+      "args": {
+        "memory_mb": 4121.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1838.0,
+      "args": {
+        "memory_mb": 4051.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1848.0,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1868.0,
+      "args": {
+        "memory_mb": 4236.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1878.0,
+      "args": {
+        "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1904.0,
+      "args": {
+        "memory_mb": 7667.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1914.0,
+      "args": {
+        "memory_mb": 7552.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1916.0,
+      "args": {
+        "memory_mb": 7417.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1920.0,
+      "args": {
+        "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1922.0,
+      "args": {
+        "memory_mb": 7155.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1926.0,
+      "args": {
+        "memory_mb": 7283.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1926.0,
+      "args": {
+        "memory_mb": 6860.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1926.0,
+      "args": {
+        "memory_mb": 6649.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1930.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1930.0,
+      "args": {
+        "memory_mb": 4288.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1932.0,
+      "args": {
+        "memory_mb": 7027.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1940.0,
+      "args": {
+        "memory_mb": 6886.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1940.0,
+      "args": {
+        "memory_mb": 4185.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1950.0,
+      "args": {
+        "memory_mb": 6745.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1950.0,
+      "args": {
+        "memory_mb": 6374.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 1950.0,
+      "args": {
+        "memory_mb": 6131.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1972.0,
+      "args": {
+        "memory_mb": 4320.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 1992.0,
+      "args": {
+        "memory_mb": 4006.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2002.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2042.0,
+      "args": {
+        "memory_mb": 4057.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2050.0,
+      "args": {
+        "memory_mb": 6630.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2052.0,
+      "args": {
+        "memory_mb": 3865.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2060.0,
+      "args": {
+        "memory_mb": 6515.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2060.0,
+      "args": {
+        "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2062.0,
+      "args": {
+        "memory_mb": 6380.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2070.0,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2072.0,
+      "args": {
+        "memory_mb": 6246.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2072.0,
+      "args": {
+        "memory_mb": 5824.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2072.0,
+      "args": {
+        "memory_mb": 5612.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2080.0,
+      "args": {
+        "memory_mb": 6118.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2090.0,
+      "args": {
+        "memory_mb": 5990.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2098.0,
+      "args": {
+        "memory_mb": 5849.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2108.0,
+      "args": {
+        "memory_mb": 5708.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2108.0,
+      "args": {
+        "memory_mb": 5337.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2108.0,
+      "args": {
+        "memory_mb": 5094.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2108.0,
+      "args": {
+        "memory_mb": 4051.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2118.0,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2138.0,
+      "args": {
+        "memory_mb": 3980.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2148.0,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2190.0,
+      "args": {
+        "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2196.0,
+      "args": {
+        "memory_mb": 5593.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2200.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2200.0,
+      "args": {
+        "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2206.0,
+      "args": {
+        "memory_mb": 5478.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2208.0,
+      "args": {
+        "memory_mb": 5344.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2218.0,
+      "args": {
+        "memory_mb": 5209.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2218.0,
+      "args": {
+        "memory_mb": 4787.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2218.0,
+      "args": {
+        "memory_mb": 4576.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2238.0,
+      "args": {
+        "memory_mb": 5081.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2242.0,
+      "args": {
+        "memory_mb": 3782.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2248.0,
+      "args": {
+        "memory_mb": 4953.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2256.0,
+      "args": {
+        "memory_mb": 4812.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2262.0,
+      "args": {
+        "memory_mb": 3750.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2266.0,
+      "args": {
+        "memory_mb": 4672.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2266.0,
+      "args": {
+        "memory_mb": 4300.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2266.0,
+      "args": {
+        "memory_mb": 4057.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2272.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2272.0,
+      "args": {
+        "memory_mb": 3520.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2330.0,
+      "args": {
+        "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2340.0,
+      "args": {
+        "memory_mb": 3648.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2342.0,
+      "args": {
+        "memory_mb": 4556.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2352.0,
+      "args": {
+        "memory_mb": 4441.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2354.0,
+      "args": {
+        "memory_mb": 4307.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2364.0,
+      "args": {
+        "memory_mb": 4172.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2364.0,
+      "args": {
+        "memory_mb": 3750.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2378.0,
+      "args": {
+        "memory_mb": 3513.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2388.0,
+      "args": {
+        "memory_mb": 3379.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2388.0,
+      "args": {
+        "memory_mb": 3212.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2396.0,
+      "args": {
+        "memory_mb": 4044.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2406.0,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2414.0,
+      "args": {
+        "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2420.0,
+      "args": {
+        "memory_mb": 3238.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2424.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2424.0,
+      "args": {
+        "memory_mb": 3532.8
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2424.0,
+      "args": {
+        "memory_mb": 3289.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2430.0,
+      "args": {
+        "memory_mb": 3097.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2430.0,
+      "args": {
+        "memory_mb": 2995.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2488.0,
+      "args": {
+        "memory_mb": 3520.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2498.0,
+      "args": {
+        "memory_mb": 3404.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2512.0,
+      "args": {
+        "memory_mb": 2982.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2522.0,
+      "args": {
+        "memory_mb": 2867.2
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2522.0,
+      "args": {
+        "memory_mb": 2752.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2554.0,
+      "args": {
+        "memory_mb": 3276.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2560.0,
+      "args": {
+        "memory_mb": 2739.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2564.0,
+      "args": {
+        "memory_mb": 3148.8
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2570.0,
+      "args": {
+        "memory_mb": 2611.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2572.0,
+      "args": {
+        "memory_mb": 3008.0
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2582.0,
+      "args": {
+        "memory_mb": 2867.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2582.0,
+      "args": {
+        "memory_mb": 2995.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2582.0,
+      "args": {
+        "memory_mb": 2752.0
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2670.0,
+      "args": {
+        "memory_mb": 2470.4
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2680.0,
+      "args": {
+        "memory_mb": 2329.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2680.0,
+      "args": {
+        "memory_mb": 2457.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2712.0,
+      "args": {
+        "memory_mb": 2739.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2722.0,
+      "args": {
+        "memory_mb": 2611.2
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2730.0,
+      "args": {
+        "memory_mb": 2470.4
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2740.0,
+      "args": {
+        "memory_mb": 2329.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2740.0,
+      "args": {
+        "memory_mb": 2457.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2810.0,
+      "args": {
+        "memory_mb": 2201.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2820.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 2,
+      "ts": 2820.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2870.0,
+      "args": {
+        "memory_mb": 2201.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2880.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "gpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 1,
+      "ts": 2880.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    }
+  ]
+}

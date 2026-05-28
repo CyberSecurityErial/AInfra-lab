@@ -8,6 +8,7 @@ assumptions:
   event_model: Every stage/microbatch/pass is represented as recv, compute, then send.
   communication_prior: Forward sends activations downstream and receives from upstream; backward receives gradients from downstream and sends upstream.
   boundary_prior: Stage 0 forward recv, last-stage forward send, last-stage backward recv, and stage 0 backward send are modeled as visible boundary events.
+  memory_prior: Forward compute allocates retained activations; backward compute releases them after local compute; gradient buffers live from backward recv through backward send.
   scheduling_prior:
     - gpipe uses all-forward then all-backward flushing with a full-forward barrier.
     - 1f1b uses per-stage warmup, forward/backward alternation, and backward cooldown.
@@ -35,9 +36,21 @@ timing:
   backward_compute_us: 120.0
   backward_send_us: 10.0
 
+memory:
+  static_mb_per_stage: 512.0
+  activation_mb_per_microbatch: 256.0
+  gradient_mb_per_microbatch: 128.0
+  stage_memory_scale:
+    - 1.0
+    - 1.1
+    - 0.9
+    - 1.05
+
 simulation:
   modes:
     - gpipe
     - 1f1b
   trace_unit: us
   emit_flow_events: true
+  emit_memory_counters: true
+  write_memory_trace: true

@@ -23,16 +23,27 @@ class TimingConfig:
 
 
 @dataclass
+class MemoryConfig:
+    static_mb_per_stage: float = 512.0
+    activation_mb_per_microbatch: float = 256.0
+    gradient_mb_per_microbatch: float = 128.0
+    stage_memory_scale: list[float] = field(default_factory=list)
+
+
+@dataclass
 class SimulationConfig:
     modes: list[str] = field(default_factory=lambda: ["gpipe", "1f1b"])
     trace_unit: str = "us"
     emit_flow_events: bool = True
+    emit_memory_counters: bool = True
+    write_memory_trace: bool = True
 
 
 @dataclass
 class Config:
     pipeline: PipelineConfig = field(default_factory=PipelineConfig)
     timing: TimingConfig = field(default_factory=TimingConfig)
+    memory: MemoryConfig = field(default_factory=MemoryConfig)
     simulation: SimulationConfig = field(default_factory=SimulationConfig)
     experiment: dict[str, Any] = field(default_factory=dict)
     assumptions: dict[str, Any] = field(default_factory=dict)
@@ -43,6 +54,7 @@ def load_config(path: str | Path) -> Config:
     cfg = Config(
         pipeline=PipelineConfig(**raw.get("pipeline", {})),
         timing=TimingConfig(**raw.get("timing", {})),
+        memory=MemoryConfig(**raw.get("memory", {})),
         simulation=SimulationConfig(**raw.get("simulation", {})),
         experiment=raw.get("experiment", {}),
         assumptions=raw.get("assumptions", {}),
@@ -58,6 +70,8 @@ def _validate(cfg: Config) -> None:
         raise ValueError("pipeline.microbatches must be positive")
     if cfg.pipeline.stage_compute_scale and len(cfg.pipeline.stage_compute_scale) != cfg.pipeline.stages:
         raise ValueError("pipeline.stage_compute_scale must either be empty or match pipeline.stages")
+    if cfg.memory.stage_memory_scale and len(cfg.memory.stage_memory_scale) != cfg.pipeline.stages:
+        raise ValueError("memory.stage_memory_scale must either be empty or match pipeline.stages")
     valid_modes = {"gpipe", "1f1b"}
     unknown = [mode for mode in cfg.simulation.modes if mode not in valid_modes]
     if unknown:
@@ -65,6 +79,12 @@ def _validate(cfg: Config) -> None:
     for name, value in vars(cfg.timing).items():
         if value < 0:
             raise ValueError(f"timing.{name} must be non-negative")
+    for name, value in vars(cfg.memory).items():
+        if isinstance(value, list):
+            if any(item < 0 for item in value):
+                raise ValueError(f"memory.{name} must be non-negative")
+        elif value < 0:
+            raise ValueError(f"memory.{name} must be non-negative")
 
 
 def _load_mapping(path: Path) -> dict[str, Any]:
