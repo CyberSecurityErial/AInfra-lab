@@ -1,0 +1,5040 @@
+{
+  "traceEvents": [
+    {
+      "ph": "M",
+      "name": "process_name",
+      "pid": 2,
+      "args": {
+        "name": "1f1b"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 1,
+      "args": {
+        "name": "stage_0"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 2,
+      "args": {
+        "name": "stage_1"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 3,
+      "args": {
+        "name": "stage_2"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 2,
+      "tid": 4,
+      "args": {
+        "name": "stage_3"
+      }
+    },
+    {
+      "name": "F_mb0_s0_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 0.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "stage": 0,
+        "op": "recv",
+        "peer": "input"
+      }
+    },
+    {
+      "name": "F_mb0_s0_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 10.0,
+      "dur": 80.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "stage": 0,
+        "op": "compute",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb0_s0_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 90.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "stage": 0,
+        "op": "send",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb1_s0_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 100.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "stage": 0,
+        "op": "recv",
+        "peer": "input"
+      }
+    },
+    {
+      "name": "F_mb0_s0_to_s1",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 1,
+      "ts": 100.0,
+      "id": 1,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "src_stage": 0,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb0_s1_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 100.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "stage": 1,
+        "op": "recv",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb0_s0_to_s1",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 2,
+      "ts": 100.0,
+      "id": 1,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "src_stage": 0,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb1_s0_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 110.0,
+      "dur": 80.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "stage": 0,
+        "op": "compute",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb0_s1_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 110.0,
+      "dur": 92.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "stage": 1,
+        "op": "compute",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb1_s0_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 190.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "stage": 0,
+        "op": "send",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb2_s0_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 200.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "stage": 0,
+        "op": "recv",
+        "peer": "input"
+      }
+    },
+    {
+      "name": "F_mb1_s0_to_s1",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 1,
+      "ts": 200.0,
+      "id": 2,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "src_stage": 0,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb0_s1_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 202.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "stage": 1,
+        "op": "send",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb2_s0_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 210.0,
+      "dur": 80.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "stage": 0,
+        "op": "compute",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb1_s1_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 212.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "stage": 1,
+        "op": "recv",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb1_s0_to_s1",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 2,
+      "ts": 212.0,
+      "id": 2,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "src_stage": 0,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb0_s1_to_s2",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 2,
+      "ts": 212.0,
+      "id": 3,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "src_stage": 1,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb0_s2_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 212.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "stage": 2,
+        "op": "recv",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb0_s1_to_s2",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 3,
+      "ts": 212.0,
+      "id": 3,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "src_stage": 1,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb1_s1_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 222.0,
+      "dur": 92.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "stage": 1,
+        "op": "compute",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb0_s2_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 222.0,
+      "dur": 76.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "stage": 2,
+        "op": "compute",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb2_s0_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 290.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "stage": 0,
+        "op": "send",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb0_s2_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 298.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "stage": 2,
+        "op": "send",
+        "peer": 3
+      }
+    },
+    {
+      "name": "F_mb3_s0_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 300.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "stage": 0,
+        "op": "recv",
+        "peer": "input"
+      }
+    },
+    {
+      "name": "F_mb2_s0_to_s1",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 1,
+      "ts": 300.0,
+      "id": 5,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "src_stage": 0,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb0_s2_to_s3",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 3,
+      "ts": 308.0,
+      "id": 4,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "src_stage": 2,
+        "dst_stage": 3
+      }
+    },
+    {
+      "name": "F_mb0_s3_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 308.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "stage": 3,
+        "op": "recv",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb0_s2_to_s3",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 4,
+      "ts": 308.0,
+      "id": 4,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "src_stage": 2,
+        "dst_stage": 3
+      }
+    },
+    {
+      "name": "F_mb3_s0_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 310.0,
+      "dur": 80.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "stage": 0,
+        "op": "compute",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb1_s1_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 314.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "stage": 1,
+        "op": "send",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb0_s3_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 318.0,
+      "dur": 84.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "stage": 3,
+        "op": "compute",
+        "peer": 3
+      }
+    },
+    {
+      "name": "F_mb2_s1_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 324.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "stage": 1,
+        "op": "recv",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb2_s0_to_s1",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 2,
+      "ts": 324.0,
+      "id": 5,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "src_stage": 0,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb1_s1_to_s2",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 2,
+      "ts": 324.0,
+      "id": 6,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "src_stage": 1,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb1_s2_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 324.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "stage": 2,
+        "op": "recv",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb1_s1_to_s2",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 3,
+      "ts": 324.0,
+      "id": 6,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "src_stage": 1,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb2_s1_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 334.0,
+      "dur": 92.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "stage": 1,
+        "op": "compute",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb1_s2_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 334.0,
+      "dur": 76.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "stage": 2,
+        "op": "compute",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb3_s0_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 390.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "stage": 0,
+        "op": "send",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb3_s0_to_s1",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 1,
+      "ts": 400.0,
+      "id": 14,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "src_stage": 0,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb0_s3_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 402.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 0,
+        "stage": 3,
+        "op": "send",
+        "peer": "loss"
+      }
+    },
+    {
+      "name": "F_mb1_s2_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 410.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "stage": 2,
+        "op": "send",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb0_s3_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 412.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "stage": 3,
+        "op": "recv",
+        "peer": "loss_grad"
+      }
+    },
+    {
+      "name": "F_mb1_s2_to_s3",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 3,
+      "ts": 420.0,
+      "id": 8,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "src_stage": 2,
+        "dst_stage": 3
+      }
+    },
+    {
+      "name": "B_mb0_s3_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 422.0,
+      "dur": 126.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "stage": 3,
+        "op": "compute",
+        "peer": 3
+      }
+    },
+    {
+      "name": "F_mb2_s1_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 426.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "stage": 1,
+        "op": "send",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb2_s1_to_s2",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 2,
+      "ts": 436.0,
+      "id": 10,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "src_stage": 1,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "B_mb0_s3_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 548.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "stage": 3,
+        "op": "send",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb0_s2_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 558.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "stage": 2,
+        "op": "recv",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb0_s3_to_s2",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 3,
+      "ts": 558.0,
+      "id": 7,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "src_stage": 3,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "B_mb0_s3_to_s2",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 4,
+      "ts": 558.0,
+      "id": 7,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "src_stage": 3,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb1_s3_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 558.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "stage": 3,
+        "op": "recv",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb1_s2_to_s3",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 4,
+      "ts": 558.0,
+      "id": 8,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "src_stage": 2,
+        "dst_stage": 3
+      }
+    },
+    {
+      "name": "B_mb0_s2_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 568.0,
+      "dur": 114.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "stage": 2,
+        "op": "compute",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb1_s3_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 568.0,
+      "dur": 84.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "stage": 3,
+        "op": "compute",
+        "peer": 3
+      }
+    },
+    {
+      "name": "F_mb1_s3_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 652.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 1,
+        "stage": 3,
+        "op": "send",
+        "peer": "loss"
+      }
+    },
+    {
+      "name": "B_mb1_s3_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 662.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "stage": 3,
+        "op": "recv",
+        "peer": "loss_grad"
+      }
+    },
+    {
+      "name": "B_mb1_s3_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 672.0,
+      "dur": 126.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "stage": 3,
+        "op": "compute",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb0_s2_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 682.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "stage": 2,
+        "op": "send",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb0_s1_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 692.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "stage": 1,
+        "op": "recv",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb0_s2_to_s1",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 2,
+      "ts": 692.0,
+      "id": 9,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "src_stage": 2,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "B_mb0_s2_to_s1",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 3,
+      "ts": 692.0,
+      "id": 9,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "src_stage": 2,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb2_s2_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 692.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "stage": 2,
+        "op": "recv",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb2_s1_to_s2",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 3,
+      "ts": 692.0,
+      "id": 10,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "src_stage": 1,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "B_mb0_s1_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 702.0,
+      "dur": 138.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "stage": 1,
+        "op": "compute",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb2_s2_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 702.0,
+      "dur": 76.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "stage": 2,
+        "op": "compute",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb2_s2_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 778.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "stage": 2,
+        "op": "send",
+        "peer": 3
+      }
+    },
+    {
+      "name": "F_mb2_s2_to_s3",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 3,
+      "ts": 788.0,
+      "id": 12,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "src_stage": 2,
+        "dst_stage": 3
+      }
+    },
+    {
+      "name": "B_mb1_s3_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 798.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "stage": 3,
+        "op": "send",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb1_s2_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 808.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "stage": 2,
+        "op": "recv",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb1_s3_to_s2",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 3,
+      "ts": 808.0,
+      "id": 11,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "src_stage": 3,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "B_mb1_s3_to_s2",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 4,
+      "ts": 808.0,
+      "id": 11,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "src_stage": 3,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb2_s3_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 808.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "stage": 3,
+        "op": "recv",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb2_s2_to_s3",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 4,
+      "ts": 808.0,
+      "id": 12,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "src_stage": 2,
+        "dst_stage": 3
+      }
+    },
+    {
+      "name": "B_mb1_s2_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 818.0,
+      "dur": 114.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "stage": 2,
+        "op": "compute",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb2_s3_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 818.0,
+      "dur": 84.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "stage": 3,
+        "op": "compute",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb0_s1_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 840.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "stage": 1,
+        "op": "send",
+        "peer": 0
+      }
+    },
+    {
+      "name": "B_mb0_s0_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 850.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "stage": 0,
+        "op": "recv",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb0_s1_to_s0",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 1,
+      "ts": 850.0,
+      "id": 13,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "src_stage": 1,
+        "dst_stage": 0
+      }
+    },
+    {
+      "name": "B_mb0_s1_to_s0",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 2,
+      "ts": 850.0,
+      "id": 13,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "src_stage": 1,
+        "dst_stage": 0
+      }
+    },
+    {
+      "name": "F_mb3_s1_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 850.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "stage": 1,
+        "op": "recv",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb3_s0_to_s1",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 2,
+      "ts": 850.0,
+      "id": 14,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "src_stage": 0,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "B_mb0_s0_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 860.0,
+      "dur": 120.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "stage": 0,
+        "op": "compute",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb3_s1_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 860.0,
+      "dur": 92.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "stage": 1,
+        "op": "compute",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb2_s3_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 902.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 2,
+        "stage": 3,
+        "op": "send",
+        "peer": "loss"
+      }
+    },
+    {
+      "name": "B_mb2_s3_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 912.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "stage": 3,
+        "op": "recv",
+        "peer": "loss_grad"
+      }
+    },
+    {
+      "name": "B_mb2_s3_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 922.0,
+      "dur": 126.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "stage": 3,
+        "op": "compute",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb1_s2_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 932.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "stage": 2,
+        "op": "send",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb1_s2_to_s1",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 3,
+      "ts": 942.0,
+      "id": 15,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "src_stage": 2,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb3_s1_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 952.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "stage": 1,
+        "op": "send",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb1_s1_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 962.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "stage": 1,
+        "op": "recv",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb1_s2_to_s1",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 2,
+      "ts": 962.0,
+      "id": 15,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "src_stage": 2,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb3_s1_to_s2",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 2,
+      "ts": 962.0,
+      "id": 16,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "src_stage": 1,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb3_s2_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 962.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "stage": 2,
+        "op": "recv",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb3_s1_to_s2",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 3,
+      "ts": 962.0,
+      "id": 16,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "src_stage": 1,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "B_mb1_s1_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 972.0,
+      "dur": 138.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "stage": 1,
+        "op": "compute",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb3_s2_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 972.0,
+      "dur": 76.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "stage": 2,
+        "op": "compute",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb0_s0_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 980.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 0,
+        "stage": 0,
+        "op": "send",
+        "peer": "grad_sink"
+      }
+    },
+    {
+      "name": "F_mb4_s0_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 990.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "stage": 0,
+        "op": "recv",
+        "peer": "input"
+      }
+    },
+    {
+      "name": "F_mb4_s0_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1000.0,
+      "dur": 80.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "stage": 0,
+        "op": "compute",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb3_s2_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1048.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "stage": 2,
+        "op": "send",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb2_s3_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1048.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "stage": 3,
+        "op": "send",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb2_s2_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1058.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "stage": 2,
+        "op": "recv",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb2_s3_to_s2",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1058.0,
+      "id": 17,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "src_stage": 3,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb3_s2_to_s3",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1058.0,
+      "id": 18,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "src_stage": 2,
+        "dst_stage": 3
+      }
+    },
+    {
+      "name": "B_mb2_s3_to_s2",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1058.0,
+      "id": 17,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "src_stage": 3,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb3_s3_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1058.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "stage": 3,
+        "op": "recv",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb3_s2_to_s3",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1058.0,
+      "id": 18,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "src_stage": 2,
+        "dst_stage": 3
+      }
+    },
+    {
+      "name": "B_mb2_s2_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1068.0,
+      "dur": 114.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "stage": 2,
+        "op": "compute",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb3_s3_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1068.0,
+      "dur": 84.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "stage": 3,
+        "op": "compute",
+        "peer": 3
+      }
+    },
+    {
+      "name": "F_mb4_s0_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1080.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "stage": 0,
+        "op": "send",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb4_s0_to_s1",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1090.0,
+      "id": 20,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "src_stage": 0,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "B_mb1_s1_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1110.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "stage": 1,
+        "op": "send",
+        "peer": 0
+      }
+    },
+    {
+      "name": "B_mb1_s0_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1120.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "stage": 0,
+        "op": "recv",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb1_s1_to_s0",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1120.0,
+      "id": 19,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "src_stage": 1,
+        "dst_stage": 0
+      }
+    },
+    {
+      "name": "B_mb1_s1_to_s0",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1120.0,
+      "id": 19,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "src_stage": 1,
+        "dst_stage": 0
+      }
+    },
+    {
+      "name": "F_mb4_s1_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1120.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "stage": 1,
+        "op": "recv",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb4_s0_to_s1",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1120.0,
+      "id": 20,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "src_stage": 0,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "B_mb1_s0_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1130.0,
+      "dur": 120.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "stage": 0,
+        "op": "compute",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb4_s1_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1130.0,
+      "dur": 92.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "stage": 1,
+        "op": "compute",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb3_s3_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1152.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 3,
+        "stage": 3,
+        "op": "send",
+        "peer": "loss"
+      }
+    },
+    {
+      "name": "B_mb3_s3_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1162.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "stage": 3,
+        "op": "recv",
+        "peer": "loss_grad"
+      }
+    },
+    {
+      "name": "B_mb3_s3_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1172.0,
+      "dur": 126.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "stage": 3,
+        "op": "compute",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb2_s2_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1182.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "stage": 2,
+        "op": "send",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb2_s2_to_s1",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1192.0,
+      "id": 21,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "src_stage": 2,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb4_s1_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1222.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "stage": 1,
+        "op": "send",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb2_s1_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1232.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "stage": 1,
+        "op": "recv",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb2_s2_to_s1",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1232.0,
+      "id": 21,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "src_stage": 2,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb4_s1_to_s2",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1232.0,
+      "id": 22,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "src_stage": 1,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb4_s2_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1232.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "stage": 2,
+        "op": "recv",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb4_s1_to_s2",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1232.0,
+      "id": 22,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "src_stage": 1,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "B_mb2_s1_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1242.0,
+      "dur": 138.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "stage": 1,
+        "op": "compute",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb4_s2_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1242.0,
+      "dur": 76.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "stage": 2,
+        "op": "compute",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb1_s0_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1250.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 1,
+        "stage": 0,
+        "op": "send",
+        "peer": "grad_sink"
+      }
+    },
+    {
+      "name": "F_mb5_s0_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1260.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "stage": 0,
+        "op": "recv",
+        "peer": "input"
+      }
+    },
+    {
+      "name": "F_mb5_s0_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1270.0,
+      "dur": 80.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "stage": 0,
+        "op": "compute",
+        "peer": 0
+      }
+    },
+    {
+      "name": "B_mb3_s3_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1298.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "stage": 3,
+        "op": "send",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb3_s3_to_s2",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1308.0,
+      "id": 23,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "src_stage": 3,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb4_s2_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1318.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "stage": 2,
+        "op": "send",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb3_s2_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1328.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "stage": 2,
+        "op": "recv",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb3_s3_to_s2",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1328.0,
+      "id": 23,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "src_stage": 3,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb4_s2_to_s3",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1328.0,
+      "id": 24,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "src_stage": 2,
+        "dst_stage": 3
+      }
+    },
+    {
+      "name": "F_mb4_s3_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1328.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "stage": 3,
+        "op": "recv",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb4_s2_to_s3",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1328.0,
+      "id": 24,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "src_stage": 2,
+        "dst_stage": 3
+      }
+    },
+    {
+      "name": "B_mb3_s2_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1338.0,
+      "dur": 114.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "stage": 2,
+        "op": "compute",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb4_s3_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1338.0,
+      "dur": 84.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "stage": 3,
+        "op": "compute",
+        "peer": 3
+      }
+    },
+    {
+      "name": "F_mb5_s0_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1350.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "stage": 0,
+        "op": "send",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb5_s0_to_s1",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1360.0,
+      "id": 26,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "src_stage": 0,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "B_mb2_s1_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1380.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "stage": 1,
+        "op": "send",
+        "peer": 0
+      }
+    },
+    {
+      "name": "B_mb2_s0_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1390.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "stage": 0,
+        "op": "recv",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb2_s1_to_s0",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1390.0,
+      "id": 25,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "src_stage": 1,
+        "dst_stage": 0
+      }
+    },
+    {
+      "name": "B_mb2_s1_to_s0",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1390.0,
+      "id": 25,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "src_stage": 1,
+        "dst_stage": 0
+      }
+    },
+    {
+      "name": "F_mb5_s1_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1390.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "stage": 1,
+        "op": "recv",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb5_s0_to_s1",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1390.0,
+      "id": 26,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "src_stage": 0,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "B_mb2_s0_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1400.0,
+      "dur": 120.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "stage": 0,
+        "op": "compute",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb5_s1_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1400.0,
+      "dur": 92.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "stage": 1,
+        "op": "compute",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb4_s3_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1422.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 4,
+        "stage": 3,
+        "op": "send",
+        "peer": "loss"
+      }
+    },
+    {
+      "name": "B_mb4_s3_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1432.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "stage": 3,
+        "op": "recv",
+        "peer": "loss_grad"
+      }
+    },
+    {
+      "name": "B_mb4_s3_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1442.0,
+      "dur": 126.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "stage": 3,
+        "op": "compute",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb3_s2_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1452.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "stage": 2,
+        "op": "send",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb3_s2_to_s1",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1462.0,
+      "id": 27,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "src_stage": 2,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb5_s1_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1492.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "stage": 1,
+        "op": "send",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb3_s1_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1502.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "stage": 1,
+        "op": "recv",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb3_s2_to_s1",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1502.0,
+      "id": 27,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "src_stage": 2,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb5_s1_to_s2",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1502.0,
+      "id": 28,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "src_stage": 1,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb5_s2_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1502.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "stage": 2,
+        "op": "recv",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb5_s1_to_s2",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1502.0,
+      "id": 28,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "src_stage": 1,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "B_mb3_s1_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1512.0,
+      "dur": 138.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "stage": 1,
+        "op": "compute",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb5_s2_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1512.0,
+      "dur": 76.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "stage": 2,
+        "op": "compute",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb2_s0_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1520.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 2,
+        "stage": 0,
+        "op": "send",
+        "peer": "grad_sink"
+      }
+    },
+    {
+      "name": "F_mb6_s0_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1530.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "stage": 0,
+        "op": "recv",
+        "peer": "input"
+      }
+    },
+    {
+      "name": "F_mb6_s0_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1540.0,
+      "dur": 80.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "stage": 0,
+        "op": "compute",
+        "peer": 0
+      }
+    },
+    {
+      "name": "B_mb4_s3_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1568.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "stage": 3,
+        "op": "send",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb4_s3_to_s2",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1578.0,
+      "id": 29,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "src_stage": 3,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb5_s2_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1588.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "stage": 2,
+        "op": "send",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb4_s2_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1598.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "stage": 2,
+        "op": "recv",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb4_s3_to_s2",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1598.0,
+      "id": 29,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "src_stage": 3,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb5_s2_to_s3",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1598.0,
+      "id": 30,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "src_stage": 2,
+        "dst_stage": 3
+      }
+    },
+    {
+      "name": "F_mb5_s3_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1598.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "stage": 3,
+        "op": "recv",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb5_s2_to_s3",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1598.0,
+      "id": 30,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "src_stage": 2,
+        "dst_stage": 3
+      }
+    },
+    {
+      "name": "B_mb4_s2_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1608.0,
+      "dur": 114.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "stage": 2,
+        "op": "compute",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb5_s3_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1608.0,
+      "dur": 84.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "stage": 3,
+        "op": "compute",
+        "peer": 3
+      }
+    },
+    {
+      "name": "F_mb6_s0_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1620.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "stage": 0,
+        "op": "send",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb6_s0_to_s1",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1630.0,
+      "id": 32,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "src_stage": 0,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "B_mb3_s1_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1650.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "stage": 1,
+        "op": "send",
+        "peer": 0
+      }
+    },
+    {
+      "name": "B_mb3_s0_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1660.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "stage": 0,
+        "op": "recv",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb3_s1_to_s0",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1660.0,
+      "id": 31,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "src_stage": 1,
+        "dst_stage": 0
+      }
+    },
+    {
+      "name": "B_mb3_s1_to_s0",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1660.0,
+      "id": 31,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "src_stage": 1,
+        "dst_stage": 0
+      }
+    },
+    {
+      "name": "F_mb6_s1_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1660.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "stage": 1,
+        "op": "recv",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb6_s0_to_s1",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1660.0,
+      "id": 32,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "src_stage": 0,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "B_mb3_s0_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1670.0,
+      "dur": 120.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "stage": 0,
+        "op": "compute",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb6_s1_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1670.0,
+      "dur": 92.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "stage": 1,
+        "op": "compute",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb5_s3_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1692.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 5,
+        "stage": 3,
+        "op": "send",
+        "peer": "loss"
+      }
+    },
+    {
+      "name": "B_mb5_s3_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1702.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "stage": 3,
+        "op": "recv",
+        "peer": "loss_grad"
+      }
+    },
+    {
+      "name": "B_mb5_s3_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1712.0,
+      "dur": 126.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "stage": 3,
+        "op": "compute",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb4_s2_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1722.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "stage": 2,
+        "op": "send",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb4_s2_to_s1",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1732.0,
+      "id": 33,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "src_stage": 2,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb6_s1_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1762.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "stage": 1,
+        "op": "send",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb4_s1_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1772.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "stage": 1,
+        "op": "recv",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb4_s2_to_s1",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1772.0,
+      "id": 33,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "src_stage": 2,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb6_s1_to_s2",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1772.0,
+      "id": 34,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "src_stage": 1,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb6_s2_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1772.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "stage": 2,
+        "op": "recv",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb6_s1_to_s2",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1772.0,
+      "id": 34,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "src_stage": 1,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "B_mb4_s1_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1782.0,
+      "dur": 138.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "stage": 1,
+        "op": "compute",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb6_s2_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1782.0,
+      "dur": 76.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "stage": 2,
+        "op": "compute",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb3_s0_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1790.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 3,
+        "stage": 0,
+        "op": "send",
+        "peer": "grad_sink"
+      }
+    },
+    {
+      "name": "F_mb7_s0_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1800.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "stage": 0,
+        "op": "recv",
+        "peer": "input"
+      }
+    },
+    {
+      "name": "F_mb7_s0_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1810.0,
+      "dur": 80.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "stage": 0,
+        "op": "compute",
+        "peer": 0
+      }
+    },
+    {
+      "name": "B_mb5_s3_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1838.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "stage": 3,
+        "op": "send",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb5_s3_to_s2",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1848.0,
+      "id": 35,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "src_stage": 3,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb6_s2_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1858.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "stage": 2,
+        "op": "send",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb5_s2_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1868.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "stage": 2,
+        "op": "recv",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb5_s3_to_s2",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1868.0,
+      "id": 35,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "src_stage": 3,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb6_s2_to_s3",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1868.0,
+      "id": 36,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "src_stage": 2,
+        "dst_stage": 3
+      }
+    },
+    {
+      "name": "F_mb6_s3_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1868.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "stage": 3,
+        "op": "recv",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb6_s2_to_s3",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1868.0,
+      "id": 36,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "src_stage": 2,
+        "dst_stage": 3
+      }
+    },
+    {
+      "name": "B_mb5_s2_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1878.0,
+      "dur": 114.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "stage": 2,
+        "op": "compute",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb6_s3_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1878.0,
+      "dur": 84.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "stage": 3,
+        "op": "compute",
+        "peer": 3
+      }
+    },
+    {
+      "name": "F_mb7_s0_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1890.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "stage": 0,
+        "op": "send",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb7_s0_to_s1",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1900.0,
+      "id": 38,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "src_stage": 0,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "B_mb4_s1_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1920.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "stage": 1,
+        "op": "send",
+        "peer": 0
+      }
+    },
+    {
+      "name": "B_mb4_s0_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1930.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "stage": 0,
+        "op": "recv",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb4_s1_to_s0",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1930.0,
+      "id": 37,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "src_stage": 1,
+        "dst_stage": 0
+      }
+    },
+    {
+      "name": "B_mb4_s1_to_s0",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1930.0,
+      "id": 37,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "src_stage": 1,
+        "dst_stage": 0
+      }
+    },
+    {
+      "name": "F_mb7_s1_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1930.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "stage": 1,
+        "op": "recv",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb7_s0_to_s1",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1930.0,
+      "id": 38,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "src_stage": 0,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "B_mb4_s0_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 1940.0,
+      "dur": 120.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "stage": 0,
+        "op": "compute",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb7_s1_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 1940.0,
+      "dur": 92.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "stage": 1,
+        "op": "compute",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb6_s3_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1962.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 6,
+        "stage": 3,
+        "op": "send",
+        "peer": "loss"
+      }
+    },
+    {
+      "name": "B_mb6_s3_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1972.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "stage": 3,
+        "op": "recv",
+        "peer": "loss_grad"
+      }
+    },
+    {
+      "name": "B_mb6_s3_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 1982.0,
+      "dur": 126.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "stage": 3,
+        "op": "compute",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb5_s2_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 1992.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "stage": 2,
+        "op": "send",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb5_s2_to_s1",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 3,
+      "ts": 2002.0,
+      "id": 39,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "src_stage": 2,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb7_s1_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2032.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "stage": 1,
+        "op": "send",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb5_s1_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2042.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "stage": 1,
+        "op": "recv",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb5_s2_to_s1",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2042.0,
+      "id": 39,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "src_stage": 2,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "F_mb7_s1_to_s2",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2042.0,
+      "id": 40,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "src_stage": 1,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb7_s2_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 2042.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "stage": 2,
+        "op": "recv",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb7_s1_to_s2",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 3,
+      "ts": 2042.0,
+      "id": 40,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "src_stage": 1,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "B_mb5_s1_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2052.0,
+      "dur": 138.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "stage": 1,
+        "op": "compute",
+        "peer": 1
+      }
+    },
+    {
+      "name": "F_mb7_s2_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 2052.0,
+      "dur": 76.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "stage": 2,
+        "op": "compute",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb4_s0_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 2060.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 4,
+        "stage": 0,
+        "op": "send",
+        "peer": "grad_sink"
+      }
+    },
+    {
+      "name": "B_mb6_s3_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 2108.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "stage": 3,
+        "op": "send",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb6_s3_to_s2",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 4,
+      "ts": 2118.0,
+      "id": 41,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "src_stage": 3,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb7_s2_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 2128.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "stage": 2,
+        "op": "send",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb6_s2_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 2138.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "stage": 2,
+        "op": "recv",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb6_s3_to_s2",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 3,
+      "ts": 2138.0,
+      "id": 41,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "src_stage": 3,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "F_mb7_s2_to_s3",
+      "cat": "activation_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 3,
+      "ts": 2138.0,
+      "id": 42,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "src_stage": 2,
+        "dst_stage": 3
+      }
+    },
+    {
+      "name": "F_mb7_s3_recv",
+      "cat": "forward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 2138.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "stage": 3,
+        "op": "recv",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb7_s2_to_s3",
+      "cat": "activation_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 4,
+      "ts": 2138.0,
+      "id": 42,
+      "args": {
+        "mode": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "src_stage": 2,
+        "dst_stage": 3
+      }
+    },
+    {
+      "name": "B_mb6_s2_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 2148.0,
+      "dur": 114.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "stage": 2,
+        "op": "compute",
+        "peer": 2
+      }
+    },
+    {
+      "name": "F_mb7_s3_compute",
+      "cat": "forward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 2148.0,
+      "dur": 84.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "stage": 3,
+        "op": "compute",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb5_s1_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2190.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "stage": 1,
+        "op": "send",
+        "peer": 0
+      }
+    },
+    {
+      "name": "B_mb5_s0_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 2200.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "stage": 0,
+        "op": "recv",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb5_s1_to_s0",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 1,
+      "ts": 2200.0,
+      "id": 43,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "src_stage": 1,
+        "dst_stage": 0
+      }
+    },
+    {
+      "name": "B_mb5_s1_to_s0",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2200.0,
+      "id": 43,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "src_stage": 1,
+        "dst_stage": 0
+      }
+    },
+    {
+      "name": "B_mb5_s0_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 2210.0,
+      "dur": 120.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "stage": 0,
+        "op": "compute",
+        "peer": 0
+      }
+    },
+    {
+      "name": "F_mb7_s3_send",
+      "cat": "forward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 2232.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "forward",
+        "microbatch": 7,
+        "stage": 3,
+        "op": "send",
+        "peer": "loss"
+      }
+    },
+    {
+      "name": "B_mb7_s3_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 2242.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "stage": 3,
+        "op": "recv",
+        "peer": "loss_grad"
+      }
+    },
+    {
+      "name": "B_mb7_s3_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 2252.0,
+      "dur": 126.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "stage": 3,
+        "op": "compute",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb6_s2_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 2262.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "stage": 2,
+        "op": "send",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb6_s1_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2272.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "stage": 1,
+        "op": "recv",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb6_s2_to_s1",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2272.0,
+      "id": 44,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "src_stage": 2,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "B_mb6_s2_to_s1",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 3,
+      "ts": 2272.0,
+      "id": 44,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "src_stage": 2,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "B_mb6_s1_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2282.0,
+      "dur": 138.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "stage": 1,
+        "op": "compute",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb5_s0_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 2330.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 5,
+        "stage": 0,
+        "op": "send",
+        "peer": "grad_sink"
+      }
+    },
+    {
+      "name": "B_mb7_s3_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 4,
+      "ts": 2378.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "stage": 3,
+        "op": "send",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb7_s2_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 2388.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "stage": 2,
+        "op": "recv",
+        "peer": 3
+      }
+    },
+    {
+      "name": "B_mb7_s3_to_s2",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 3,
+      "ts": 2388.0,
+      "id": 45,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "src_stage": 3,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "B_mb7_s3_to_s2",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 4,
+      "ts": 2388.0,
+      "id": 45,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "src_stage": 3,
+        "dst_stage": 2
+      }
+    },
+    {
+      "name": "B_mb7_s2_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 2398.0,
+      "dur": 114.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "stage": 2,
+        "op": "compute",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb6_s1_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2420.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "stage": 1,
+        "op": "send",
+        "peer": 0
+      }
+    },
+    {
+      "name": "B_mb6_s0_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 2430.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "stage": 0,
+        "op": "recv",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb6_s1_to_s0",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 1,
+      "ts": 2430.0,
+      "id": 46,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "src_stage": 1,
+        "dst_stage": 0
+      }
+    },
+    {
+      "name": "B_mb6_s1_to_s0",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2430.0,
+      "id": 46,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "src_stage": 1,
+        "dst_stage": 0
+      }
+    },
+    {
+      "name": "B_mb6_s0_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 2440.0,
+      "dur": 120.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "stage": 0,
+        "op": "compute",
+        "peer": 0
+      }
+    },
+    {
+      "name": "B_mb7_s2_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 3,
+      "ts": 2512.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "stage": 2,
+        "op": "send",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb7_s1_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2522.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "stage": 1,
+        "op": "recv",
+        "peer": 2
+      }
+    },
+    {
+      "name": "B_mb7_s2_to_s1",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2522.0,
+      "id": 47,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "src_stage": 2,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "B_mb7_s2_to_s1",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 3,
+      "ts": 2522.0,
+      "id": 47,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "src_stage": 2,
+        "dst_stage": 1
+      }
+    },
+    {
+      "name": "B_mb7_s1_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2532.0,
+      "dur": 138.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "stage": 1,
+        "op": "compute",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb6_s0_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 2560.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 6,
+        "stage": 0,
+        "op": "send",
+        "peer": "grad_sink"
+      }
+    },
+    {
+      "name": "B_mb7_s1_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2670.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "stage": 1,
+        "op": "send",
+        "peer": 0
+      }
+    },
+    {
+      "name": "B_mb7_s0_recv",
+      "cat": "backward.recv",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 2680.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "stage": 0,
+        "op": "recv",
+        "peer": 1
+      }
+    },
+    {
+      "name": "B_mb7_s1_to_s0",
+      "cat": "gradient_flow",
+      "ph": "t",
+      "pid": 2,
+      "tid": 1,
+      "ts": 2680.0,
+      "id": 48,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "src_stage": 1,
+        "dst_stage": 0
+      }
+    },
+    {
+      "name": "B_mb7_s1_to_s0",
+      "cat": "gradient_flow",
+      "ph": "s",
+      "pid": 2,
+      "tid": 2,
+      "ts": 2680.0,
+      "id": 48,
+      "args": {
+        "mode": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "src_stage": 1,
+        "dst_stage": 0
+      }
+    },
+    {
+      "name": "B_mb7_s0_compute",
+      "cat": "backward.compute",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 2690.0,
+      "dur": 120.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "stage": 0,
+        "op": "compute",
+        "peer": 0
+      }
+    },
+    {
+      "name": "B_mb7_s0_send",
+      "cat": "backward.send",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 2810.0,
+      "dur": 10.0,
+      "args": {
+        "mode": "1f1b",
+        "strategy": "1f1b",
+        "phase": "backward",
+        "microbatch": 7,
+        "stage": 0,
+        "op": "send",
+        "peer": "grad_sink"
+      }
+    }
+  ]
+}

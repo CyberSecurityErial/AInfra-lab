@@ -1,0 +1,43 @@
+experiment:
+  name: pipeline_small
+  purpose: Compare GPipe flushing with 1F1B steady-state scheduling for a small pipeline.
+  expected_trace: GPipe has a full-forward barrier before backward; 1F1B overlaps forward and backward after warmup.
+
+assumptions:
+  timing_scope: Synthetic event latency from a CPU-only discrete-event model, not measured framework or GPU time.
+  event_model: Every stage/microbatch/pass is represented as recv, compute, then send.
+  communication_prior: Forward sends activations downstream and receives from upstream; backward receives gradients from downstream and sends upstream.
+  boundary_prior: Stage 0 forward recv, last-stage forward send, last-stage backward recv, and stage 0 backward send are modeled as visible boundary events.
+  scheduling_prior:
+    - gpipe uses all-forward then all-backward flushing with a full-forward barrier.
+    - 1f1b uses per-stage warmup, forward/backward alternation, and backward cooldown.
+  not_modeled:
+    - activation memory pressure
+    - optimizer step timing
+    - tensor-parallel or data-parallel collectives
+    - NCCL protocol details
+    - framework graph capture and kernel launch overhead
+
+pipeline:
+  stages: 4
+  microbatches: 8
+  stage_compute_scale:
+    - 1.0
+    - 1.15
+    - 0.95
+    - 1.05
+
+timing:
+  forward_recv_us: 10.0
+  forward_compute_us: 80.0
+  forward_send_us: 10.0
+  backward_recv_us: 10.0
+  backward_compute_us: 120.0
+  backward_send_us: 10.0
+
+simulation:
+  modes:
+    - gpipe
+    - 1f1b
+  trace_unit: us
+  emit_flow_events: true

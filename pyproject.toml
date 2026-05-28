@@ -5,4 +5,4 @@ description = "CPU-only AI infrastructure lab experiments."
 requires-python = ">=3.10"
 
 [tool.setuptools]
-packages = ["moe_trace_sim"]
+packages = ["moe_trace_sim", "pipeline_trace_sim"]
