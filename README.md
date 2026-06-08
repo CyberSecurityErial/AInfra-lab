@@ -19,7 +19,7 @@ Each scenario config carries its own `experiment` and `assumptions` sections so 
 
 ## Pipeline Trace Simulator
 
-Generate Perfetto/Chrome Trace timelines that compare GPipe, 1F1B, ZeroBubble 1F1B, a deliberately bad MoE 1F1B overlap, DualPipe, and DualPipeV pipeline training schedules:
+Generate Perfetto/Chrome Trace timelines and static PNG schedule diagrams that compare GPipe, 1F1B, Interleaved 1F1B, ZeroBubble 1F1B, a deliberately bad MoE 1F1B overlap, Chimera bidirectional pipelines, DualPipe, and DualPipeV pipeline training schedules:
 
 ```bash
 python3 -m pipeline_trace_sim.cli --config configs/pipeline_small.yaml --out outputs/pipeline_small

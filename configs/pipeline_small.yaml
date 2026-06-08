@@ -1,7 +1,7 @@
 experiment:
   name: pipeline_small
-  purpose: Compare GPipe, 1F1B, ZeroBubble 1F1B, a deliberately bad MoE 1F1B overlap, DualPipe, and DualPipeV scheduling for a small pipeline.
-  expected_trace: GPipe has a full-forward barrier; 1F1B alternates after warmup; ZeroBubble moves weight-gradient work into idle slots; bad MoE overlap shows long all-to-all tails as bubbles; DualPipe and DualPipeV expose paired forward/backward overlap and mirrored-stage rank lanes.
+  purpose: Compare GPipe, 1F1B, Interleaved 1F1B, ZeroBubble 1F1B, a deliberately bad MoE 1F1B overlap, Chimera bidirectional pipelines, DualPipe, and DualPipeV scheduling for a small pipeline.
+  expected_trace: GPipe has a full-forward barrier; 1F1B alternates after warmup; Interleaved 1F1B shares each rank across virtual chunks; ZeroBubble moves weight-gradient work into idle slots; bad MoE overlap shows long all-to-all tails as bubbles; Chimera exposes two opposite 1F1B pipelines on mirrored rank lanes; DualPipe and DualPipeV expose paired forward/backward overlap and mirrored-stage rank lanes.
 
 assumptions:
   timing_scope: Synthetic event latency from a CPU-only discrete-event model, not measured framework or GPU time.
@@ -12,8 +12,10 @@ assumptions:
   scheduling_prior:
     - gpipe uses all-forward then all-backward flushing with a full-forward barrier.
     - 1f1b uses per-stage warmup, forward/backward alternation, and backward cooldown.
+    - interleaved_1f1b splits each physical rank into virtual pipeline chunks, scales compute and activation memory per chunk, and shares the rank lane across chunk-local 1F1B queues.
     - zerobubble_1f1b splits backward into input-gradient B and delayed weight-gradient W. B stays on the pipeline critical path; W is queued and used to fill idle slots before the optimizer step.
     - moe_bad_overlap_1f1b uses the same 1F1B microbatch order but tries a naive MoE component overlap: forward attn/alltoall/mlp/alltoall against backward alltoallB/mlpB/alltoallB/attnB. Long all-to-all tails are counted as exposed pipeline bubbles.
+    - chimera splits the configured microbatches across down and up 1F1B pipelines, hosts mirrored stages on each rank lane, and keeps the step synchronous without stale weights.
     - dualpipe uses two boundary-fed directions, mirrored local stages, paired forward/backward overlap, and delayed weight-gradient chunks.
     - dualpipev folds the logical pipeline into a V shape on half as many physical rank lanes and uses the same paired-overlap and delayed-weight abstractions.
   not_modeled:
@@ -27,6 +29,7 @@ assumptions:
 pipeline:
   stages: 4
   microbatches: 8
+  interleaved_virtual_chunks: 2
   stage_compute_scale:
     - 1.0
     - 1.15
@@ -63,8 +66,10 @@ simulation:
   modes:
     - gpipe
     - 1f1b
+    - interleaved_1f1b
     - zerobubble_1f1b
     - moe_bad_overlap_1f1b
+    - chimera
     - dualpipe
     - dualpipev
   trace_unit: us

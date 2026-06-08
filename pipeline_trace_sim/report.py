@@ -49,6 +49,9 @@ def write_report(path: str | Path, cfg: Config, summaries: list[PipelineSummary]
     experiment = _format_mapping(cfg.experiment)
     assumptions = _format_mapping(cfg.assumptions)
     mode_files = ", ".join(f"`{s.mode}_trace.json`" for s in summaries)
+    schedule_images = "\n\n".join(
+        f"### {s.mode}\n![{s.mode} schedule]({s.mode}_schedule.png)" for s in summaries
+    )
     text = f"""# Pipeline Trace Simulation Report
 
 ## Experiment Setting
@@ -57,6 +60,7 @@ def write_report(path: str | Path, cfg: Config, summaries: list[PipelineSummary]
 ## Config
 - stages: {cfg.pipeline.stages}
 - microbatches: {cfg.pipeline.microbatches}
+- interleaved_virtual_chunks: {cfg.pipeline.interleaved_virtual_chunks}
 - stage_compute_scale: {cfg.pipeline.stage_compute_scale or "uniform"}
 - forward recv/compute/send us: {cfg.timing.forward_recv_us} / {cfg.timing.forward_compute_us} / {cfg.timing.forward_send_us}
 - backward recv/compute/send us: {cfg.timing.backward_recv_us} / {cfg.timing.backward_compute_us} / {cfg.timing.backward_send_us}
@@ -76,18 +80,23 @@ def write_report(path: str | Path, cfg: Config, summaries: list[PipelineSummary]
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 {rows}
 
+## Schedule PNGs
+{schedule_images}
+
 ## Findings
 1. `gpipe` runs all forward microbatches first, then flushes backward work after a full-forward barrier.
 2. `1f1b` warms up each stage with forward work, alternates forward/backward tasks in steady state, then drains remaining backward work.
-3. `zerobubble_1f1b` splits backward into input-gradient `B` and delayed weight-gradient `W`; `B` stays on the dependency path while `weight.compute` fills idle slots before optimizer time.
-4. `moe_bad_overlap_1f1b` keeps 1F1B microbatch ordering but tries to hide forward attention/all-to-all/MLP/all-to-all against backward all-to-all/MLP/all-to-all/attention; long all-to-all tails are emitted as `moe_bad_overlap.bubble`.
-5. `dualpipe` splits microbatches into two boundary-fed directions, maps each rank to a normal and mirrored stage, and models paired forward/backward chunks with componentwise overlap.
-6. `dualpipev` folds an even number of logical stages onto half as many physical rank lanes, forming a V-shaped forward path and reverse backward path.
-7. Pipeline bubbles are visible as gaps on rank lanes; lower `bubble_us` generally means better physical-lane occupancy under this synthetic timing model.
-8. Memory counters show retained activation growth, transient gradient buffers, and static memory for the logical stages hosted by each lane.
+3. `interleaved_1f1b` splits each physical rank into virtual chunks, interleaves chunk-local 1F1B queues on the same rank lane, and scales per-chunk compute and activation memory.
+4. `zerobubble_1f1b` splits backward into input-gradient `B` and delayed weight-gradient `W`; `B` stays on the dependency path while `weight.compute` fills idle slots before optimizer time.
+5. `moe_bad_overlap_1f1b` keeps 1F1B microbatch ordering but tries to hide forward attention/all-to-all/MLP/all-to-all against backward all-to-all/MLP/all-to-all/attention; long all-to-all tails are emitted as `moe_bad_overlap.bubble`.
+6. `chimera` splits the configured microbatches across down and up 1F1B pipelines, maps each physical rank to a normal and mirrored stage, and keeps the synchronous flush model without DualPipe-style component overlap.
+7. `dualpipe` starts from the same bidirectional lane idea but adds paired forward/backward chunks and delayed weight-gradient chunks.
+8. `dualpipev` folds an even number of logical stages onto half as many physical rank lanes, forming a V-shaped forward path and reverse backward path.
+9. Pipeline bubbles are visible as gaps on rank lanes; lower `bubble_us` generally means better physical-lane occupancy under this synthetic timing model.
+10. Memory counters show retained activation growth, transient gradient buffers, and static memory for the logical stages hosted by each lane.
 
 ## How to View
-Open {mode_files}, and `memory_trace.json` in Perfetto UI or Chrome trace viewer.
+Open the `*_schedule.png` files directly for static schedule diagrams. Open {mode_files}, and `memory_trace.json` in Perfetto UI or Chrome trace viewer for interactive traces.
 
 This is a teaching simulator, not a framework benchmark. All timings come from the configured abstract event model.
 """

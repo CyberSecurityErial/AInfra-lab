@@ -12,6 +12,8 @@ OVERLAP = "overlap"
 MOE_BAD_OVERLAP = "moe_bad_overlap"
 MOE_BAD_MODE = "moe_bad_overlap_1f1b"
 ZERO_BUBBLE_MODE = "zerobubble_1f1b"
+INTERLEAVED_MODE = "interleaved_1f1b"
+CHIMERA_MODE = "chimera"
 
 CompletionKey = tuple[str, int, int, int]
 
@@ -25,6 +27,8 @@ class Task:
     lane: int | None = None
     enable_zb: bool = False
     partner: "Task | None" = None
+    duration_scale: float = 1.0
+    memory_scale: float = 1.0
 
 
 @dataclass(frozen=True)
@@ -86,6 +90,10 @@ def schedule(mode: str, cfg: Config, pid: int) -> tuple[Trace, PipelineSummary]:
             cfg.pipeline.stages,
             _standard_lane_stage_groups(cfg),
         )
+    if mode == INTERLEAVED_MODE:
+        return _schedule_interleaved_1f1b(mode, cfg, pid)
+    if mode == CHIMERA_MODE:
+        return _schedule_chimera(mode, cfg, pid)
     if mode == "dualpipe":
         orders = _dualpipe_orders(cfg)
         return _schedule(
@@ -184,6 +192,115 @@ def _moe_bad_overlap_orders(cfg: Config) -> list[list[Task]]:
         stage_order.extend(Task(BACKWARD, stage, mb, lane=stage) for mb in range(remaining, microbatches))
         orders.append(stage_order)
     return orders
+
+
+def _interleaved_one_f_one_b_orders(cfg: Config) -> list[list[list[Task]]]:
+    physical_stages = cfg.pipeline.stages
+    virtual_chunks = cfg.pipeline.interleaved_virtual_chunks
+    logical_stages = physical_stages * virtual_chunks
+    task_scale = 1.0 / virtual_chunks
+    orders: list[list[list[Task]]] = [[] for _ in range(physical_stages)]
+    for chunk in range(virtual_chunks):
+        for rank in range(physical_stages):
+            logical_stage = chunk * physical_stages + rank
+            orders[rank].append(
+                _one_f_one_b_stage_order(
+                    logical_stages,
+                    cfg.pipeline.microbatches,
+                    logical_stage,
+                    0,
+                    rank,
+                    0,
+                    duration_scale=task_scale,
+                    memory_scale=task_scale,
+                )
+            )
+    return orders
+
+
+def _chimera_orders(cfg: Config) -> list[list[list[Task]]]:
+    stages = cfg.pipeline.stages
+    microbatches_per_direction = cfg.pipeline.microbatches // 2
+    orders: list[list[list[Task]]] = []
+    for lane in range(stages):
+        down_stage = lane
+        up_stage = stages - 1 - lane
+        orders.append(
+            [
+                _one_f_one_b_stage_order(stages, microbatches_per_direction, down_stage, 0, lane, 0),
+                _one_f_one_b_stage_order(
+                    stages,
+                    microbatches_per_direction,
+                    up_stage,
+                    1,
+                    lane,
+                    microbatches_per_direction,
+                ),
+            ]
+        )
+    return orders
+
+
+def _one_f_one_b_stage_order(
+    stages: int,
+    microbatches: int,
+    stage: int,
+    direction: int,
+    lane: int,
+    microbatch_offset: int,
+    duration_scale: float = 1.0,
+    memory_scale: float = 1.0,
+) -> list[Task]:
+    warmup = min(stages - stage - 1, microbatches)
+    remaining = microbatches - warmup
+    stage_order = [
+        Task(
+            FORWARD,
+            stage,
+            microbatch_offset + mb,
+            direction,
+            lane,
+            duration_scale=duration_scale,
+            memory_scale=memory_scale,
+        )
+        for mb in range(warmup)
+    ]
+    for idx in range(remaining):
+        stage_order.append(
+            Task(
+                FORWARD,
+                stage,
+                microbatch_offset + warmup + idx,
+                direction,
+                lane,
+                duration_scale=duration_scale,
+                memory_scale=memory_scale,
+            )
+        )
+        stage_order.append(
+            Task(
+                BACKWARD,
+                stage,
+                microbatch_offset + idx,
+                direction,
+                lane,
+                duration_scale=duration_scale,
+                memory_scale=memory_scale,
+            )
+        )
+    stage_order.extend(
+        Task(
+            BACKWARD,
+            stage,
+            microbatch_offset + mb,
+            direction,
+            lane,
+            duration_scale=duration_scale,
+            memory_scale=memory_scale,
+        )
+        for mb in range(remaining, microbatches)
+    )
+    return stage_order
 
 
 def _dualpipe_orders(cfg: Config) -> list[list[Task]]:
@@ -571,6 +688,167 @@ def _schedule(
     return trace, summary
 
 
+def _schedule_interleaved_1f1b(mode: str, cfg: Config, pid: int) -> tuple[Trace, PipelineSummary]:
+    orders = _interleaved_one_f_one_b_orders(cfg)
+    physical_stages = cfg.pipeline.stages
+    virtual_chunks = cfg.pipeline.interleaved_virtual_chunks
+    logical_stages = physical_stages * virtual_chunks
+    trace = Trace(
+        mode,
+        pid,
+        physical_stages,
+        _memory_thread_names(physical_stages),
+        _interleaved_thread_names(physical_stages, virtual_chunks),
+    )
+    acc = Accumulator()
+    memory = (
+        MemoryTracker(
+            trace,
+            cfg,
+            _interleaved_lane_stage_groups(physical_stages, virtual_chunks),
+            stage_memory_factor=1.0 / virtual_chunks,
+        )
+        if cfg.simulation.emit_memory_counters
+        else None
+    )
+    lane_ready = [0.0] * physical_stages
+    cursors = [[0 for _ in lane_orders] for lane_orders in orders]
+    completions: dict[CompletionKey, float] = {}
+    completion_lanes: dict[CompletionKey, int] = {}
+    flow_id = 1
+    remaining = sum(len(queue) for lane_orders in orders for queue in lane_orders)
+
+    while remaining:
+        candidates: list[tuple[float, int, int, Task]] = []
+        for lane, lane_orders in enumerate(orders):
+            for queue_idx, queue in enumerate(lane_orders):
+                cursor = cursors[lane][queue_idx]
+                if cursor >= len(queue):
+                    continue
+                task = queue[cursor]
+                dep_ready = _dependency_ready(task, logical_stages, completions)
+                if dep_ready is not None:
+                    candidates.append((max(lane_ready[lane], dep_ready), lane, queue_idx, task))
+        if not candidates:
+            raise RuntimeError("Interleaved 1F1B scheduler deadlocked; check virtual-stage dependencies")
+
+        start, lane, queue_idx, task = min(candidates, key=lambda item: (item[0], item[1], item[2]))
+        timing = _emit_work_item(trace, acc, cfg, task, start)
+
+        if memory is not None:
+            memory.record_task(task, timing)
+
+        if cfg.simulation.emit_flow_events:
+            flow_id = _emit_dependency_flows(
+                trace,
+                logical_stages,
+                task,
+                timing.recv_start,
+                completions,
+                completion_lanes,
+                flow_id,
+            )
+
+        _mark_completions(task, timing.end, completions, completion_lanes)
+        lane_ready[lane] = timing.end
+        cursors[lane][queue_idx] += 1
+        remaining -= 1
+
+    total = max(lane_ready, default=0.0)
+    if memory is not None:
+        memory.finish(total)
+    bubble = max(total * physical_stages - acc.occupied, 0.0)
+    util = acc.occupied / (total * physical_stages) if total > 0 else 0.0
+    summary = PipelineSummary(
+        mode=mode,
+        total_us=total,
+        event_count=acc.event_count,
+        recv_us=acc.recv,
+        compute_us=acc.compute,
+        send_us=acc.send,
+        bubble_us=bubble,
+        utilization=util,
+        peak_memory_mb=memory.peak_total if memory is not None else 0.0,
+        peak_stage_memory_mb=memory.peak_stage if memory is not None else 0.0,
+    )
+    return trace, summary
+
+
+def _schedule_chimera(mode: str, cfg: Config, pid: int) -> tuple[Trace, PipelineSummary]:
+    orders = _chimera_orders(cfg)
+    lane_count = len(orders)
+    trace = Trace(
+        mode,
+        pid,
+        lane_count,
+        _memory_thread_names(lane_count),
+        _chimera_thread_names(cfg.pipeline.stages),
+    )
+    acc = Accumulator()
+    memory = MemoryTracker(trace, cfg, _dualpipe_lane_stage_groups(cfg.pipeline.stages)) if cfg.simulation.emit_memory_counters else None
+    lane_ready = [0.0] * lane_count
+    cursors = [[0 for _ in lane_orders] for lane_orders in orders]
+    completions: dict[CompletionKey, float] = {}
+    completion_lanes: dict[CompletionKey, int] = {}
+    flow_id = 1
+    remaining = sum(len(queue) for lane_orders in orders for queue in lane_orders)
+
+    while remaining:
+        candidates: list[tuple[float, int, int, Task]] = []
+        for lane, lane_orders in enumerate(orders):
+            for queue_idx, queue in enumerate(lane_orders):
+                cursor = cursors[lane][queue_idx]
+                if cursor >= len(queue):
+                    continue
+                task = queue[cursor]
+                dep_ready = _dependency_ready(task, cfg.pipeline.stages, completions)
+                if dep_ready is not None:
+                    candidates.append((max(lane_ready[lane], dep_ready), lane, queue_idx, task))
+        if not candidates:
+            raise RuntimeError("Chimera scheduler deadlocked; check bidirectional task dependencies")
+
+        start, lane, queue_idx, task = min(candidates, key=lambda item: (item[0], item[1], item[2]))
+        timing = _emit_work_item(trace, acc, cfg, task, start)
+
+        if memory is not None:
+            memory.record_task(task, timing)
+
+        if cfg.simulation.emit_flow_events:
+            flow_id = _emit_dependency_flows(
+                trace,
+                cfg.pipeline.stages,
+                task,
+                timing.recv_start,
+                completions,
+                completion_lanes,
+                flow_id,
+            )
+
+        _mark_completions(task, timing.end, completions, completion_lanes)
+        lane_ready[lane] = timing.end
+        cursors[lane][queue_idx] += 1
+        remaining -= 1
+
+    total = max(lane_ready, default=0.0)
+    if memory is not None:
+        memory.finish(total)
+    bubble = max(total * lane_count - acc.occupied, 0.0)
+    util = acc.occupied / (total * lane_count) if total > 0 else 0.0
+    summary = PipelineSummary(
+        mode=mode,
+        total_us=total,
+        event_count=acc.event_count,
+        recv_us=acc.recv,
+        compute_us=acc.compute,
+        send_us=acc.send,
+        bubble_us=bubble,
+        utilization=util,
+        peak_memory_mb=memory.peak_total if memory is not None else 0.0,
+        peak_stage_memory_mb=memory.peak_stage if memory is not None else 0.0,
+    )
+    return trace, summary
+
+
 def _dependency_ready(
     task: Task,
     logical_stages: int,
@@ -892,12 +1170,19 @@ def _emit_moe_bad_overlap_task(
 
 
 class MemoryTracker:
-    def __init__(self, trace: Trace, cfg: Config, lane_stage_groups: list[list[int]]):
+    def __init__(
+        self,
+        trace: Trace,
+        cfg: Config,
+        lane_stage_groups: list[list[int]],
+        stage_memory_factor: float = 1.0,
+    ):
         self.trace = trace
         self.cfg = cfg
         self.lane_stage_groups = lane_stage_groups
+        self.stage_memory_factor = stage_memory_factor
         self.static = [
-            sum(_scaled(cfg.memory.static_mb_per_stage, cfg, stage) for stage in stages)
+            sum(_scaled(cfg.memory.static_mb_per_stage, cfg, stage) * self.stage_memory_factor for stage in stages)
             for stages in lane_stage_groups
         ]
         self.activation = [0.0] * len(lane_stage_groups)
@@ -911,11 +1196,11 @@ class MemoryTracker:
     def record_task(self, task: Task, timing: TaskTiming) -> None:
         for item in _constituent_tasks(task):
             if item.phase == FORWARD:
-                activation_mb = _scaled(self.cfg.memory.activation_mb_per_microbatch, self.cfg, item.stage)
+                activation_mb = _scaled(self.cfg.memory.activation_mb_per_microbatch, self.cfg, item.stage) * item.memory_scale
                 self._add_activation(_lane(item), activation_mb, timing.compute_start)
             elif item.phase == BACKWARD:
-                gradient_mb = _scaled(self.cfg.memory.gradient_mb_per_microbatch, self.cfg, item.stage)
-                activation_mb = _scaled(self.cfg.memory.activation_mb_per_microbatch, self.cfg, item.stage)
+                gradient_mb = _scaled(self.cfg.memory.gradient_mb_per_microbatch, self.cfg, item.stage) * item.memory_scale
+                activation_mb = _scaled(self.cfg.memory.activation_mb_per_microbatch, self.cfg, item.stage) * item.memory_scale
                 self._add_gradient(_lane(item), gradient_mb, timing.recv_start)
                 self._add_activation(_lane(item), -activation_mb, timing.send_start)
                 self._add_gradient(_lane(item), -gradient_mb, timing.end)
@@ -990,7 +1275,7 @@ def _lane(task: Task) -> int:
 def _scaled(value: float, cfg: Config, stage: int) -> float:
     if not cfg.memory.stage_memory_scale:
         return value
-    return value * cfg.memory.stage_memory_scale[stage]
+    return value * cfg.memory.stage_memory_scale[stage % len(cfg.memory.stage_memory_scale)]
 
 
 def _memory_thread_names(lane_count: int) -> dict[int, str]:
@@ -1013,25 +1298,25 @@ def _durations(cfg: Config, task: Task) -> tuple[float, float, float]:
     if task.phase == FORWARD:
         return (
             cfg.timing.forward_recv_us,
-            cfg.timing.forward_compute_us * scale,
+            cfg.timing.forward_compute_us * scale * task.duration_scale,
             cfg.timing.forward_send_us,
         )
     if task.phase == BACKWARD:
         backward_compute = cfg.timing.backward_input_compute_us if task.enable_zb else cfg.timing.backward_compute_us
         return (
             cfg.timing.backward_recv_us,
-            backward_compute * scale,
+            backward_compute * scale * task.duration_scale,
             cfg.timing.backward_send_us,
         )
     if task.phase == WEIGHT:
-        return (0.0, cfg.timing.backward_weight_compute_us * scale, 0.0)
+        return (0.0, cfg.timing.backward_weight_compute_us * scale * task.duration_scale, 0.0)
     raise ValueError(f"Unexpected phase for duration lookup: {task.phase}")
 
 
 def _stage_scale(cfg: Config, stage: int) -> float:
     if not cfg.pipeline.stage_compute_scale:
         return 1.0
-    return cfg.pipeline.stage_compute_scale[stage]
+    return cfg.pipeline.stage_compute_scale[stage % len(cfg.pipeline.stage_compute_scale)]
 
 
 def _moe_components(cfg: Config, task: Task) -> list[tuple[str, str, float]]:
@@ -1167,7 +1452,7 @@ def _event_args(mode: str, cfg: Config, task: Task, op: str) -> dict[str, object
         "direction_label": _direction_label(mode, task.direction),
         "op": op,
         "zero_bubble": task.enable_zb,
-        "peer": _peer(cfg, task, op),
+        "peer": _peer(cfg, task, op, mode),
     }
 
 
@@ -1182,25 +1467,27 @@ def _overlap_args(mode: str, cfg: Config, forward: Task, backward: Task, op: str
         "forward_stage": forward.stage,
         "forward_direction": forward.direction,
         "forward_direction_label": _direction_label(mode, forward.direction),
-        "forward_peer": _peer(cfg, forward, op),
+        "forward_peer": _peer(cfg, forward, op, mode),
         "backward_microbatch": backward.microbatch,
         "backward_stage": backward.stage,
         "backward_direction": backward.direction,
         "backward_direction_label": _direction_label(mode, backward.direction),
-        "backward_peer": _peer(cfg, backward, op),
+        "backward_peer": _peer(cfg, backward, op, mode),
     }
 
 
 def _direction_label(mode: str, direction: int) -> str:
     if mode == "dualpipe":
         return "first_boundary_input" if direction == 0 else "last_boundary_input"
+    if mode == CHIMERA_MODE:
+        return "down_pipeline" if direction == 0 else "up_pipeline"
     if mode == "dualpipev":
         return "v_path"
     return "single_path"
 
 
-def _peer(cfg: Config, task: Task, op: str) -> str | int:
-    last_stage = cfg.pipeline.stages - 1
+def _peer(cfg: Config, task: Task, op: str, mode: str | None = None) -> str | int:
+    last_stage = cfg.pipeline.stages * cfg.pipeline.interleaved_virtual_chunks - 1 if mode == INTERLEAVED_MODE else cfg.pipeline.stages - 1
     if task.phase == FORWARD:
         if op == "recv":
             return f"input_d{task.direction}" if task.stage == 0 else task.stage - 1
@@ -1282,6 +1569,27 @@ def _flow_name(task: Task, src_stage: int) -> str:
 
 def _standard_lane_stage_groups(cfg: Config) -> list[list[int]]:
     return [[stage] for stage in range(cfg.pipeline.stages)]
+
+
+def _interleaved_lane_stage_groups(physical_stages: int, virtual_chunks: int) -> list[list[int]]:
+    return [[rank + chunk * physical_stages for chunk in range(virtual_chunks)] for rank in range(physical_stages)]
+
+
+def _interleaved_thread_names(physical_stages: int, virtual_chunks: int) -> dict[int, str]:
+    return {
+        rank + 1: "rank_{} chunks_{}".format(
+            rank,
+            "+".join(f"s{rank + chunk * physical_stages}" for chunk in range(virtual_chunks)),
+        )
+        for rank in range(physical_stages)
+    }
+
+
+def _chimera_thread_names(stages: int) -> dict[int, str]:
+    return {
+        rank + 1: f"rank_{rank} down_s{rank}+up_s{stages - 1 - rank}"
+        for rank in range(stages)
+    }
 
 
 def _dualpipe_lane_stage_groups(stages: int) -> list[list[int]]:

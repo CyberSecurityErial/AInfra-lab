@@ -10,6 +10,7 @@ class PipelineConfig:
     stages: int = 4
     microbatches: int = 8
     stage_compute_scale: list[float] = field(default_factory=list)
+    interleaved_virtual_chunks: int = 2
 
 
 @dataclass
@@ -76,14 +77,24 @@ def _validate(cfg: Config) -> None:
         raise ValueError("pipeline.stages must be positive")
     if cfg.pipeline.microbatches <= 0:
         raise ValueError("pipeline.microbatches must be positive")
+    if cfg.pipeline.interleaved_virtual_chunks <= 0:
+        raise ValueError("pipeline.interleaved_virtual_chunks must be positive")
     if cfg.pipeline.stage_compute_scale and len(cfg.pipeline.stage_compute_scale) != cfg.pipeline.stages:
         raise ValueError("pipeline.stage_compute_scale must either be empty or match pipeline.stages")
     if cfg.memory.stage_memory_scale and len(cfg.memory.stage_memory_scale) != cfg.pipeline.stages:
         raise ValueError("memory.stage_memory_scale must either be empty or match pipeline.stages")
-    valid_modes = {"gpipe", "1f1b", "zerobubble_1f1b", "dualpipe", "dualpipev", "moe_bad_overlap_1f1b"}
+    valid_modes = {"gpipe", "1f1b", "zerobubble_1f1b", "interleaved_1f1b", "chimera", "dualpipe", "dualpipev", "moe_bad_overlap_1f1b"}
     unknown = [mode for mode in cfg.simulation.modes if mode not in valid_modes]
     if unknown:
         raise ValueError(f"Unknown simulation mode(s): {', '.join(unknown)}")
+    if "interleaved_1f1b" in cfg.simulation.modes:
+        if cfg.pipeline.interleaved_virtual_chunks < 2:
+            raise ValueError("interleaved_1f1b requires pipeline.interleaved_virtual_chunks >= 2")
+    if "chimera" in cfg.simulation.modes:
+        if cfg.pipeline.stages % 2 != 0:
+            raise ValueError("chimera requires pipeline.stages to be even")
+        if cfg.pipeline.microbatches % 2 != 0:
+            raise ValueError("chimera requires pipeline.microbatches to be even")
     if "dualpipe" in cfg.simulation.modes:
         if cfg.pipeline.stages % 2 != 0:
             raise ValueError("dualpipe requires pipeline.stages to be even")

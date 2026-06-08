@@ -32,7 +32,7 @@
       "pid": 100,
       "tid": 3,
       "args": {
-        "name": "zerobubble_1f1b total memory"
+        "name": "interleaved_1f1b total memory"
       }
     },
     {
@@ -41,7 +41,7 @@
       "pid": 100,
       "tid": 4,
       "args": {
-        "name": "moe_bad_overlap_1f1b total memory"
+        "name": "zerobubble_1f1b total memory"
       }
     },
     {
@@ -50,7 +50,7 @@
       "pid": 100,
       "tid": 5,
       "args": {
-        "name": "dualpipe total memory"
+        "name": "moe_bad_overlap_1f1b total memory"
       }
     },
     {
@@ -58,6 +58,24 @@
       "name": "thread_name",
       "pid": 100,
       "tid": 6,
+      "args": {
+        "name": "chimera total memory"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 100,
+      "tid": 7,
+      "args": {
+        "name": "dualpipe total memory"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 100,
+      "tid": 8,
       "args": {
         "name": "dualpipev total memory"
       }
@@ -85,7 +103,7 @@
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
@@ -96,7 +114,7 @@
       }
     },
     {
-      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "name": "zerobubble_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
@@ -107,11 +125,33 @@
       }
     },
     {
-      "name": "dualpipe_total_memory_mb",
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 5,
+      "ts": 0.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 0.0,
+      "args": {
+        "memory_mb": 4147.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 7,
       "ts": 0.0,
       "args": {
         "memory_mb": 4147.2
@@ -122,7 +162,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 0.0,
       "args": {
         "memory_mb": 2073.6
@@ -151,18 +191,18 @@
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
       "ts": 10.0,
       "args": {
-        "memory_mb": 2329.6
+        "memory_mb": 2201.6
       }
     },
     {
-      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "name": "zerobubble_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
@@ -173,11 +213,44 @@
       }
     },
     {
-      "name": "dualpipe_total_memory_mb",
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 5,
+      "ts": 10.0,
+      "args": {
+        "memory_mb": 2329.6
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 10.0,
+      "args": {
+        "memory_mb": 4403.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 10.0,
+      "args": {
+        "memory_mb": 4659.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 7,
       "ts": 10.0,
       "args": {
         "memory_mb": 4403.2
@@ -188,7 +261,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 10.0,
       "args": {
         "memory_mb": 4659.2
@@ -199,13 +272,35 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 10.0,
       "args": {
         "memory_mb": 2329.6
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 70.0,
+      "args": {
+        "memory_mb": 2329.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 70.0,
+      "args": {
+        "memory_mb": 2470.4
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -254,7 +349,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 110.0,
       "args": {
         "memory_mb": 2585.6
@@ -265,10 +360,54 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 110.0,
       "args": {
         "memory_mb": 2867.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 4915.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 5196.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 5478.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 5734.4
       }
     },
     {
@@ -276,7 +415,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 110.0,
       "args": {
         "memory_mb": 4915.2
@@ -287,7 +426,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 110.0,
       "args": {
         "memory_mb": 5196.8
@@ -298,7 +437,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 110.0,
       "args": {
         "memory_mb": 5478.4
@@ -309,7 +448,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 110.0,
       "args": {
         "memory_mb": 5734.4
@@ -320,7 +459,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 110.0,
       "args": {
         "memory_mb": 2585.6
@@ -331,10 +470,87 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 110.0,
       "args": {
         "memory_mb": 2867.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 130.0,
+      "args": {
+        "memory_mb": 2598.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 136.0,
+      "args": {
+        "memory_mb": 2739.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 136.0,
+      "args": {
+        "memory_mb": 2854.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 190.0,
+      "args": {
+        "memory_mb": 2982.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 194.0,
+      "args": {
+        "memory_mb": 3116.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 202.0,
+      "args": {
+        "memory_mb": 3257.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 202.0,
+      "args": {
+        "memory_mb": 3372.8
       }
     },
     {
@@ -364,10 +580,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 210.0,
       "args": {
         "memory_mb": 3123.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 210.0,
+      "args": {
+        "memory_mb": 5990.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 210.0,
+      "args": {
+        "memory_mb": 6246.4
       }
     },
     {
@@ -375,7 +613,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 210.0,
       "args": {
         "memory_mb": 5990.4
@@ -386,7 +624,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 210.0,
       "args": {
         "memory_mb": 6246.4
@@ -397,7 +635,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 210.0,
       "args": {
         "memory_mb": 3123.2
@@ -452,7 +690,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 222.0,
       "args": {
         "memory_mb": 3404.8
@@ -463,10 +701,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 222.0,
       "args": {
         "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 222.0,
+      "args": {
+        "memory_mb": 6528.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 222.0,
+      "args": {
+        "memory_mb": 6758.4
       }
     },
     {
@@ -474,7 +734,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 222.0,
       "args": {
         "memory_mb": 6476.8
@@ -485,7 +745,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 222.0,
       "args": {
         "memory_mb": 6707.2
@@ -496,13 +756,57 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 222.0,
       "args": {
         "memory_mb": 3353.6
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 250.0,
+      "args": {
+        "memory_mb": 3500.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 260.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 268.0,
+      "args": {
+        "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 268.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -525,14 +829,47 @@
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
       "ts": 310.0,
       "args": {
+        "memory_mb": 4019.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 310.0,
+      "args": {
         "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 310.0,
+      "args": {
+        "memory_mb": 7014.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 310.0,
+      "args": {
+        "memory_mb": 7270.4
       }
     },
     {
@@ -562,10 +899,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 318.0,
       "args": {
         "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 318.0,
+      "args": {
+        "memory_mb": 7552.0
       }
     },
     {
@@ -573,7 +921,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 318.0,
       "args": {
         "memory_mb": 6976.0
@@ -584,7 +932,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 318.0,
       "args": {
         "memory_mb": 7257.6
@@ -595,7 +943,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 318.0,
       "args": {
         "memory_mb": 7539.2
@@ -606,7 +954,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 318.0,
       "args": {
         "memory_mb": 7808.0
@@ -617,7 +965,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 318.0,
       "args": {
         "memory_mb": 3622.4
@@ -628,13 +976,24 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 318.0,
       "args": {
         "memory_mb": 3904.0
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 326.0,
+      "args": {
+        "memory_mb": 4153.6
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -679,11 +1038,33 @@
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
+      "ts": 334.0,
+      "args": {
+        "memory_mb": 4294.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 334.0,
+      "args": {
+        "memory_mb": 4409.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
       "ts": 334.0,
       "args": {
         "memory_mb": 4441.6
@@ -694,10 +1075,65 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 334.0,
       "args": {
         "memory_mb": 4672.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 334.0,
+      "args": {
+        "memory_mb": 7833.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 370.0,
+      "args": {
+        "memory_mb": 4537.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 392.0,
+      "args": {
+        "memory_mb": 4672.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 400.0,
+      "args": {
+        "memory_mb": 4812.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 400.0,
+      "args": {
+        "memory_mb": 4928.0
       }
     },
     {
@@ -712,6 +1148,17 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 410.0,
+      "args": {
+        "memory_mb": 8102.4
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -727,7 +1174,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 412.0,
       "args": {
         "memory_mb": 4806.4
@@ -738,7 +1185,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 412.0,
       "args": {
         "memory_mb": 7942.4
@@ -749,7 +1196,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 412.0,
       "args": {
         "memory_mb": 7673.6
@@ -760,7 +1207,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 412.0,
       "args": {
         "memory_mb": 4038.4
@@ -778,11 +1225,33 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 430.0,
+      "args": {
+        "memory_mb": 5056.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 430.0,
+      "args": {
+        "memory_mb": 8332.8
+      }
+    },
+    {
       "name": "dualpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 430.0,
       "args": {
         "memory_mb": 7500.8
@@ -793,7 +1262,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 430.0,
       "args": {
         "memory_mb": 7731.2
@@ -804,7 +1273,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 430.0,
       "args": {
         "memory_mb": 3865.6
@@ -833,11 +1302,66 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 446.0,
+      "args": {
+        "memory_mb": 8563.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 458.0,
+      "args": {
+        "memory_mb": 5190.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 466.0,
+      "args": {
+        "memory_mb": 5331.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 466.0,
+      "args": {
+        "memory_mb": 5446.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 490.0,
+      "args": {
+        "memory_mb": 5574.4
+      }
+    },
+    {
       "name": "moe_bad_overlap_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 500.0,
       "args": {
         "memory_mb": 2585.6
@@ -848,10 +1372,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 500.0,
       "args": {
         "memory_mb": 2867.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 504.0,
+      "args": {
+        "memory_mb": 8697.6
       }
     },
     {
@@ -859,7 +1394,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 506.0,
       "args": {
         "memory_mb": 4537.6
@@ -870,7 +1405,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 506.0,
       "args": {
         "memory_mb": 7673.6
@@ -881,7 +1416,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 506.0,
       "args": {
         "memory_mb": 7404.8
@@ -892,7 +1427,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 506.0,
       "args": {
         "memory_mb": 3769.6
@@ -914,7 +1449,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 516.0,
       "args": {
         "memory_mb": 4403.2
@@ -925,7 +1460,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 516.0,
       "args": {
         "memory_mb": 4518.4
@@ -936,7 +1471,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 516.0,
       "args": {
         "memory_mb": 7539.2
@@ -947,7 +1482,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 516.0,
       "args": {
         "memory_mb": 7270.4
@@ -958,7 +1493,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 516.0,
       "args": {
         "memory_mb": 3635.2
@@ -969,10 +1504,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 526.0,
       "args": {
         "memory_mb": 4441.6
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 526.0,
+      "args": {
+        "memory_mb": 8576.0
       }
     },
     {
@@ -980,7 +1526,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 526.0,
       "args": {
         "memory_mb": 8012.8
@@ -991,7 +1537,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 526.0,
       "args": {
         "memory_mb": 8294.4
@@ -1002,7 +1548,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 526.0,
       "args": {
         "memory_mb": 4147.2
@@ -1020,6 +1566,28 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 542.0,
+      "args": {
+        "memory_mb": 8844.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 542.0,
+      "args": {
+        "memory_mb": 9075.2
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1028,6 +1596,28 @@
       "ts": 548.0,
       "args": {
         "memory_mb": 4537.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 550.0,
+      "args": {
+        "memory_mb": 5702.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 550.0,
+      "args": {
+        "memory_mb": 5843.2
       }
     },
     {
@@ -1090,7 +1680,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 568.0,
       "args": {
         "memory_mb": 8563.2
@@ -1101,7 +1691,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 568.0,
       "args": {
         "memory_mb": 8832.0
@@ -1112,7 +1702,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 568.0,
       "args": {
         "memory_mb": 4416.0
@@ -1123,7 +1713,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 602.0,
       "args": {
         "memory_mb": 4288.0
@@ -1141,11 +1731,22 @@
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
+      "ts": 610.0,
+      "args": {
+        "memory_mb": 5971.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
       "ts": 612.0,
       "args": {
         "memory_mb": 4172.8
@@ -1156,10 +1757,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 612.0,
       "args": {
         "memory_mb": 4582.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 616.0,
+      "args": {
+        "memory_mb": 6112.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 616.0,
+      "args": {
+        "memory_mb": 6227.2
       }
     },
     {
@@ -1167,7 +1790,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 620.0,
       "args": {
         "memory_mb": 4524.8
@@ -1178,7 +1801,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 622.0,
       "args": {
         "memory_mb": 4390.4
@@ -1189,7 +1812,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 628.0,
       "args": {
         "memory_mb": 8947.2
@@ -1200,7 +1823,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 628.0,
       "args": {
         "memory_mb": 8716.8
@@ -1211,10 +1834,54 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 628.0,
       "args": {
         "memory_mb": 4531.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 636.0,
+      "args": {
+        "memory_mb": 9209.6
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 640.0,
+      "args": {
+        "memory_mb": 8428.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 650.0,
+      "args": {
+        "memory_mb": 8294.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 650.0,
+      "args": {
+        "memory_mb": 8921.6
       }
     },
     {
@@ -1226,6 +1893,17 @@
       "ts": 654.0,
       "args": {
         "memory_mb": 7270.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 660.0,
+      "args": {
+        "memory_mb": 8844.8
       }
     },
     {
@@ -1244,7 +1922,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 662.0,
       "args": {
         "memory_mb": 8761.6
@@ -1255,7 +1933,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 662.0,
       "args": {
         "memory_mb": 8748.8
@@ -1266,7 +1944,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 662.0,
       "args": {
         "memory_mb": 4576.0
@@ -1295,11 +1973,22 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 670.0,
+      "args": {
+        "memory_mb": 6355.2
+      }
+    },
+    {
       "name": "dualpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 672.0,
       "args": {
         "memory_mb": 8627.2
@@ -1310,7 +1999,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 672.0,
       "args": {
         "memory_mb": 8614.4
@@ -1321,10 +2010,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 672.0,
       "args": {
         "memory_mb": 4441.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 674.0,
+      "args": {
+        "memory_mb": 6489.6
       }
     },
     {
@@ -1336,6 +2036,28 @@
       "ts": 682.0,
       "args": {
         "memory_mb": 4288.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 682.0,
+      "args": {
+        "memory_mb": 6630.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 682.0,
+      "args": {
+        "memory_mb": 6745.6
       }
     },
     {
@@ -1387,7 +2109,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 714.0,
       "args": {
         "memory_mb": 4300.8
@@ -1398,7 +2120,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 714.0,
       "args": {
         "memory_mb": 4256.0
@@ -1409,7 +2131,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 724.0,
       "args": {
         "memory_mb": 4160.0
@@ -1420,7 +2142,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 724.0,
       "args": {
         "memory_mb": 4121.6
@@ -1431,7 +2153,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 724.0,
       "args": {
         "memory_mb": 4249.6
@@ -1442,10 +2164,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 724.0,
       "args": {
         "memory_mb": 4262.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 726.0,
+      "args": {
+        "memory_mb": 6812.8
       }
     },
     {
@@ -1453,7 +2186,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 734.0,
       "args": {
         "memory_mb": 4147.2
@@ -1464,7 +2197,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 734.0,
       "args": {
         "memory_mb": 4185.6
@@ -1475,7 +2208,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 752.0,
       "args": {
         "memory_mb": 8716.8
@@ -1486,7 +2219,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 752.0,
       "args": {
         "memory_mb": 8486.4
@@ -1497,10 +2230,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 752.0,
       "args": {
         "memory_mb": 4300.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 754.0,
+      "args": {
+        "memory_mb": 8979.2
       }
     },
     {
@@ -1508,7 +2252,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 762.0,
       "args": {
         "memory_mb": 8601.6
@@ -1519,7 +2263,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 762.0,
       "args": {
         "memory_mb": 8371.2
@@ -1530,7 +2274,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 762.0,
       "args": {
         "memory_mb": 8716.8
@@ -1541,7 +2285,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 762.0,
       "args": {
         "memory_mb": 8665.6
@@ -1552,7 +2296,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 762.0,
       "args": {
         "memory_mb": 4185.6
@@ -1563,7 +2307,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 762.0,
       "args": {
         "memory_mb": 4544.0
@@ -1581,11 +2325,22 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 772.0,
+      "args": {
+        "memory_mb": 8940.8
+      }
+    },
+    {
       "name": "dualpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 772.0,
       "args": {
         "memory_mb": 8576.0
@@ -1596,7 +2351,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 772.0,
       "args": {
         "memory_mb": 8524.8
@@ -1607,10 +2362,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 772.0,
       "args": {
         "memory_mb": 4403.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 774.0,
+      "args": {
+        "memory_mb": 8691.2
       }
     },
     {
@@ -1636,6 +2402,61 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 782.0,
+      "args": {
+        "memory_mb": 8806.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 782.0,
+      "args": {
+        "memory_mb": 8960.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 784.0,
+      "args": {
+        "memory_mb": 8576.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 792.0,
+      "args": {
+        "memory_mb": 8844.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 794.0,
+      "args": {
+        "memory_mb": 8844.8
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1651,7 +2472,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 798.0,
       "args": {
         "memory_mb": 8492.8
@@ -1662,7 +2483,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 798.0,
       "args": {
         "memory_mb": 8480.0
@@ -1673,10 +2494,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 798.0,
       "args": {
         "memory_mb": 4307.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 799.0,
+      "args": {
+        "memory_mb": 6678.4
       }
     },
     {
@@ -1706,7 +2538,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 808.0,
       "args": {
         "memory_mb": 8358.4
@@ -1717,7 +2549,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 808.0,
       "args": {
         "memory_mb": 8345.6
@@ -1728,10 +2560,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 808.0,
       "args": {
         "memory_mb": 4172.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 809.0,
+      "args": {
+        "memory_mb": 6611.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 809.0,
+      "args": {
+        "memory_mb": 6668.8
       }
     },
     {
@@ -1739,7 +2593,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 810.0,
       "args": {
         "memory_mb": 4032.0
@@ -1750,7 +2604,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 814.0,
       "args": {
         "memory_mb": 3993.6
@@ -1768,11 +2622,22 @@
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
+      "ts": 819.0,
+      "args": {
+        "memory_mb": 6630.4
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
       "ts": 820.0,
       "args": {
         "memory_mb": 3916.8
@@ -1783,7 +2648,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 824.0,
       "args": {
         "memory_mb": 3865.6
@@ -1794,7 +2659,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 828.0,
       "args": {
         "memory_mb": 4576.0
@@ -1805,7 +2670,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 834.0,
       "args": {
         "memory_mb": 4441.6
@@ -1816,7 +2681,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 836.0,
       "args": {
         "memory_mb": 4313.6
@@ -1838,7 +2703,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 846.0,
       "args": {
         "memory_mb": 4121.6
@@ -1878,6 +2743,28 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 871.0,
+      "args": {
+        "memory_mb": 6697.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 876.0,
+      "args": {
+        "memory_mb": 6553.6
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1886,6 +2773,50 @@
       "ts": 878.0,
       "args": {
         "memory_mb": 9088.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 886.0,
+      "args": {
+        "memory_mb": 6496.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 886.0,
+      "args": {
+        "memory_mb": 6566.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 886.0,
+      "args": {
+        "memory_mb": 8979.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 890.0,
+      "args": {
+        "memory_mb": 8710.4
       }
     },
     {
@@ -1911,11 +2842,66 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 896.0,
+      "args": {
+        "memory_mb": 6470.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 900.0,
+      "args": {
+        "memory_mb": 8576.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 900.0,
+      "args": {
+        "memory_mb": 8691.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 906.0,
+      "args": {
+        "memory_mb": 8729.6
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 910.0,
+      "args": {
+        "memory_mb": 8614.4
+      }
+    },
+    {
       "name": "dualpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 910.0,
       "args": {
         "memory_mb": 8435.2
@@ -1926,7 +2912,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 910.0,
       "args": {
         "memory_mb": 8384.0
@@ -1937,7 +2923,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 910.0,
       "args": {
         "memory_mb": 4262.4
@@ -1955,11 +2941,33 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 916.0,
+      "args": {
+        "memory_mb": 8614.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 916.0,
+      "args": {
+        "memory_mb": 8755.2
+      }
+    },
+    {
       "name": "dualpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 920.0,
       "args": {
         "memory_mb": 8294.4
@@ -1970,7 +2978,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 920.0,
       "args": {
         "memory_mb": 8243.2
@@ -1981,7 +2989,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 920.0,
       "args": {
         "memory_mb": 8640.0
@@ -1992,7 +3000,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 920.0,
       "args": {
         "memory_mb": 8652.8
@@ -2003,7 +3011,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 920.0,
       "args": {
         "memory_mb": 8704.0
@@ -2014,7 +3022,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 920.0,
       "args": {
         "memory_mb": 8755.2
@@ -2025,7 +3033,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 920.0,
       "args": {
         "memory_mb": 4121.6
@@ -2036,7 +3044,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 920.0,
       "args": {
         "memory_mb": 4518.4
@@ -2047,7 +3055,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 920.0,
       "args": {
         "memory_mb": 4531.2
@@ -2058,7 +3066,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 922.0,
       "args": {
         "memory_mb": 4307.2
@@ -2069,7 +3077,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 930.0,
       "args": {
         "memory_mb": 8512.0
@@ -2080,7 +3088,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 930.0,
       "args": {
         "memory_mb": 8537.6
@@ -2091,7 +3099,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 930.0,
       "args": {
         "memory_mb": 8588.8
@@ -2102,7 +3110,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 930.0,
       "args": {
         "memory_mb": 8627.2
@@ -2113,7 +3121,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 930.0,
       "args": {
         "memory_mb": 4390.4
@@ -2124,7 +3132,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 930.0,
       "args": {
         "memory_mb": 4416.0
@@ -2146,7 +3154,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 932.0,
       "args": {
         "memory_mb": 4172.8
@@ -2157,7 +3165,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 932.0,
       "args": {
         "memory_mb": 4236.8
@@ -2168,7 +3176,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 938.0,
       "args": {
         "memory_mb": 4032.0
@@ -2190,10 +3198,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 942.0,
       "args": {
         "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 944.0,
+      "args": {
+        "memory_mb": 6563.2
       }
     },
     {
@@ -2201,7 +3220,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 948.0,
       "args": {
         "memory_mb": 3891.2
@@ -2212,10 +3231,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 948.0,
       "args": {
         "memory_mb": 4288.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 954.0,
+      "args": {
+        "memory_mb": 6496.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 954.0,
+      "args": {
+        "memory_mb": 6528.0
       }
     },
     {
@@ -2223,7 +3264,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 958.0,
       "args": {
         "memory_mb": 4185.6
@@ -2241,6 +3282,28 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 964.0,
+      "args": {
+        "memory_mb": 6489.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 965.0,
+      "args": {
+        "memory_mb": 6425.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -2252,6 +3315,28 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 975.0,
+      "args": {
+        "memory_mb": 6355.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 975.0,
+      "args": {
+        "memory_mb": 6553.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -2260,6 +3345,17 @@
       "ts": 980.0,
       "args": {
         "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 985.0,
+      "args": {
+        "memory_mb": 6502.4
       }
     },
     {
@@ -2289,7 +3385,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 990.0,
       "args": {
         "memory_mb": 3123.2
@@ -2304,6 +3400,17 @@
       "ts": 1000.0,
       "args": {
         "memory_mb": 4121.6
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1004.0,
+      "args": {
+        "memory_mb": 8467.2
       }
     },
     {
@@ -2322,7 +3429,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 1006.5,
       "args": {
         "memory_mb": 3404.8
@@ -2333,32 +3440,65 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 1006.5,
       "args": {
         "memory_mb": 3635.2
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
+      "ts": 1016.0,
+      "args": {
+        "memory_mb": 6569.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
       "ts": 1018.0,
       "args": {
         "memory_mb": 4006.4
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
-      "ts": 1028.0,
+      "ts": 1021.0,
       "args": {
-        "memory_mb": 3891.2
+        "memory_mb": 6412.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1022.0,
+      "args": {
+        "memory_mb": 8710.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1024.0,
+      "args": {
+        "memory_mb": 8460.8
       }
     },
     {
@@ -2366,7 +3506,62 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
+      "tid": 4,
+      "ts": 1028.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
       "tid": 3,
+      "ts": 1031.0,
+      "args": {
+        "memory_mb": 6355.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1032.0,
+      "args": {
+        "memory_mb": 8576.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1034.0,
+      "args": {
+        "memory_mb": 8345.6
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1034.0,
+      "args": {
+        "memory_mb": 8204.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
       "ts": 1036.0,
       "args": {
         "memory_mb": 4320.0
@@ -2377,10 +3572,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1038.0,
       "args": {
         "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1041.0,
+      "args": {
+        "memory_mb": 6438.4
       }
     },
     {
@@ -2388,7 +3594,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1044.0,
       "args": {
         "memory_mb": 8422.4
@@ -2399,7 +3605,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1044.0,
       "args": {
         "memory_mb": 8473.6
@@ -2410,10 +3616,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1044.0,
       "args": {
         "memory_mb": 4300.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1045.0,
+      "args": {
+        "memory_mb": 6425.6
       }
     },
     {
@@ -2432,7 +3649,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1048.0,
       "args": {
         "memory_mb": 3904.0
@@ -2443,7 +3660,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1050.0,
       "args": {
         "memory_mb": 8384.0
@@ -2454,7 +3671,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1050.0,
       "args": {
         "memory_mb": 8499.2
@@ -2465,10 +3682,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1050.0,
       "args": {
         "memory_mb": 4262.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1051.0,
+      "args": {
+        "memory_mb": 6342.4
       }
     },
     {
@@ -2476,7 +3704,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1054.0,
       "args": {
         "memory_mb": 8307.2
@@ -2487,7 +3715,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1054.0,
       "args": {
         "memory_mb": 8358.4
@@ -2498,7 +3726,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1054.0,
       "args": {
         "memory_mb": 8742.4
@@ -2509,7 +3737,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1054.0,
       "args": {
         "memory_mb": 8691.2
@@ -2520,7 +3748,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1054.0,
       "args": {
         "memory_mb": 4185.6
@@ -2531,10 +3759,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1054.0,
       "args": {
         "memory_mb": 4556.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1055.0,
+      "args": {
+        "memory_mb": 6361.6
       }
     },
     {
@@ -2564,7 +3803,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1058.0,
       "args": {
         "memory_mb": 4172.8
@@ -2575,7 +3814,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1060.0,
       "args": {
         "memory_mb": 4313.6
@@ -2586,7 +3825,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1060.0,
       "args": {
         "memory_mb": 8256.0
@@ -2597,7 +3836,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1060.0,
       "args": {
         "memory_mb": 8371.2
@@ -2608,7 +3847,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1060.0,
       "args": {
         "memory_mb": 8403.2
@@ -2619,7 +3858,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1060.0,
       "args": {
         "memory_mb": 8134.4
@@ -2630,7 +3869,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1060.0,
       "args": {
         "memory_mb": 4134.4
@@ -2641,10 +3880,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1060.0,
       "args": {
         "memory_mb": 4524.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1064.0,
+      "args": {
+        "memory_mb": 8473.6
       }
     },
     {
@@ -2652,7 +3902,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1064.0,
       "args": {
         "memory_mb": 8601.6
@@ -2663,7 +3913,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1064.0,
       "args": {
         "memory_mb": 8550.4
@@ -2674,10 +3924,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1064.0,
       "args": {
         "memory_mb": 4416.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1065.0,
+      "args": {
+        "memory_mb": 6470.4
       }
     },
     {
@@ -2696,7 +3957,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1070.0,
       "args": {
         "memory_mb": 4121.6
@@ -2707,10 +3968,87 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1070.0,
       "args": {
         "memory_mb": 4390.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1074.0,
+      "args": {
+        "memory_mb": 8332.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1074.0,
+      "args": {
+        "memory_mb": 7910.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1084.0,
+      "args": {
+        "memory_mb": 7808.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1089.0,
+      "args": {
+        "memory_mb": 6435.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1099.0,
+      "args": {
+        "memory_mb": 6368.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1099.0,
+      "args": {
+        "memory_mb": 6528.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1099.0,
+      "args": {
+        "memory_mb": 6422.4
       }
     },
     {
@@ -2758,6 +4096,17 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1120.0,
+      "args": {
+        "memory_mb": 6297.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -2769,25 +4118,47 @@
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
       "ts": 1130.0,
       "args": {
-        "memory_mb": 4051.2
+        "memory_mb": 6227.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1130.0,
+      "args": {
+        "memory_mb": 6284.8
       }
     },
     {
       "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 1130.0,
+      "args": {
+        "memory_mb": 4051.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
       "ts": 1140.0,
       "args": {
-        "memory_mb": 3916.8
+        "memory_mb": 6233.6
       }
     },
     {
@@ -2795,7 +4166,40 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
+      "ts": 1140.0,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1140.0,
+      "args": {
+        "memory_mb": 8198.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1150.0,
+      "args": {
+        "memory_mb": 8064.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
       "ts": 1156.0,
       "args": {
         "memory_mb": 4236.8
@@ -2817,21 +4221,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1162.0,
       "args": {
         "memory_mb": 4032.0
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
       "ts": 1166.0,
       "args": {
-        "memory_mb": 4160.0
+        "memory_mb": 6412.8
       }
     },
     {
@@ -2839,7 +4243,29 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
+      "tid": 4,
+      "ts": 1166.0,
+      "args": {
+        "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
       "tid": 3,
+      "ts": 1172.0,
+      "args": {
+        "memory_mb": 6288.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
       "ts": 1172.0,
       "args": {
         "memory_mb": 3891.2
@@ -2850,10 +4276,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1172.0,
       "args": {
         "memory_mb": 4288.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1176.0,
+      "args": {
+        "memory_mb": 6355.2
       }
     },
     {
@@ -2868,14 +4305,58 @@
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
       "ts": 1182.0,
       "args": {
+        "memory_mb": 6220.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1182.0,
+      "args": {
+        "memory_mb": 6291.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 1182.0,
+      "args": {
         "memory_mb": 4185.6
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1182.0,
+      "args": {
+        "memory_mb": 7923.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1186.0,
+      "args": {
+        "memory_mb": 7948.8
       }
     },
     {
@@ -2890,6 +4371,39 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1192.0,
+      "args": {
+        "memory_mb": 6252.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1192.0,
+      "args": {
+        "memory_mb": 7782.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1192.0,
+      "args": {
+        "memory_mb": 7884.8
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -2901,11 +4415,22 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1196.0,
+      "args": {
+        "memory_mb": 6323.2
+      }
+    },
+    {
       "name": "dualpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1196.0,
       "args": {
         "memory_mb": 8134.4
@@ -2916,7 +4441,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1196.0,
       "args": {
         "memory_mb": 7865.6
@@ -2927,10 +4452,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1196.0,
       "args": {
         "memory_mb": 4256.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1200.0,
+      "args": {
+        "memory_mb": 6156.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1202.0,
+      "args": {
+        "memory_mb": 7756.8
       }
     },
     {
@@ -2938,7 +4485,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1202.0,
       "args": {
         "memory_mb": 8460.8
@@ -2949,7 +4496,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1202.0,
       "args": {
         "memory_mb": 8409.6
@@ -2960,10 +4507,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1202.0,
       "args": {
         "memory_mb": 4275.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1204.0,
+      "args": {
+        "memory_mb": 7654.4
       }
     },
     {
@@ -2971,7 +4529,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1206.0,
       "args": {
         "memory_mb": 8000.0
@@ -2982,7 +4540,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1206.0,
       "args": {
         "memory_mb": 7731.2
@@ -2993,10 +4551,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1206.0,
       "args": {
         "memory_mb": 4121.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1210.0,
+      "args": {
+        "memory_mb": 6092.8
       }
     },
     {
@@ -3004,7 +4573,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1212.0,
       "args": {
         "memory_mb": 8320.0
@@ -3015,7 +4584,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1212.0,
       "args": {
         "memory_mb": 8268.8
@@ -3026,7 +4595,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1212.0,
       "args": {
         "memory_mb": 8128.0
@@ -3037,7 +4606,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1212.0,
       "args": {
         "memory_mb": 7859.2
@@ -3048,7 +4617,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1212.0,
       "args": {
         "memory_mb": 7628.8
@@ -3059,7 +4628,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1212.0,
       "args": {
         "memory_mb": 7680.0
@@ -3070,7 +4639,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1212.0,
       "args": {
         "memory_mb": 4134.4
@@ -3081,7 +4650,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1212.0,
       "args": {
         "memory_mb": 4518.4
@@ -3092,10 +4661,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1212.0,
       "args": {
         "memory_mb": 4531.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1214.0,
+      "args": {
+        "memory_mb": 7526.4
       }
     },
     {
@@ -3103,7 +4683,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1222.0,
       "args": {
         "memory_mb": 8000.0
@@ -3114,7 +4694,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1222.0,
       "args": {
         "memory_mb": 7552.0
@@ -3125,7 +4705,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1222.0,
       "args": {
         "memory_mb": 4390.4
@@ -3136,7 +4716,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1222.0,
       "args": {
         "memory_mb": 4416.0
@@ -3169,10 +4749,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1242.0,
       "args": {
         "memory_mb": 4006.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1244.0,
+      "args": {
+        "memory_mb": 6307.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1249.0,
+      "args": {
+        "memory_mb": 6176.0
       }
     },
     {
@@ -3191,10 +4793,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1252.0,
       "args": {
         "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1254.0,
+      "args": {
+        "memory_mb": 6240.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1259.0,
+      "args": {
+        "memory_mb": 6118.4
       }
     },
     {
@@ -3213,7 +4837,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1260.0,
       "args": {
         "memory_mb": 4320.0
@@ -3224,10 +4848,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1262.0,
       "args": {
         "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1269.0,
+      "args": {
+        "memory_mb": 6220.8
       }
     },
     {
@@ -3246,10 +4881,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1272.0,
       "args": {
         "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1275.0,
+      "args": {
+        "memory_mb": 6182.4
       }
     },
     {
@@ -3257,7 +4903,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1282.0,
       "args": {
         "memory_mb": 4172.8
@@ -3268,10 +4914,43 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1284.0,
       "args": {
         "memory_mb": 4313.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1285.0,
+      "args": {
+        "memory_mb": 6112.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1285.0,
+      "args": {
+        "memory_mb": 6291.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1288.0,
+      "args": {
+        "memory_mb": 7616.0
       }
     },
     {
@@ -3279,7 +4958,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1294.0,
       "args": {
         "memory_mb": 4121.6
@@ -3297,6 +4976,17 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1304.0,
+      "args": {
+        "memory_mb": 6144.0
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -3305,6 +4995,50 @@
       "ts": 1308.0,
       "args": {
         "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1317.0,
+      "args": {
+        "memory_mb": 6172.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1322.0,
+      "args": {
+        "memory_mb": 7628.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1327.0,
+      "args": {
+        "memory_mb": 6105.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1327.0,
+      "args": {
+        "memory_mb": 6067.2
       }
     },
     {
@@ -3330,11 +5064,33 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1332.0,
+      "args": {
+        "memory_mb": 7500.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1334.0,
+      "args": {
+        "memory_mb": 7667.2
+      }
+    },
+    {
       "name": "dualpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1336.0,
       "args": {
         "memory_mb": 7628.8
@@ -3345,7 +5101,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1336.0,
       "args": {
         "memory_mb": 7398.4
@@ -3356,10 +5112,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1336.0,
       "args": {
         "memory_mb": 4300.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1337.0,
+      "args": {
+        "memory_mb": 6201.6
       }
     },
     {
@@ -3407,11 +5174,22 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1342.0,
+      "args": {
+        "memory_mb": 7539.2
+      }
+    },
+    {
       "name": "dualpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1342.0,
       "args": {
         "memory_mb": 7872.0
@@ -3422,7 +5200,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1342.0,
       "args": {
         "memory_mb": 7424.0
@@ -3433,10 +5211,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1342.0,
       "args": {
         "memory_mb": 4262.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1344.0,
+      "args": {
+        "memory_mb": 7526.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1344.0,
+      "args": {
+        "memory_mb": 7667.2
       }
     },
     {
@@ -3444,7 +5244,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1346.0,
       "args": {
         "memory_mb": 7513.6
@@ -3455,7 +5255,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1346.0,
       "args": {
         "memory_mb": 7283.2
@@ -3466,7 +5266,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1346.0,
       "args": {
         "memory_mb": 7436.8
@@ -3477,7 +5277,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1346.0,
       "args": {
         "memory_mb": 7155.2
@@ -3488,7 +5288,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1346.0,
       "args": {
         "memory_mb": 4185.6
@@ -3499,7 +5299,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1346.0,
       "args": {
         "memory_mb": 4556.8
@@ -3510,7 +5310,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1352.0,
       "args": {
         "memory_mb": 7744.0
@@ -3521,7 +5321,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1352.0,
       "args": {
         "memory_mb": 7296.0
@@ -3532,7 +5332,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1352.0,
       "args": {
         "memory_mb": 6867.2
@@ -3543,7 +5343,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1352.0,
       "args": {
         "memory_mb": 6598.4
@@ -3554,7 +5354,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1352.0,
       "args": {
         "memory_mb": 4134.4
@@ -3565,7 +5365,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1352.0,
       "args": {
         "memory_mb": 4524.8
@@ -3576,10 +5376,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1354.0,
       "args": {
         "memory_mb": 4051.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1354.0,
+      "args": {
+        "memory_mb": 7513.6
       }
     },
     {
@@ -3587,7 +5398,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1356.0,
       "args": {
         "memory_mb": 4416.0
@@ -3598,10 +5409,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1362.0,
       "args": {
         "memory_mb": 4390.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1364.0,
+      "args": {
+        "memory_mb": 6150.4
       }
     },
     {
@@ -3609,10 +5431,43 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1364.0,
       "args": {
         "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1374.0,
+      "args": {
+        "memory_mb": 6080.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1374.0,
+      "args": {
+        "memory_mb": 6016.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1375.0,
+      "args": {
+        "memory_mb": 6400.0
       }
     },
     {
@@ -3631,10 +5486,43 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1380.0,
       "args": {
         "memory_mb": 4236.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1384.0,
+      "args": {
+        "memory_mb": 5952.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1384.0,
+      "args": {
+        "memory_mb": 6342.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1384.0,
+      "args": {
+        "memory_mb": 6291.2
       }
     },
     {
@@ -3642,10 +5530,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1386.0,
       "args": {
         "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1389.0,
+      "args": {
+        "memory_mb": 6166.4
       }
     },
     {
@@ -3675,7 +5574,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1390.0,
       "args": {
         "memory_mb": 4160.0
@@ -3686,7 +5585,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1396.0,
       "args": {
         "memory_mb": 3891.2
@@ -3697,7 +5596,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1396.0,
       "args": {
         "memory_mb": 4288.0
@@ -3719,10 +5618,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1406.0,
       "args": {
         "memory_mb": 4185.6
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1412.0,
+      "args": {
+        "memory_mb": 7385.6
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1422.0,
+      "args": {
+        "memory_mb": 7270.4
       }
     },
     {
@@ -3737,6 +5658,61 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1432.0,
+      "args": {
+        "memory_mb": 7795.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1436.0,
+      "args": {
+        "memory_mb": 7929.6
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1440.0,
+      "args": {
+        "memory_mb": 7667.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1442.0,
+      "args": {
+        "memory_mb": 6284.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1450.0,
+      "args": {
+        "memory_mb": 6105.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -3748,6 +5724,28 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1452.0,
+      "args": {
+        "memory_mb": 6227.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1454.0,
+      "args": {
+        "memory_mb": 6163.2
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -3756,6 +5754,39 @@
       "ts": 1462.0,
       "args": {
         "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1462.0,
+      "args": {
+        "memory_mb": 6032.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1462.0,
+      "args": {
+        "memory_mb": 6220.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1464.0,
+      "args": {
+        "memory_mb": 6099.2
       }
     },
     {
@@ -3774,10 +5805,43 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1466.0,
       "args": {
         "memory_mb": 4006.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1472.0,
+      "args": {
+        "memory_mb": 5964.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1474.0,
+      "args": {
+        "memory_mb": 6348.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1474.0,
+      "args": {
+        "memory_mb": 7411.2
       }
     },
     {
@@ -3807,7 +5871,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1476.0,
       "args": {
         "memory_mb": 3891.2
@@ -3825,14 +5889,14 @@
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
-      "ts": 1484.0,
+      "ts": 1482.0,
       "args": {
-        "memory_mb": 4320.0
+        "memory_mb": 6483.2
       }
     },
     {
@@ -3840,7 +5904,29 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
+      "ts": 1484.0,
+      "args": {
+        "memory_mb": 4320.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1484.0,
+      "args": {
+        "memory_mb": 7283.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
       "ts": 1486.0,
       "args": {
         "memory_mb": 4032.0
@@ -3884,7 +5970,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1488.0,
       "args": {
         "memory_mb": 6598.4
@@ -3895,7 +5981,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1488.0,
       "args": {
         "memory_mb": 6329.6
@@ -3906,7 +5992,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1488.0,
       "args": {
         "memory_mb": 4256.0
@@ -3917,10 +6003,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 1491.0,
       "args": {
         "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1494.0,
+      "args": {
+        "memory_mb": 7513.6
       }
     },
     {
@@ -3928,7 +6025,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1494.0,
       "args": {
         "memory_mb": 7155.2
@@ -3939,7 +6036,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1494.0,
       "args": {
         "memory_mb": 6873.6
@@ -3950,7 +6047,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1494.0,
       "args": {
         "memory_mb": 4275.2
@@ -3961,7 +6058,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1496.0,
       "args": {
         "memory_mb": 3904.0
@@ -3972,7 +6069,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1498.0,
       "args": {
         "memory_mb": 6464.0
@@ -3983,7 +6080,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1498.0,
       "args": {
         "memory_mb": 6195.2
@@ -3994,7 +6091,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1498.0,
       "args": {
         "memory_mb": 4121.6
@@ -4016,7 +6113,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1504.0,
       "args": {
         "memory_mb": 7014.4
@@ -4027,7 +6124,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1504.0,
       "args": {
         "memory_mb": 6732.8
@@ -4038,7 +6135,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1504.0,
       "args": {
         "memory_mb": 6323.2
@@ -4049,7 +6146,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1504.0,
       "args": {
         "memory_mb": 6054.4
@@ -4060,7 +6157,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1504.0,
       "args": {
         "memory_mb": 5824.0
@@ -4071,7 +6168,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1504.0,
       "args": {
         "memory_mb": 5606.4
@@ -4082,7 +6179,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1504.0,
       "args": {
         "memory_mb": 4134.4
@@ -4093,7 +6190,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1504.0,
       "args": {
         "memory_mb": 4518.4
@@ -4104,10 +6201,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1504.0,
       "args": {
         "memory_mb": 4531.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1506.0,
+      "args": {
+        "memory_mb": 6553.6
       }
     },
     {
@@ -4115,7 +6223,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1506.0,
       "args": {
         "memory_mb": 4172.8
@@ -4126,10 +6234,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1508.0,
       "args": {
         "memory_mb": 4313.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1510.0,
+      "args": {
+        "memory_mb": 6400.0
       }
     },
     {
@@ -4148,7 +6267,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1514.0,
       "args": {
         "memory_mb": 4390.4
@@ -4159,7 +6278,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1514.0,
       "args": {
         "memory_mb": 4416.0
@@ -4170,7 +6289,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1518.0,
       "args": {
         "memory_mb": 4121.6
@@ -4210,6 +6329,17 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1544.0,
+      "args": {
+        "memory_mb": 6361.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -4221,6 +6351,28 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1572.0,
+      "args": {
+        "memory_mb": 7660.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1577.0,
+      "args": {
+        "memory_mb": 6284.8
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -4236,10 +6388,54 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1578.0,
       "args": {
         "memory_mb": 4051.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1582.0,
+      "args": {
+        "memory_mb": 7526.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1582.0,
+      "args": {
+        "memory_mb": 7628.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1585.0,
+      "args": {
+        "memory_mb": 6412.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1587.0,
+      "args": {
+        "memory_mb": 6227.2
       }
     },
     {
@@ -4247,10 +6443,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1588.0,
       "args": {
         "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1588.0,
+      "args": {
+        "memory_mb": 7385.6
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1588.0,
+      "args": {
+        "memory_mb": 7417.6
       }
     },
     {
@@ -4258,7 +6476,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1590.0,
       "args": {
         "memory_mb": 5824.0
@@ -4269,7 +6487,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1590.0,
       "args": {
         "memory_mb": 5593.6
@@ -4280,7 +6498,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1594.0,
       "args": {
         "memory_mb": 6067.2
@@ -4291,10 +6509,54 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1594.0,
       "args": {
         "memory_mb": 5350.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1595.0,
+      "args": {
+        "memory_mb": 6342.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1595.0,
+      "args": {
+        "memory_mb": 6425.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1595.0,
+      "args": {
+        "memory_mb": 6304.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1596.0,
+      "args": {
+        "memory_mb": 6160.0
       }
     },
     {
@@ -4309,11 +6571,33 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1598.0,
+      "args": {
+        "memory_mb": 7244.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1598.0,
+      "args": {
+        "memory_mb": 7129.6
+      }
+    },
+    {
       "name": "dualpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1600.0,
       "args": {
         "memory_mb": 5708.8
@@ -4324,7 +6608,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1600.0,
       "args": {
         "memory_mb": 5478.4
@@ -4335,7 +6619,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1600.0,
       "args": {
         "memory_mb": 5363.2
@@ -4346,7 +6630,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1600.0,
       "args": {
         "memory_mb": 5081.6
@@ -4357,7 +6641,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1604.0,
       "args": {
         "memory_mb": 4236.8
@@ -4368,7 +6652,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1604.0,
       "args": {
         "memory_mb": 5939.2
@@ -4379,7 +6663,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1604.0,
       "args": {
         "memory_mb": 5222.4
@@ -4401,7 +6685,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1610.0,
       "args": {
         "memory_mb": 4032.0
@@ -4423,7 +6707,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1614.0,
       "args": {
         "memory_mb": 4160.0
@@ -4434,7 +6718,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1620.0,
       "args": {
         "memory_mb": 3891.2
@@ -4445,7 +6729,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1620.0,
       "args": {
         "memory_mb": 4288.0
@@ -4489,7 +6773,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1628.0,
       "args": {
         "memory_mb": 4300.8
@@ -4500,7 +6784,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1630.0,
       "args": {
         "memory_mb": 4185.6
@@ -4577,7 +6861,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1634.0,
       "args": {
         "memory_mb": 4262.4
@@ -4588,7 +6872,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1638.0,
       "args": {
         "memory_mb": 4185.6
@@ -4599,7 +6883,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1638.0,
       "args": {
         "memory_mb": 4556.8
@@ -4610,7 +6894,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1644.0,
       "args": {
         "memory_mb": 4134.4
@@ -4621,7 +6905,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1644.0,
       "args": {
         "memory_mb": 4524.8
@@ -4632,7 +6916,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1648.0,
       "args": {
         "memory_mb": 4416.0
@@ -4654,7 +6938,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1654.0,
       "args": {
         "memory_mb": 4390.4
@@ -4683,6 +6967,28 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1665.0,
+      "args": {
+        "memory_mb": 6297.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1669.0,
+      "args": {
+        "memory_mb": 6025.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -4694,11 +7000,88 @@
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
+      "ts": 1674.0,
+      "args": {
+        "memory_mb": 6163.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1675.0,
+      "args": {
+        "memory_mb": 6233.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1679.0,
+      "args": {
+        "memory_mb": 5958.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1679.0,
+      "args": {
+        "memory_mb": 6016.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1684.0,
+      "args": {
+        "memory_mb": 6092.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1684.0,
+      "args": {
+        "memory_mb": 6041.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1689.0,
+      "args": {
+        "memory_mb": 5977.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
       "ts": 1690.0,
       "args": {
         "memory_mb": 4006.4
@@ -4709,7 +7092,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1700.0,
       "args": {
         "memory_mb": 3891.2
@@ -4731,7 +7114,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1702.0,
       "args": {
         "memory_mb": 5081.6
@@ -4742,10 +7125,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1702.0,
       "args": {
         "memory_mb": 4800.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1706.0,
+      "args": {
+        "memory_mb": 7398.4
       }
     },
     {
@@ -4753,7 +7147,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1708.0,
       "args": {
         "memory_mb": 4320.0
@@ -4764,7 +7158,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1710.0,
       "args": {
         "memory_mb": 4032.0
@@ -4775,7 +7169,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1712.0,
       "args": {
         "memory_mb": 4940.8
@@ -4786,7 +7180,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1712.0,
       "args": {
         "memory_mb": 4659.2
@@ -4797,7 +7191,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1712.0,
       "args": {
         "memory_mb": 4787.2
@@ -4808,10 +7202,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1712.0,
       "args": {
         "memory_mb": 4531.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1716.0,
+      "args": {
+        "memory_mb": 7283.2
       }
     },
     {
@@ -4819,7 +7224,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1720.0,
       "args": {
         "memory_mb": 3904.0
@@ -4834,6 +7239,28 @@
       "ts": 1722.0,
       "args": {
         "memory_mb": 4006.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1722.0,
+      "args": {
+        "memory_mb": 6899.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1724.0,
+      "args": {
+        "memory_mb": 7148.8
       }
     },
     {
@@ -4852,10 +7279,76 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1732.0,
       "args": {
         "memory_mb": 4057.6
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1732.0,
+      "args": {
+        "memory_mb": 6784.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1732.0,
+      "args": {
+        "memory_mb": 6924.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1732.0,
+      "args": {
+        "memory_mb": 6643.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1734.0,
+      "args": {
+        "memory_mb": 7014.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1734.0,
+      "args": {
+        "memory_mb": 6348.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1741.0,
+      "args": {
+        "memory_mb": 5916.8
       }
     },
     {
@@ -4863,10 +7356,54 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1742.0,
       "args": {
         "memory_mb": 3865.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1746.0,
+      "args": {
+        "memory_mb": 5900.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1754.0,
+      "args": {
+        "memory_mb": 5913.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1756.0,
+      "args": {
+        "memory_mb": 5843.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1756.0,
+      "args": {
+        "memory_mb": 5785.6
       }
     },
     {
@@ -4889,6 +7426,28 @@
       "ts": 1764.0,
       "args": {
         "memory_mb": 8691.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1764.0,
+      "args": {
+        "memory_mb": 5849.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1766.0,
+      "args": {
+        "memory_mb": 5689.6
       }
     },
     {
@@ -4973,7 +7532,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1780.0,
       "args": {
         "memory_mb": 4256.0
@@ -5006,7 +7565,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1786.0,
       "args": {
         "memory_mb": 4275.2
@@ -5028,7 +7587,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1790.0,
       "args": {
         "memory_mb": 4121.6
@@ -5072,7 +7631,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1796.0,
       "args": {
         "memory_mb": 4134.4
@@ -5083,7 +7642,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1796.0,
       "args": {
         "memory_mb": 4518.4
@@ -5094,7 +7653,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1796.0,
       "args": {
         "memory_mb": 4531.2
@@ -5116,7 +7675,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1802.0,
       "args": {
         "memory_mb": 4051.2
@@ -5127,7 +7686,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1802.0,
       "args": {
         "memory_mb": 4531.2
@@ -5138,7 +7697,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1802.0,
       "args": {
         "memory_mb": 4275.2
@@ -5149,7 +7708,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1806.0,
       "args": {
         "memory_mb": 4390.4
@@ -5160,7 +7719,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1806.0,
       "args": {
         "memory_mb": 4416.0
@@ -5182,7 +7741,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1812.0,
       "args": {
         "memory_mb": 3916.8
@@ -5193,7 +7752,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1812.0,
       "args": {
         "memory_mb": 4403.2
@@ -5204,21 +7763,43 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1812.0,
       "args": {
         "memory_mb": 4147.2
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
-      "ts": 1828.0,
+      "ts": 1814.0,
       "args": {
-        "memory_mb": 3980.8
+        "memory_mb": 5782.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1824.0,
+      "args": {
+        "memory_mb": 5715.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1824.0,
+      "args": {
+        "memory_mb": 5747.2
       }
     },
     {
@@ -5226,10 +7807,43 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
+      "tid": 4,
+      "ts": 1828.0,
+      "args": {
+        "memory_mb": 3980.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
       "tid": 3,
       "ts": 1834.0,
       "args": {
+        "memory_mb": 5708.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 1834.0,
+      "args": {
         "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1835.0,
+      "args": {
+        "memory_mb": 5644.8
       }
     },
     {
@@ -5248,7 +7862,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1838.0,
       "args": {
         "memory_mb": 3904.0
@@ -5259,7 +7873,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1844.0,
       "args": {
         "memory_mb": 3635.2
@@ -5270,10 +7884,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1844.0,
       "args": {
         "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1845.0,
+      "args": {
+        "memory_mb": 5574.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1845.0,
+      "args": {
+        "memory_mb": 5772.8
       }
     },
     {
@@ -5292,10 +7928,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 5,
+      "tid": 7,
       "ts": 1852.0,
       "args": {
         "memory_mb": 4147.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1855.0,
+      "args": {
+        "memory_mb": 5721.6
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1864.0,
+      "args": {
+        "memory_mb": 6092.8
       }
     },
     {
@@ -5310,6 +7968,17 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1874.0,
+      "args": {
+        "memory_mb": 5964.8
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -5321,6 +7990,116 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1880.0,
+      "args": {
+        "memory_mb": 6643.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1880.0,
+      "args": {
+        "memory_mb": 6361.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1886.0,
+      "args": {
+        "memory_mb": 5788.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1890.0,
+      "args": {
+        "memory_mb": 6502.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1890.0,
+      "args": {
+        "memory_mb": 6220.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1890.0,
+      "args": {
+        "memory_mb": 6092.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1890.0,
+      "args": {
+        "memory_mb": 6067.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1891.0,
+      "args": {
+        "memory_mb": 5632.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1900.0,
+      "args": {
+        "memory_mb": 5939.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1901.0,
+      "args": {
+        "memory_mb": 5574.4
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -5329,6 +8108,17 @@
       "ts": 1904.0,
       "args": {
         "memory_mb": 7667.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1911.0,
+      "args": {
+        "memory_mb": 5657.6
       }
     },
     {
@@ -5347,10 +8137,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1914.0,
       "args": {
         "memory_mb": 3750.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1915.0,
+      "args": {
+        "memory_mb": 5644.8
       }
     },
     {
@@ -5380,10 +8181,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1920.0,
       "args": {
         "memory_mb": 4300.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1921.0,
+      "args": {
+        "memory_mb": 5561.6
       }
     },
     {
@@ -5402,7 +8214,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1924.0,
       "args": {
         "memory_mb": 3635.2
@@ -5413,10 +8225,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1924.0,
       "args": {
         "memory_mb": 3788.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1925.0,
+      "args": {
+        "memory_mb": 5580.8
       }
     },
     {
@@ -5457,7 +8280,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1926.0,
       "args": {
         "memory_mb": 4262.4
@@ -5490,7 +8313,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1930.0,
       "args": {
         "memory_mb": 4185.6
@@ -5501,7 +8324,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1930.0,
       "args": {
         "memory_mb": 4556.8
@@ -5523,7 +8346,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1932.0,
       "args": {
         "memory_mb": 3500.8
@@ -5534,10 +8357,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1934.0,
       "args": {
         "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1935.0,
+      "args": {
+        "memory_mb": 5689.6
       }
     },
     {
@@ -5545,7 +8379,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1936.0,
       "args": {
         "memory_mb": 4134.4
@@ -5556,7 +8390,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1936.0,
       "args": {
         "memory_mb": 4524.8
@@ -5589,7 +8423,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1940.0,
       "args": {
         "memory_mb": 4416.0
@@ -5600,7 +8434,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 1944.0,
       "args": {
         "memory_mb": 3648.0
@@ -5611,7 +8445,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 1946.0,
       "args": {
         "memory_mb": 4390.4
@@ -5651,6 +8485,50 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1959.0,
+      "args": {
+        "memory_mb": 5654.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1969.0,
+      "args": {
+        "memory_mb": 5587.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1969.0,
+      "args": {
+        "memory_mb": 5747.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1969.0,
+      "args": {
+        "memory_mb": 5641.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -5666,10 +8544,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 1976.5,
       "args": {
         "memory_mb": 4038.4
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1986.0,
+      "args": {
+        "memory_mb": 5798.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1990.0,
+      "args": {
+        "memory_mb": 5516.8
       }
     },
     {
@@ -5684,6 +8584,28 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2000.0,
+      "args": {
+        "memory_mb": 5446.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2000.0,
+      "args": {
+        "memory_mb": 5504.0
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -5695,11 +8617,44 @@
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
+      "ts": 2010.0,
+      "args": {
+        "memory_mb": 5452.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2020.0,
+      "args": {
+        "memory_mb": 5836.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2020.0,
+      "args": {
+        "memory_mb": 5811.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
       "ts": 2026.0,
       "args": {
         "memory_mb": 3507.2
@@ -5710,10 +8665,43 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 2026.0,
       "args": {
         "memory_mb": 3232.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2030.0,
+      "args": {
+        "memory_mb": 5708.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2030.0,
+      "args": {
+        "memory_mb": 5683.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2036.0,
+      "args": {
+        "memory_mb": 5632.0
       }
     },
     {
@@ -5721,7 +8709,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 2036.0,
       "args": {
         "memory_mb": 3366.4
@@ -5732,7 +8720,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 2036.0,
       "args": {
         "memory_mb": 3097.6
@@ -5743,7 +8731,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 2036.0,
       "args": {
         "memory_mb": 3225.6
@@ -5754,10 +8742,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 2036.0,
       "args": {
         "memory_mb": 2956.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2040.0,
+      "args": {
+        "memory_mb": 5721.6
       }
     },
     {
@@ -5769,6 +8768,28 @@
       "ts": 2042.0,
       "args": {
         "memory_mb": 4057.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2042.0,
+      "args": {
+        "memory_mb": 5507.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2046.0,
+      "args": {
+        "memory_mb": 5574.4
       }
     },
     {
@@ -5791,6 +8812,28 @@
       "ts": 2052.0,
       "args": {
         "memory_mb": 3865.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2052.0,
+      "args": {
+        "memory_mb": 5440.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2052.0,
+      "args": {
+        "memory_mb": 5510.4
       }
     },
     {
@@ -5827,6 +8870,28 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2062.0,
+      "args": {
+        "memory_mb": 5472.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2066.0,
+      "args": {
+        "memory_mb": 5542.4
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -5835,6 +8900,17 @@
       "ts": 2070.0,
       "args": {
         "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2070.0,
+      "args": {
+        "memory_mb": 5376.0
       }
     },
     {
@@ -5875,7 +8951,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2072.0,
       "args": {
         "memory_mb": 4256.0
@@ -5886,7 +8962,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2078.0,
       "args": {
         "memory_mb": 4275.2
@@ -5904,11 +8980,22 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2080.0,
+      "args": {
+        "memory_mb": 5312.0
+      }
+    },
+    {
       "name": "dualpipev_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2082.0,
       "args": {
         "memory_mb": 4121.6
@@ -5919,7 +9006,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2088.0,
       "args": {
         "memory_mb": 4134.4
@@ -5930,7 +9017,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2088.0,
       "args": {
         "memory_mb": 4518.4
@@ -5941,7 +9028,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2088.0,
       "args": {
         "memory_mb": 4531.2
@@ -5974,7 +9061,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2098.0,
       "args": {
         "memory_mb": 4390.4
@@ -5985,7 +9072,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2098.0,
       "args": {
         "memory_mb": 4416.0
@@ -6036,6 +9123,28 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2110.0,
+      "args": {
+        "memory_mb": 5568.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2114.0,
+      "args": {
+        "memory_mb": 5398.4
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -6047,11 +9156,44 @@
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
+      "ts": 2119.0,
+      "args": {
+        "memory_mb": 5395.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2120.0,
+      "args": {
+        "memory_mb": 5452.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2120.0,
+      "args": {
+        "memory_mb": 5862.4
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
       "ts": 2122.0,
       "args": {
         "memory_mb": 2726.4
@@ -6062,10 +9204,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 2126.0,
       "args": {
         "memory_mb": 2969.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2129.0,
+      "args": {
+        "memory_mb": 5337.6
       }
     },
     {
@@ -6073,7 +9226,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 2132.0,
       "args": {
         "memory_mb": 2611.2
@@ -6084,10 +9237,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 2132.0,
       "args": {
         "memory_mb": 2752.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2134.0,
+      "args": {
+        "memory_mb": 5574.4
       }
     },
     {
@@ -6095,7 +9259,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 2136.0,
       "args": {
         "memory_mb": 2841.6
@@ -6113,6 +9277,28 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2139.0,
+      "args": {
+        "memory_mb": 5312.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2145.0,
+      "args": {
+        "memory_mb": 5401.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -6121,6 +9307,50 @@
       "ts": 2148.0,
       "args": {
         "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2155.0,
+      "args": {
+        "memory_mb": 5331.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2155.0,
+      "args": {
+        "memory_mb": 5376.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2155.0,
+      "args": {
+        "memory_mb": 5254.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2187.0,
+      "args": {
+        "memory_mb": 5264.0
       }
     },
     {
@@ -6143,6 +9373,39 @@
       "ts": 2196.0,
       "args": {
         "memory_mb": 5593.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2197.0,
+      "args": {
+        "memory_mb": 5196.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2197.0,
+      "args": {
+        "memory_mb": 5100.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2197.0,
+      "args": {
+        "memory_mb": 4995.2
       }
     },
     {
@@ -6194,7 +9457,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2212.0,
       "args": {
         "memory_mb": 4300.8
@@ -6238,7 +9501,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2218.0,
       "args": {
         "memory_mb": 4262.4
@@ -6249,7 +9512,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2222.0,
       "args": {
         "memory_mb": 4185.6
@@ -6260,10 +9523,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2222.0,
       "args": {
         "memory_mb": 4556.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2225.0,
+      "args": {
+        "memory_mb": 5248.0
       }
     },
     {
@@ -6271,7 +9545,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2228.0,
       "args": {
         "memory_mb": 4134.4
@@ -6282,7 +9556,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2228.0,
       "args": {
         "memory_mb": 4268.8
@@ -6293,10 +9567,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2232.0,
       "args": {
         "memory_mb": 4416.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2234.0,
+      "args": {
+        "memory_mb": 5113.6
       }
     },
     {
@@ -6304,10 +9589,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 2234.0,
       "args": {
         "memory_mb": 2470.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2235.0,
+      "args": {
+        "memory_mb": 5184.0
       }
     },
     {
@@ -6333,11 +9629,33 @@
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
+      "ts": 2244.0,
+      "args": {
+        "memory_mb": 5043.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2244.0,
+      "args": {
+        "memory_mb": 4857.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
       "ts": 2244.0,
       "args": {
         "memory_mb": 2329.6
@@ -6348,7 +9666,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 2244.0,
       "args": {
         "memory_mb": 2457.6
@@ -6388,6 +9706,17 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2264.0,
+      "args": {
+        "memory_mb": 4985.6
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -6421,6 +9750,39 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2268.0,
+      "args": {
+        "memory_mb": 5580.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2270.0,
+      "args": {
+        "memory_mb": 4860.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2270.0,
+      "args": {
+        "memory_mb": 5305.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -6443,6 +9805,127 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2274.0,
+      "args": {
+        "memory_mb": 4928.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2274.0,
+      "args": {
+        "memory_mb": 4736.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2278.0,
+      "args": {
+        "memory_mb": 5440.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2278.0,
+      "args": {
+        "memory_mb": 5299.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2280.0,
+      "args": {
+        "memory_mb": 4793.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2280.0,
+      "args": {
+        "memory_mb": 4582.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2280.0,
+      "args": {
+        "memory_mb": 4476.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2280.0,
+      "args": {
+        "memory_mb": 5171.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2280.0,
+      "args": {
+        "memory_mb": 5030.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2314.0,
+      "args": {
+        "memory_mb": 4729.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2324.0,
+      "args": {
+        "memory_mb": 4665.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -6458,7 +9941,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 2334.0,
       "args": {
         "memory_mb": 2201.6
@@ -6491,10 +9974,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 3,
+      "tid": 4,
       "ts": 2344.0,
       "args": {
         "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2347.0,
+      "args": {
+        "memory_mb": 4467.2
       }
     },
     {
@@ -6509,6 +10003,28 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2353.0,
+      "args": {
+        "memory_mb": 4595.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2353.0,
+      "args": {
+        "memory_mb": 4342.4
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -6517,6 +10033,72 @@
       "ts": 2354.0,
       "args": {
         "memory_mb": 4307.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2357.0,
+      "args": {
+        "memory_mb": 4409.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2363.0,
+      "args": {
+        "memory_mb": 4524.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2363.0,
+      "args": {
+        "memory_mb": 4275.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2363.0,
+      "args": {
+        "memory_mb": 4339.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2363.0,
+      "args": {
+        "memory_mb": 4217.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2363.0,
+      "args": {
+        "memory_mb": 4064.0
       }
     },
     {
@@ -6546,7 +10128,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2364.0,
       "args": {
         "memory_mb": 4000.0
@@ -6557,10 +10139,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2370.0,
       "args": {
         "memory_mb": 4275.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2373.0,
+      "args": {
+        "memory_mb": 4025.6
       }
     },
     {
@@ -6568,7 +10161,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2374.0,
       "args": {
         "memory_mb": 3865.6
@@ -6590,7 +10183,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2380.0,
       "args": {
         "memory_mb": 4134.4
@@ -6601,7 +10194,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2380.0,
       "args": {
         "memory_mb": 4262.4
@@ -6612,7 +10205,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2380.0,
       "args": {
         "memory_mb": 3993.6
@@ -6645,7 +10238,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2390.0,
       "args": {
         "memory_mb": 4134.4
@@ -6663,6 +10256,17 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2404.0,
+      "args": {
+        "memory_mb": 4800.0
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -6674,6 +10278,17 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2408.0,
+      "args": {
+        "memory_mb": 5043.2
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -6682,6 +10297,39 @@
       "ts": 2414.0,
       "args": {
         "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2414.0,
+      "args": {
+        "memory_mb": 4684.8
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2414.0,
+      "args": {
+        "memory_mb": 4825.6
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2418.0,
+      "args": {
+        "memory_mb": 4915.2
       }
     },
     {
@@ -6729,6 +10377,17 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2425.0,
+      "args": {
+        "memory_mb": 4092.8
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -6751,11 +10410,99 @@
       }
     },
     {
-      "name": "zerobubble_1f1b_total_memory_mb",
+      "name": "interleaved_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 3,
+      "ts": 2430.0,
+      "args": {
+        "memory_mb": 3948.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2433.0,
+      "args": {
+        "memory_mb": 4211.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2440.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2442.0,
+      "args": {
+        "memory_mb": 4076.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2443.0,
+      "args": {
+        "memory_mb": 4147.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2452.0,
+      "args": {
+        "memory_mb": 4006.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2452.0,
+      "args": {
+        "memory_mb": 3955.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2452.0,
+      "args": {
+        "memory_mb": 3833.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
       "ts": 2474.0,
       "args": {
         "memory_mb": 2073.6
@@ -6777,7 +10524,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 2492.5,
       "args": {
         "memory_mb": 3769.6
@@ -6795,11 +10542,22 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2498.0,
+      "args": {
+        "memory_mb": 3958.4
+      }
+    },
+    {
       "name": "moe_bad_overlap_1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 2502.5,
       "args": {
         "memory_mb": 3635.2
@@ -6810,7 +10568,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 2502.5,
       "args": {
         "memory_mb": 3980.8
@@ -6821,10 +10579,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2504.0,
       "args": {
         "memory_mb": 3763.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2508.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2508.0,
+      "args": {
+        "memory_mb": 3680.0
       }
     },
     {
@@ -6832,7 +10612,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2510.0,
       "args": {
         "memory_mb": 4006.4
@@ -6854,7 +10634,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 2512.5,
       "args": {
         "memory_mb": 3865.6
@@ -6865,7 +10645,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2514.0,
       "args": {
         "memory_mb": 3648.0
@@ -6876,7 +10656,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2514.0,
       "args": {
         "memory_mb": 3788.8
@@ -6887,7 +10667,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2520.0,
       "args": {
         "memory_mb": 3878.4
@@ -6898,7 +10678,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2520.0,
       "args": {
         "memory_mb": 3500.8
@@ -6927,6 +10707,72 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2522.0,
+      "args": {
+        "memory_mb": 3827.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2531.0,
+      "args": {
+        "memory_mb": 3692.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2532.0,
+      "args": {
+        "memory_mb": 3763.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2532.0,
+      "args": {
+        "memory_mb": 3574.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2541.0,
+      "args": {
+        "memory_mb": 3622.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2541.0,
+      "args": {
+        "memory_mb": 3436.8
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -6946,6 +10792,17 @@
       "ts": 2560.0,
       "args": {
         "memory_mb": 2739.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2562.0,
+      "args": {
+        "memory_mb": 4544.0
       }
     },
     {
@@ -6982,6 +10839,39 @@
       }
     },
     {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2572.0,
+      "args": {
+        "memory_mb": 4403.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2572.0,
+      "args": {
+        "memory_mb": 4531.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2575.0,
+      "args": {
+        "memory_mb": 3564.8
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -7015,11 +10905,88 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2585.0,
+      "args": {
+        "memory_mb": 3507.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2585.0,
+      "args": {
+        "memory_mb": 3315.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2605.0,
+      "args": {
+        "memory_mb": 3440.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2611.0,
+      "args": {
+        "memory_mb": 3308.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2615.0,
+      "args": {
+        "memory_mb": 3372.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2615.0,
+      "args": {
+        "memory_mb": 3161.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2621.0,
+      "args": {
+        "memory_mb": 3244.8
+      }
+    },
+    {
       "name": "dualpipev_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2656.0,
       "args": {
         "memory_mb": 3232.0
@@ -7030,10 +10997,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2662.0,
       "args": {
         "memory_mb": 3507.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2664.0,
+      "args": {
+        "memory_mb": 3174.4
       }
     },
     {
@@ -7041,7 +11019,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2666.0,
       "args": {
         "memory_mb": 3097.6
@@ -7063,7 +11041,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2672.0,
       "args": {
         "memory_mb": 3366.4
@@ -7074,7 +11052,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2672.0,
       "args": {
         "memory_mb": 3225.6
@@ -7085,10 +11063,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2672.0,
       "args": {
         "memory_mb": 2956.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2674.0,
+      "args": {
+        "memory_mb": 3104.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2674.0,
+      "args": {
+        "memory_mb": 3052.8
       }
     },
     {
@@ -7114,6 +11114,50 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2682.0,
+      "args": {
+        "memory_mb": 3046.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2692.0,
+      "args": {
+        "memory_mb": 2988.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2692.0,
+      "args": {
+        "memory_mb": 2931.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2702.0,
+      "args": {
+        "memory_mb": 4275.2
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -7122,6 +11166,28 @@
       "ts": 2712.0,
       "args": {
         "memory_mb": 2739.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2712.0,
+      "args": {
+        "memory_mb": 4147.2
+      }
+    },
+    {
+      "name": "chimera_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2712.0,
+      "args": {
+        "memory_mb": 4147.2
       }
     },
     {
@@ -7169,11 +11235,44 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2744.0,
+      "args": {
+        "memory_mb": 2924.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2754.0,
+      "args": {
+        "memory_mb": 2860.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2754.0,
+      "args": {
+        "memory_mb": 2787.2
+      }
+    },
+    {
       "name": "dualpipev_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2758.0,
       "args": {
         "memory_mb": 2726.4
@@ -7184,7 +11283,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2762.0,
       "args": {
         "memory_mb": 2969.6
@@ -7195,7 +11294,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2768.0,
       "args": {
         "memory_mb": 2611.2
@@ -7206,10 +11305,21 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2768.0,
       "args": {
         "memory_mb": 2752.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2771.0,
+      "args": {
+        "memory_mb": 2790.4
       }
     },
     {
@@ -7217,10 +11327,32 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2772.0,
       "args": {
         "memory_mb": 2841.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2781.0,
+      "args": {
+        "memory_mb": 2720.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2781.0,
+      "args": {
+        "memory_mb": 2649.6
       }
     },
     {
@@ -7257,6 +11389,61 @@
       }
     },
     {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2827.0,
+      "args": {
+        "memory_mb": 2652.8
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2837.0,
+      "args": {
+        "memory_mb": 2585.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2837.0,
+      "args": {
+        "memory_mb": 2515.2
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2851.0,
+      "args": {
+        "memory_mb": 2521.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2861.0,
+      "args": {
+        "memory_mb": 2457.6
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -7272,7 +11459,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2870.0,
       "args": {
         "memory_mb": 2470.4
@@ -7305,7 +11492,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2880.0,
       "args": {
         "memory_mb": 2329.6
@@ -7316,10 +11503,43 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2880.0,
       "args": {
         "memory_mb": 2457.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2904.0,
+      "args": {
+        "memory_mb": 2400.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2914.0,
+      "args": {
+        "memory_mb": 2342.4
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2914.0,
+      "args": {
+        "memory_mb": 2412.8
       }
     },
     {
@@ -7327,7 +11547,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2970.0,
       "args": {
         "memory_mb": 2201.6
@@ -7338,10 +11558,43 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 2980.0,
       "args": {
         "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2993.0,
+      "args": {
+        "memory_mb": 2272.0
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 3003.0,
+      "args": {
+        "memory_mb": 2201.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 3003.0,
+      "args": {
+        "memory_mb": 2265.6
       }
     },
     {
@@ -7349,8 +11602,41 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 6,
+      "tid": 8,
       "ts": 3020.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 3073.0,
+      "args": {
+        "memory_mb": 2137.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 3083.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "interleaved_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 3083.0,
       "args": {
         "memory_mb": 2073.6
       }
@@ -7360,7 +11646,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 3252.5,
       "args": {
         "memory_mb": 3750.4
@@ -7371,7 +11657,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 3262.5,
       "args": {
         "memory_mb": 3635.2
@@ -7382,7 +11668,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 3262.5,
       "args": {
         "memory_mb": 4057.6
@@ -7393,7 +11679,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 3272.5,
       "args": {
         "memory_mb": 3916.8
@@ -7404,7 +11690,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 3272.5,
       "args": {
         "memory_mb": 3904.0
@@ -7415,7 +11701,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 3758.0,
       "args": {
         "memory_mb": 4038.4
@@ -7426,7 +11712,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 4012.5,
       "args": {
         "memory_mb": 3776.0
@@ -7437,7 +11723,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 4022.5,
       "args": {
         "memory_mb": 3635.2
@@ -7448,7 +11734,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 4022.5,
       "args": {
         "memory_mb": 4019.2
@@ -7459,7 +11745,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 4032.5,
       "args": {
         "memory_mb": 3891.2
@@ -7470,7 +11756,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 4274.0,
       "args": {
         "memory_mb": 3769.6
@@ -7481,7 +11767,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 4284.0,
       "args": {
         "memory_mb": 3635.2
@@ -7492,7 +11778,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 4284.0,
       "args": {
         "memory_mb": 3980.8
@@ -7503,7 +11789,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 4294.0,
       "args": {
         "memory_mb": 3865.6
@@ -7514,7 +11800,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 4772.5,
       "args": {
         "memory_mb": 3763.2
@@ -7525,7 +11811,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 4782.5,
       "args": {
         "memory_mb": 3635.2
@@ -7536,7 +11822,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 5034.0,
       "args": {
         "memory_mb": 3750.4
@@ -7547,7 +11833,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 5044.0,
       "args": {
         "memory_mb": 3635.2
@@ -7558,7 +11844,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 5044.0,
       "args": {
         "memory_mb": 4057.6
@@ -7569,7 +11855,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 5054.0,
       "args": {
         "memory_mb": 3916.8
@@ -7580,7 +11866,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 5054.0,
       "args": {
         "memory_mb": 3904.0
@@ -7591,7 +11877,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 5539.5,
       "args": {
         "memory_mb": 4038.4
@@ -7602,7 +11888,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 5794.0,
       "args": {
         "memory_mb": 3776.0
@@ -7613,7 +11899,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 5804.0,
       "args": {
         "memory_mb": 3635.2
@@ -7624,7 +11910,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 5804.0,
       "args": {
         "memory_mb": 4019.2
@@ -7635,7 +11921,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 5814.0,
       "args": {
         "memory_mb": 3891.2
@@ -7646,7 +11932,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 6055.5,
       "args": {
         "memory_mb": 3769.6
@@ -7657,7 +11943,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 6065.5,
       "args": {
         "memory_mb": 3635.2
@@ -7668,7 +11954,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 6065.5,
       "args": {
         "memory_mb": 3980.8
@@ -7679,7 +11965,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 6075.5,
       "args": {
         "memory_mb": 3865.6
@@ -7690,7 +11976,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 6554.0,
       "args": {
         "memory_mb": 3763.2
@@ -7701,7 +11987,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 6564.0,
       "args": {
         "memory_mb": 3635.2
@@ -7712,7 +11998,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 6815.5,
       "args": {
         "memory_mb": 3750.4
@@ -7723,7 +12009,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 6825.5,
       "args": {
         "memory_mb": 3635.2
@@ -7734,7 +12020,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 6825.5,
       "args": {
         "memory_mb": 4057.6
@@ -7745,7 +12031,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 6835.5,
       "args": {
         "memory_mb": 3916.8
@@ -7756,7 +12042,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 6835.5,
       "args": {
         "memory_mb": 3904.0
@@ -7767,7 +12053,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 7321.0,
       "args": {
         "memory_mb": 4038.4
@@ -7778,7 +12064,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 7575.5,
       "args": {
         "memory_mb": 3776.0
@@ -7789,7 +12075,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 7585.5,
       "args": {
         "memory_mb": 3635.2
@@ -7800,7 +12086,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 7585.5,
       "args": {
         "memory_mb": 4019.2
@@ -7811,7 +12097,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 7595.5,
       "args": {
         "memory_mb": 3891.2
@@ -7822,7 +12108,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 7837.0,
       "args": {
         "memory_mb": 3769.6
@@ -7833,7 +12119,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 7847.0,
       "args": {
         "memory_mb": 3635.2
@@ -7844,7 +12130,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 7847.0,
       "args": {
         "memory_mb": 3980.8
@@ -7855,7 +12141,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 7857.0,
       "args": {
         "memory_mb": 3865.6
@@ -7866,7 +12152,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 8335.5,
       "args": {
         "memory_mb": 3763.2
@@ -7877,7 +12163,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 8345.5,
       "args": {
         "memory_mb": 3635.2
@@ -7888,7 +12174,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 8597.0,
       "args": {
         "memory_mb": 3750.4
@@ -7899,7 +12185,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 8607.0,
       "args": {
         "memory_mb": 3635.2
@@ -7910,7 +12196,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 8607.0,
       "args": {
         "memory_mb": 4057.6
@@ -7921,7 +12207,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 8617.0,
       "args": {
         "memory_mb": 3916.8
@@ -7932,7 +12218,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 8617.0,
       "args": {
         "memory_mb": 3904.0
@@ -7943,7 +12229,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 9102.5,
       "args": {
         "memory_mb": 4038.4
@@ -7954,7 +12240,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 9357.0,
       "args": {
         "memory_mb": 3776.0
@@ -7965,7 +12251,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 9367.0,
       "args": {
         "memory_mb": 3635.2
@@ -7976,7 +12262,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 9367.0,
       "args": {
         "memory_mb": 4019.2
@@ -7987,7 +12273,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 9377.0,
       "args": {
         "memory_mb": 3891.2
@@ -7998,7 +12284,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 9618.5,
       "args": {
         "memory_mb": 3769.6
@@ -8009,7 +12295,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 9628.5,
       "args": {
         "memory_mb": 3635.2
@@ -8020,7 +12306,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 9628.5,
       "args": {
         "memory_mb": 3980.8
@@ -8031,7 +12317,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 9638.5,
       "args": {
         "memory_mb": 3865.6
@@ -8042,7 +12328,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 10117.0,
       "args": {
         "memory_mb": 3763.2
@@ -8053,7 +12339,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 10127.0,
       "args": {
         "memory_mb": 3635.2
@@ -8064,7 +12350,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 10378.5,
       "args": {
         "memory_mb": 3750.4
@@ -8075,7 +12361,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 10388.5,
       "args": {
         "memory_mb": 3635.2
@@ -8086,7 +12372,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 10388.5,
       "args": {
         "memory_mb": 4057.6
@@ -8097,7 +12383,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 10398.5,
       "args": {
         "memory_mb": 3916.8
@@ -8108,7 +12394,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 10398.5,
       "args": {
         "memory_mb": 3904.0
@@ -8119,7 +12405,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 10884.0,
       "args": {
         "memory_mb": 4038.4
@@ -8130,7 +12416,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 11138.5,
       "args": {
         "memory_mb": 3776.0
@@ -8141,7 +12427,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 11148.5,
       "args": {
         "memory_mb": 3635.2
@@ -8152,7 +12438,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 11148.5,
       "args": {
         "memory_mb": 4019.2
@@ -8163,7 +12449,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 11158.5,
       "args": {
         "memory_mb": 3891.2
@@ -8174,7 +12460,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 11400.0,
       "args": {
         "memory_mb": 3769.6
@@ -8185,7 +12471,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 11410.0,
       "args": {
         "memory_mb": 3635.2
@@ -8196,7 +12482,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 11410.0,
       "args": {
         "memory_mb": 3980.8
@@ -8207,7 +12493,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 11420.0,
       "args": {
         "memory_mb": 3865.6
@@ -8218,7 +12504,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 11898.5,
       "args": {
         "memory_mb": 3763.2
@@ -8229,7 +12515,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 11908.5,
       "args": {
         "memory_mb": 3635.2
@@ -8240,7 +12526,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 12160.0,
       "args": {
         "memory_mb": 3750.4
@@ -8251,7 +12537,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 12170.0,
       "args": {
         "memory_mb": 3635.2
@@ -8262,7 +12548,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 12170.0,
       "args": {
         "memory_mb": 4057.6
@@ -8273,7 +12559,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 12180.0,
       "args": {
         "memory_mb": 3916.8
@@ -8284,7 +12570,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 12180.0,
       "args": {
         "memory_mb": 3904.0
@@ -8295,7 +12581,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 12665.5,
       "args": {
         "memory_mb": 4038.4
@@ -8306,7 +12592,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 12920.0,
       "args": {
         "memory_mb": 3776.0
@@ -8317,7 +12603,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 12930.0,
       "args": {
         "memory_mb": 3635.2
@@ -8328,7 +12614,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 12930.0,
       "args": {
         "memory_mb": 3763.2
@@ -8339,7 +12625,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 13181.5,
       "args": {
         "memory_mb": 3769.6
@@ -8350,7 +12636,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 13191.5,
       "args": {
         "memory_mb": 3635.2
@@ -8361,7 +12647,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 13191.5,
       "args": {
         "memory_mb": 3724.8
@@ -8372,7 +12658,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 13201.5,
       "args": {
         "memory_mb": 3609.6
@@ -8383,7 +12669,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 13440.0,
       "args": {
         "memory_mb": 3507.2
@@ -8394,7 +12680,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 13450.0,
       "args": {
         "memory_mb": 3379.2
@@ -8405,7 +12691,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 13941.5,
       "args": {
         "memory_mb": 3494.4
@@ -8416,7 +12702,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 13951.5,
       "args": {
         "memory_mb": 3379.2
@@ -8427,7 +12713,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 13951.5,
       "args": {
         "memory_mb": 3520.0
@@ -8438,7 +12724,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 13961.5,
       "args": {
         "memory_mb": 3366.4
@@ -8449,7 +12735,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 14447.0,
       "args": {
         "memory_mb": 3500.8
@@ -8460,7 +12746,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 14479.5,
       "args": {
         "memory_mb": 3238.4
@@ -8471,7 +12757,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 14489.5,
       "args": {
         "memory_mb": 3097.6
@@ -8482,7 +12768,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 14489.5,
       "args": {
         "memory_mb": 3225.6
@@ -8493,7 +12779,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 14963.0,
       "args": {
         "memory_mb": 3232.0
@@ -8504,7 +12790,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 14973.0,
       "args": {
         "memory_mb": 3097.6
@@ -8515,7 +12801,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 14973.0,
       "args": {
         "memory_mb": 2956.8
@@ -8526,7 +12812,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 14999.5,
       "args": {
         "memory_mb": 2969.6
@@ -8537,7 +12823,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 15009.5,
       "args": {
         "memory_mb": 2841.6
@@ -8548,7 +12834,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 15477.0,
       "args": {
         "memory_mb": 2726.4
@@ -8559,7 +12845,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 15487.0,
       "args": {
         "memory_mb": 2611.2
@@ -8570,7 +12856,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 15487.0,
       "args": {
         "memory_mb": 2752.0
@@ -8581,7 +12867,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 16015.0,
       "args": {
         "memory_mb": 2470.4
@@ -8592,7 +12878,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 16025.0,
       "args": {
         "memory_mb": 2329.6
@@ -8603,7 +12889,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 16025.0,
       "args": {
         "memory_mb": 2457.6
@@ -8614,7 +12900,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 16535.0,
       "args": {
         "memory_mb": 2201.6
@@ -8625,7 +12911,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 16545.0,
       "args": {
         "memory_mb": 2073.6
@@ -8636,7 +12922,7 @@
       "cat": "memory",
       "ph": "C",
       "pid": 100,
-      "tid": 4,
+      "tid": 5,
       "ts": 16545.0,
       "args": {
         "memory_mb": 2073.6
