@@ -27,6 +27,42 @@
       }
     },
     {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 100,
+      "tid": 3,
+      "args": {
+        "name": "zerobubble_1f1b total memory"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 100,
+      "tid": 4,
+      "args": {
+        "name": "moe_bad_overlap_1f1b total memory"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 100,
+      "tid": 5,
+      "args": {
+        "name": "dualpipe total memory"
+      }
+    },
+    {
+      "ph": "M",
+      "name": "thread_name",
+      "pid": 100,
+      "tid": 6,
+      "args": {
+        "name": "dualpipev total memory"
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -43,6 +79,50 @@
       "ph": "C",
       "pid": 100,
       "tid": 2,
+      "ts": 0.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 0.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 0.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 0.0,
+      "args": {
+        "memory_mb": 4147.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
       "ts": 0.0,
       "args": {
         "memory_mb": 2073.6
@@ -65,6 +145,61 @@
       "ph": "C",
       "pid": 100,
       "tid": 2,
+      "ts": 10.0,
+      "args": {
+        "memory_mb": 2329.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 10.0,
+      "args": {
+        "memory_mb": 2329.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 10.0,
+      "args": {
+        "memory_mb": 2329.6
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 10.0,
+      "args": {
+        "memory_mb": 4403.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 10.0,
+      "args": {
+        "memory_mb": 4659.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
       "ts": 10.0,
       "args": {
         "memory_mb": 2329.6
@@ -115,6 +250,94 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 2585.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 2867.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 4915.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 5196.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 5478.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 5734.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 2585.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 110.0,
+      "args": {
+        "memory_mb": 2867.2
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -131,6 +354,50 @@
       "ph": "C",
       "pid": 100,
       "tid": 2,
+      "ts": 210.0,
+      "args": {
+        "memory_mb": 3123.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 210.0,
+      "args": {
+        "memory_mb": 3123.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 210.0,
+      "args": {
+        "memory_mb": 5990.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 210.0,
+      "args": {
+        "memory_mb": 6246.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
       "ts": 210.0,
       "args": {
         "memory_mb": 3123.2
@@ -181,6 +448,61 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 222.0,
+      "args": {
+        "memory_mb": 3404.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 222.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 222.0,
+      "args": {
+        "memory_mb": 6476.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 222.0,
+      "args": {
+        "memory_mb": 6707.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 222.0,
+      "args": {
+        "memory_mb": 3353.6
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -197,6 +519,17 @@
       "ph": "C",
       "pid": 100,
       "tid": 2,
+      "ts": 310.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
       "ts": 310.0,
       "args": {
         "memory_mb": 3891.2
@@ -222,6 +555,83 @@
       "ts": 318.0,
       "args": {
         "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 318.0,
+      "args": {
+        "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 318.0,
+      "args": {
+        "memory_mb": 6976.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 318.0,
+      "args": {
+        "memory_mb": 7257.6
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 318.0,
+      "args": {
+        "memory_mb": 7539.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 318.0,
+      "args": {
+        "memory_mb": 7808.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 318.0,
+      "args": {
+        "memory_mb": 3622.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 318.0,
+      "args": {
+        "memory_mb": 3904.0
       }
     },
     {
@@ -263,6 +673,28 @@
       "ph": "C",
       "pid": 100,
       "tid": 2,
+      "ts": 334.0,
+      "args": {
+        "memory_mb": 4672.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 334.0,
+      "args": {
+        "memory_mb": 4441.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
       "ts": 334.0,
       "args": {
         "memory_mb": 4672.0
@@ -291,6 +723,50 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 412.0,
+      "args": {
+        "memory_mb": 4806.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 412.0,
+      "args": {
+        "memory_mb": 7942.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 412.0,
+      "args": {
+        "memory_mb": 7673.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 412.0,
+      "args": {
+        "memory_mb": 4038.4
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -299,6 +775,39 @@
       "ts": 430.0,
       "args": {
         "memory_mb": 5196.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 430.0,
+      "args": {
+        "memory_mb": 7500.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 430.0,
+      "args": {
+        "memory_mb": 7731.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 430.0,
+      "args": {
+        "memory_mb": 3865.6
       }
     },
     {
@@ -324,6 +833,72 @@
       }
     },
     {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 500.0,
+      "args": {
+        "memory_mb": 2585.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 500.0,
+      "args": {
+        "memory_mb": 2867.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 506.0,
+      "args": {
+        "memory_mb": 4537.6
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 506.0,
+      "args": {
+        "memory_mb": 7673.6
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 506.0,
+      "args": {
+        "memory_mb": 7404.8
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 506.0,
+      "args": {
+        "memory_mb": 3769.6
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -332,6 +907,105 @@
       "ts": 510.0,
       "args": {
         "memory_mb": 5964.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 516.0,
+      "args": {
+        "memory_mb": 4403.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 516.0,
+      "args": {
+        "memory_mb": 4518.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 516.0,
+      "args": {
+        "memory_mb": 7539.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 516.0,
+      "args": {
+        "memory_mb": 7270.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 516.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 526.0,
+      "args": {
+        "memory_mb": 4441.6
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 526.0,
+      "args": {
+        "memory_mb": 8012.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 526.0,
+      "args": {
+        "memory_mb": 8294.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 526.0,
+      "args": {
+        "memory_mb": 4147.2
       }
     },
     {
@@ -412,6 +1086,50 @@
       }
     },
     {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 568.0,
+      "args": {
+        "memory_mb": 8563.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 568.0,
+      "args": {
+        "memory_mb": 8832.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 568.0,
+      "args": {
+        "memory_mb": 4416.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 602.0,
+      "args": {
+        "memory_mb": 4288.0
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -420,6 +1138,83 @@
       "ts": 610.0,
       "args": {
         "memory_mb": 7001.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 612.0,
+      "args": {
+        "memory_mb": 4172.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 612.0,
+      "args": {
+        "memory_mb": 4582.4
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 620.0,
+      "args": {
+        "memory_mb": 4524.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 622.0,
+      "args": {
+        "memory_mb": 4390.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 628.0,
+      "args": {
+        "memory_mb": 8947.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 628.0,
+      "args": {
+        "memory_mb": 8716.8
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 628.0,
+      "args": {
+        "memory_mb": 4531.2
       }
     },
     {
@@ -445,6 +1240,39 @@
       }
     },
     {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 662.0,
+      "args": {
+        "memory_mb": 8761.6
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 662.0,
+      "args": {
+        "memory_mb": 8748.8
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 662.0,
+      "args": {
+        "memory_mb": 4576.0
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -464,6 +1292,39 @@
       "ts": 670.0,
       "args": {
         "memory_mb": 7782.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 672.0,
+      "args": {
+        "memory_mb": 8627.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 672.0,
+      "args": {
+        "memory_mb": 8614.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 672.0,
+      "args": {
+        "memory_mb": 4441.6
       }
     },
     {
@@ -522,6 +1383,193 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 714.0,
+      "args": {
+        "memory_mb": 4300.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 714.0,
+      "args": {
+        "memory_mb": 4256.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 724.0,
+      "args": {
+        "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 724.0,
+      "args": {
+        "memory_mb": 4121.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 724.0,
+      "args": {
+        "memory_mb": 4249.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 724.0,
+      "args": {
+        "memory_mb": 4262.4
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 734.0,
+      "args": {
+        "memory_mb": 4147.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 734.0,
+      "args": {
+        "memory_mb": 4185.6
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 752.0,
+      "args": {
+        "memory_mb": 8716.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 752.0,
+      "args": {
+        "memory_mb": 8486.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 752.0,
+      "args": {
+        "memory_mb": 4300.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 762.0,
+      "args": {
+        "memory_mb": 8601.6
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 762.0,
+      "args": {
+        "memory_mb": 8371.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 762.0,
+      "args": {
+        "memory_mb": 8716.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 762.0,
+      "args": {
+        "memory_mb": 8665.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 762.0,
+      "args": {
+        "memory_mb": 4185.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 762.0,
+      "args": {
+        "memory_mb": 4544.0
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -530,6 +1578,39 @@
       "ts": 766.0,
       "args": {
         "memory_mb": 8307.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 772.0,
+      "args": {
+        "memory_mb": 8576.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 772.0,
+      "args": {
+        "memory_mb": 8524.8
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 772.0,
+      "args": {
+        "memory_mb": 4403.2
       }
     },
     {
@@ -566,6 +1647,39 @@
       }
     },
     {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 798.0,
+      "args": {
+        "memory_mb": 8492.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 798.0,
+      "args": {
+        "memory_mb": 8480.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 798.0,
+      "args": {
+        "memory_mb": 4307.2
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -588,6 +1702,61 @@
       }
     },
     {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 808.0,
+      "args": {
+        "memory_mb": 8358.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 808.0,
+      "args": {
+        "memory_mb": 8345.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 808.0,
+      "args": {
+        "memory_mb": 4172.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 810.0,
+      "args": {
+        "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 814.0,
+      "args": {
+        "memory_mb": 3993.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -599,6 +1768,61 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 820.0,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 824.0,
+      "args": {
+        "memory_mb": 3865.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 828.0,
+      "args": {
+        "memory_mb": 4576.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 834.0,
+      "args": {
+        "memory_mb": 4441.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 836.0,
+      "args": {
+        "memory_mb": 4313.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -607,6 +1831,17 @@
       "ts": 840.0,
       "args": {
         "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 846.0,
+      "args": {
+        "memory_mb": 4121.6
       }
     },
     {
@@ -676,6 +1911,39 @@
       }
     },
     {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 910.0,
+      "args": {
+        "memory_mb": 8435.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 910.0,
+      "args": {
+        "memory_mb": 8384.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 910.0,
+      "args": {
+        "memory_mb": 4262.4
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -684,6 +1952,182 @@
       "ts": 912.0,
       "args": {
         "memory_mb": 4320.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 920.0,
+      "args": {
+        "memory_mb": 8294.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 920.0,
+      "args": {
+        "memory_mb": 8243.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 920.0,
+      "args": {
+        "memory_mb": 8640.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 920.0,
+      "args": {
+        "memory_mb": 8652.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 920.0,
+      "args": {
+        "memory_mb": 8704.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 920.0,
+      "args": {
+        "memory_mb": 8755.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 920.0,
+      "args": {
+        "memory_mb": 4121.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 920.0,
+      "args": {
+        "memory_mb": 4518.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 920.0,
+      "args": {
+        "memory_mb": 4531.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 922.0,
+      "args": {
+        "memory_mb": 4307.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 930.0,
+      "args": {
+        "memory_mb": 8512.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 930.0,
+      "args": {
+        "memory_mb": 8537.6
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 930.0,
+      "args": {
+        "memory_mb": 8588.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 930.0,
+      "args": {
+        "memory_mb": 8627.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 930.0,
+      "args": {
+        "memory_mb": 4390.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 930.0,
+      "args": {
+        "memory_mb": 4416.0
       }
     },
     {
@@ -698,6 +2142,39 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 932.0,
+      "args": {
+        "memory_mb": 4172.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 932.0,
+      "args": {
+        "memory_mb": 4236.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 938.0,
+      "args": {
+        "memory_mb": 4032.0
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -706,6 +2183,50 @@
       "ts": 942.0,
       "args": {
         "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 942.0,
+      "args": {
+        "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 948.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 948.0,
+      "args": {
+        "memory_mb": 4288.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 958.0,
+      "args": {
+        "memory_mb": 4185.6
       }
     },
     {
@@ -764,6 +2285,17 @@
       }
     },
     {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 990.0,
+      "args": {
+        "memory_mb": 3123.2
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -786,6 +2318,105 @@
       }
     },
     {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 1006.5,
+      "args": {
+        "memory_mb": 3404.8
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 1006.5,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1018.0,
+      "args": {
+        "memory_mb": 4006.4
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1028.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1036.0,
+      "args": {
+        "memory_mb": 4320.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1038.0,
+      "args": {
+        "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1044.0,
+      "args": {
+        "memory_mb": 8422.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1044.0,
+      "args": {
+        "memory_mb": 8473.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1044.0,
+      "args": {
+        "memory_mb": 4300.8
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -794,6 +2425,116 @@
       "ts": 1048.0,
       "args": {
         "memory_mb": 4051.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1048.0,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1050.0,
+      "args": {
+        "memory_mb": 8384.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1050.0,
+      "args": {
+        "memory_mb": 8499.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1050.0,
+      "args": {
+        "memory_mb": 4262.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1054.0,
+      "args": {
+        "memory_mb": 8307.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1054.0,
+      "args": {
+        "memory_mb": 8358.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1054.0,
+      "args": {
+        "memory_mb": 8742.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1054.0,
+      "args": {
+        "memory_mb": 8691.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1054.0,
+      "args": {
+        "memory_mb": 4185.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1054.0,
+      "args": {
+        "memory_mb": 4556.8
       }
     },
     {
@@ -819,6 +2560,127 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1058.0,
+      "args": {
+        "memory_mb": 4172.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1060.0,
+      "args": {
+        "memory_mb": 4313.6
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1060.0,
+      "args": {
+        "memory_mb": 8256.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1060.0,
+      "args": {
+        "memory_mb": 8371.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1060.0,
+      "args": {
+        "memory_mb": 8403.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1060.0,
+      "args": {
+        "memory_mb": 8134.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1060.0,
+      "args": {
+        "memory_mb": 4134.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1060.0,
+      "args": {
+        "memory_mb": 4524.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1064.0,
+      "args": {
+        "memory_mb": 8601.6
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1064.0,
+      "args": {
+        "memory_mb": 8550.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1064.0,
+      "args": {
+        "memory_mb": 4416.0
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -827,6 +2689,28 @@
       "ts": 1068.0,
       "args": {
         "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1070.0,
+      "args": {
+        "memory_mb": 4121.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1070.0,
+      "args": {
+        "memory_mb": 4390.4
       }
     },
     {
@@ -885,6 +2769,39 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1130.0,
+      "args": {
+        "memory_mb": 4051.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1140.0,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1156.0,
+      "args": {
+        "memory_mb": 4236.8
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -896,6 +2813,50 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1162.0,
+      "args": {
+        "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1166.0,
+      "args": {
+        "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1172.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1172.0,
+      "args": {
+        "memory_mb": 4288.0
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -904,6 +2865,17 @@
       "ts": 1182.0,
       "args": {
         "memory_mb": 4006.4
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1182.0,
+      "args": {
+        "memory_mb": 4185.6
       }
     },
     {
@@ -929,6 +2901,248 @@
       }
     },
     {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1196.0,
+      "args": {
+        "memory_mb": 8134.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1196.0,
+      "args": {
+        "memory_mb": 7865.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1196.0,
+      "args": {
+        "memory_mb": 4256.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1202.0,
+      "args": {
+        "memory_mb": 8460.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1202.0,
+      "args": {
+        "memory_mb": 8409.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1202.0,
+      "args": {
+        "memory_mb": 4275.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1206.0,
+      "args": {
+        "memory_mb": 8000.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1206.0,
+      "args": {
+        "memory_mb": 7731.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1206.0,
+      "args": {
+        "memory_mb": 4121.6
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1212.0,
+      "args": {
+        "memory_mb": 8320.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1212.0,
+      "args": {
+        "memory_mb": 8268.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1212.0,
+      "args": {
+        "memory_mb": 8128.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1212.0,
+      "args": {
+        "memory_mb": 7859.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1212.0,
+      "args": {
+        "memory_mb": 7628.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1212.0,
+      "args": {
+        "memory_mb": 7680.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1212.0,
+      "args": {
+        "memory_mb": 4134.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1212.0,
+      "args": {
+        "memory_mb": 4518.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1212.0,
+      "args": {
+        "memory_mb": 4531.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1222.0,
+      "args": {
+        "memory_mb": 8000.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1222.0,
+      "args": {
+        "memory_mb": 7552.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1222.0,
+      "args": {
+        "memory_mb": 4390.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1222.0,
+      "args": {
+        "memory_mb": 4416.0
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -951,6 +3165,17 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1242.0,
+      "args": {
+        "memory_mb": 4006.4
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -959,6 +3184,17 @@
       "ts": 1250.0,
       "args": {
         "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1252.0,
+      "args": {
+        "memory_mb": 3891.2
       }
     },
     {
@@ -973,12 +3209,78 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1260.0,
+      "args": {
+        "memory_mb": 4320.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1262.0,
+      "args": {
+        "memory_mb": 4032.0
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 2,
       "ts": 1270.0,
+      "args": {
+        "memory_mb": 4121.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1272.0,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1282.0,
+      "args": {
+        "memory_mb": 4172.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1284.0,
+      "args": {
+        "memory_mb": 4313.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1294.0,
       "args": {
         "memory_mb": 4121.6
       }
@@ -1028,6 +3330,39 @@
       }
     },
     {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1336.0,
+      "args": {
+        "memory_mb": 7628.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1336.0,
+      "args": {
+        "memory_mb": 7398.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1336.0,
+      "args": {
+        "memory_mb": 4300.8
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1072,6 +3407,215 @@
       }
     },
     {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1342.0,
+      "args": {
+        "memory_mb": 7872.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1342.0,
+      "args": {
+        "memory_mb": 7424.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1342.0,
+      "args": {
+        "memory_mb": 4262.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1346.0,
+      "args": {
+        "memory_mb": 7513.6
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1346.0,
+      "args": {
+        "memory_mb": 7283.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1346.0,
+      "args": {
+        "memory_mb": 7436.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1346.0,
+      "args": {
+        "memory_mb": 7155.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1346.0,
+      "args": {
+        "memory_mb": 4185.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1346.0,
+      "args": {
+        "memory_mb": 4556.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1352.0,
+      "args": {
+        "memory_mb": 7744.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1352.0,
+      "args": {
+        "memory_mb": 7296.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1352.0,
+      "args": {
+        "memory_mb": 6867.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1352.0,
+      "args": {
+        "memory_mb": 6598.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1352.0,
+      "args": {
+        "memory_mb": 4134.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1352.0,
+      "args": {
+        "memory_mb": 4524.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1354.0,
+      "args": {
+        "memory_mb": 4051.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1356.0,
+      "args": {
+        "memory_mb": 4416.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1362.0,
+      "args": {
+        "memory_mb": 4390.4
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1364.0,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1080,6 +3624,28 @@
       "ts": 1380.0,
       "args": {
         "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1380.0,
+      "args": {
+        "memory_mb": 4236.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1386.0,
+      "args": {
+        "memory_mb": 4032.0
       }
     },
     {
@@ -1105,12 +3671,56 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1390.0,
+      "args": {
+        "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1396.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1396.0,
+      "args": {
+        "memory_mb": 4288.0
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
       "pid": 100,
       "tid": 2,
       "ts": 1400.0,
+      "args": {
+        "memory_mb": 4185.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1406.0,
       "args": {
         "memory_mb": 4185.6
       }
@@ -1160,6 +3770,17 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1466.0,
+      "args": {
+        "memory_mb": 4006.4
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1182,6 +3803,17 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1476.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1190,6 +3822,28 @@
       "ts": 1478.0,
       "args": {
         "memory_mb": 9734.4
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1484.0,
+      "args": {
+        "memory_mb": 4320.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1486.0,
+      "args": {
+        "memory_mb": 4032.0
       }
     },
     {
@@ -1226,6 +3880,127 @@
       }
     },
     {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1488.0,
+      "args": {
+        "memory_mb": 6598.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1488.0,
+      "args": {
+        "memory_mb": 6329.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1488.0,
+      "args": {
+        "memory_mb": 4256.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 1491.0,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1494.0,
+      "args": {
+        "memory_mb": 7155.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1494.0,
+      "args": {
+        "memory_mb": 6873.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1494.0,
+      "args": {
+        "memory_mb": 4275.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1496.0,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1498.0,
+      "args": {
+        "memory_mb": 6464.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1498.0,
+      "args": {
+        "memory_mb": 6195.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1498.0,
+      "args": {
+        "memory_mb": 4121.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1237,6 +4012,127 @@
       }
     },
     {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1504.0,
+      "args": {
+        "memory_mb": 7014.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1504.0,
+      "args": {
+        "memory_mb": 6732.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1504.0,
+      "args": {
+        "memory_mb": 6323.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1504.0,
+      "args": {
+        "memory_mb": 6054.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1504.0,
+      "args": {
+        "memory_mb": 5824.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1504.0,
+      "args": {
+        "memory_mb": 5606.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1504.0,
+      "args": {
+        "memory_mb": 4134.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1504.0,
+      "args": {
+        "memory_mb": 4518.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1504.0,
+      "args": {
+        "memory_mb": 4531.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1506.0,
+      "args": {
+        "memory_mb": 4172.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1508.0,
+      "args": {
+        "memory_mb": 4313.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1245,6 +4141,39 @@
       "ts": 1512.0,
       "args": {
         "memory_mb": 3865.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1514.0,
+      "args": {
+        "memory_mb": 4390.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1514.0,
+      "args": {
+        "memory_mb": 4416.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1518.0,
+      "args": {
+        "memory_mb": 4121.6
       }
     },
     {
@@ -1303,6 +4232,72 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1578.0,
+      "args": {
+        "memory_mb": 4051.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1588.0,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1590.0,
+      "args": {
+        "memory_mb": 5824.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1590.0,
+      "args": {
+        "memory_mb": 5593.6
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1594.0,
+      "args": {
+        "memory_mb": 6067.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1594.0,
+      "args": {
+        "memory_mb": 5350.4
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1311,6 +4306,83 @@
       "ts": 1598.0,
       "args": {
         "memory_mb": 4236.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1600.0,
+      "args": {
+        "memory_mb": 5708.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1600.0,
+      "args": {
+        "memory_mb": 5478.4
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1600.0,
+      "args": {
+        "memory_mb": 5363.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1600.0,
+      "args": {
+        "memory_mb": 5081.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1604.0,
+      "args": {
+        "memory_mb": 4236.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1604.0,
+      "args": {
+        "memory_mb": 5939.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1604.0,
+      "args": {
+        "memory_mb": 5222.4
       }
     },
     {
@@ -1325,6 +4397,17 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1610.0,
+      "args": {
+        "memory_mb": 4032.0
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1333,6 +4416,39 @@
       "ts": 1612.0,
       "args": {
         "memory_mb": 9203.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1614.0,
+      "args": {
+        "memory_mb": 4160.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1620.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1620.0,
+      "args": {
+        "memory_mb": 4288.0
       }
     },
     {
@@ -1366,6 +4482,28 @@
       "ts": 1624.0,
       "args": {
         "memory_mb": 8953.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1628.0,
+      "args": {
+        "memory_mb": 4300.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1630.0,
+      "args": {
+        "memory_mb": 4185.6
       }
     },
     {
@@ -1435,6 +4573,72 @@
       }
     },
     {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1634.0,
+      "args": {
+        "memory_mb": 4262.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1638.0,
+      "args": {
+        "memory_mb": 4185.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1638.0,
+      "args": {
+        "memory_mb": 4556.8
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1644.0,
+      "args": {
+        "memory_mb": 4134.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1644.0,
+      "args": {
+        "memory_mb": 4524.8
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1648.0,
+      "args": {
+        "memory_mb": 4416.0
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1443,6 +4647,17 @@
       "ts": 1650.0,
       "args": {
         "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1654.0,
+      "args": {
+        "memory_mb": 4390.4
       }
     },
     {
@@ -1479,6 +4694,28 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1690.0,
+      "args": {
+        "memory_mb": 4006.4
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1700.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1487,6 +4724,105 @@
       "ts": 1702.0,
       "args": {
         "memory_mb": 4320.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1702.0,
+      "args": {
+        "memory_mb": 5081.6
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1702.0,
+      "args": {
+        "memory_mb": 4800.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1708.0,
+      "args": {
+        "memory_mb": 4320.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1710.0,
+      "args": {
+        "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1712.0,
+      "args": {
+        "memory_mb": 4940.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1712.0,
+      "args": {
+        "memory_mb": 4659.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1712.0,
+      "args": {
+        "memory_mb": 4787.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1712.0,
+      "args": {
+        "memory_mb": 4531.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1720.0,
+      "args": {
+        "memory_mb": 3904.0
       }
     },
     {
@@ -1509,6 +4845,28 @@
       "ts": 1732.0,
       "args": {
         "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1732.0,
+      "args": {
+        "memory_mb": 4057.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1742.0,
+      "args": {
+        "memory_mb": 3865.6
       }
     },
     {
@@ -1611,6 +4969,17 @@
       }
     },
     {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1780.0,
+      "args": {
+        "memory_mb": 4256.0
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1633,6 +5002,17 @@
       }
     },
     {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1786.0,
+      "args": {
+        "memory_mb": 4275.2
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1641,6 +5021,17 @@
       "ts": 1790.0,
       "args": {
         "memory_mb": 4032.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1790.0,
+      "args": {
+        "memory_mb": 4121.6
       }
     },
     {
@@ -1677,6 +5068,39 @@
       }
     },
     {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1796.0,
+      "args": {
+        "memory_mb": 4134.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1796.0,
+      "args": {
+        "memory_mb": 4518.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1796.0,
+      "args": {
+        "memory_mb": 4531.2
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1685,6 +5109,61 @@
       "ts": 1800.0,
       "args": {
         "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1802.0,
+      "args": {
+        "memory_mb": 4051.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1802.0,
+      "args": {
+        "memory_mb": 4531.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1802.0,
+      "args": {
+        "memory_mb": 4275.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1806.0,
+      "args": {
+        "memory_mb": 4390.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1806.0,
+      "args": {
+        "memory_mb": 4416.0
       }
     },
     {
@@ -1699,6 +5178,61 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1812.0,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1812.0,
+      "args": {
+        "memory_mb": 4403.2
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1812.0,
+      "args": {
+        "memory_mb": 4147.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1828.0,
+      "args": {
+        "memory_mb": 3980.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1834.0,
+      "args": {
+        "memory_mb": 3776.0
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1710,6 +5244,39 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1838.0,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1844.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1844.0,
+      "args": {
+        "memory_mb": 4032.0
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1718,6 +5285,17 @@
       "ts": 1848.0,
       "args": {
         "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "dualpipe_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 5,
+      "ts": 1852.0,
+      "args": {
+        "memory_mb": 4147.2
       }
     },
     {
@@ -1765,6 +5343,17 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1914.0,
+      "args": {
+        "memory_mb": 3750.4
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1787,6 +5376,17 @@
       }
     },
     {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1920.0,
+      "args": {
+        "memory_mb": 4300.8
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1795,6 +5395,28 @@
       "ts": 1922.0,
       "args": {
         "memory_mb": 7155.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1924.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1924.0,
+      "args": {
+        "memory_mb": 3788.8
       }
     },
     {
@@ -1831,6 +5453,17 @@
       }
     },
     {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1926.0,
+      "args": {
+        "memory_mb": 4262.4
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1853,6 +5486,28 @@
       }
     },
     {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1930.0,
+      "args": {
+        "memory_mb": 4185.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1930.0,
+      "args": {
+        "memory_mb": 4556.8
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1861,6 +5516,50 @@
       "ts": 1932.0,
       "args": {
         "memory_mb": 7027.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1932.0,
+      "args": {
+        "memory_mb": 3500.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1934.0,
+      "args": {
+        "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1936.0,
+      "args": {
+        "memory_mb": 4134.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1936.0,
+      "args": {
+        "memory_mb": 4524.8
       }
     },
     {
@@ -1883,6 +5582,39 @@
       "ts": 1940.0,
       "args": {
         "memory_mb": 4185.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1940.0,
+      "args": {
+        "memory_mb": 4416.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 1944.0,
+      "args": {
+        "memory_mb": 3648.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 1946.0,
+      "args": {
+        "memory_mb": 4390.4
       }
     },
     {
@@ -1930,6 +5662,17 @@
       }
     },
     {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 1976.5,
+      "args": {
+        "memory_mb": 4038.4
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -1949,6 +5692,72 @@
       "ts": 2002.0,
       "args": {
         "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2026.0,
+      "args": {
+        "memory_mb": 3507.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2026.0,
+      "args": {
+        "memory_mb": 3232.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2036.0,
+      "args": {
+        "memory_mb": 3366.4
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2036.0,
+      "args": {
+        "memory_mb": 3097.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2036.0,
+      "args": {
+        "memory_mb": 3225.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2036.0,
+      "args": {
+        "memory_mb": 2956.8
       }
     },
     {
@@ -2062,6 +5871,28 @@
       }
     },
     {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2072.0,
+      "args": {
+        "memory_mb": 4256.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2078.0,
+      "args": {
+        "memory_mb": 4275.2
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -2070,6 +5901,50 @@
       "ts": 2080.0,
       "args": {
         "memory_mb": 6118.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2082.0,
+      "args": {
+        "memory_mb": 4121.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2088.0,
+      "args": {
+        "memory_mb": 4134.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2088.0,
+      "args": {
+        "memory_mb": 4518.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2088.0,
+      "args": {
+        "memory_mb": 4531.2
       }
     },
     {
@@ -2092,6 +5967,28 @@
       "ts": 2098.0,
       "args": {
         "memory_mb": 5849.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2098.0,
+      "args": {
+        "memory_mb": 4390.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2098.0,
+      "args": {
+        "memory_mb": 4416.0
       }
     },
     {
@@ -2147,6 +6044,61 @@
       "ts": 2118.0,
       "args": {
         "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2122.0,
+      "args": {
+        "memory_mb": 2726.4
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2126.0,
+      "args": {
+        "memory_mb": 2969.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2132.0,
+      "args": {
+        "memory_mb": 2611.2
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2132.0,
+      "args": {
+        "memory_mb": 2752.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2136.0,
+      "args": {
+        "memory_mb": 2841.6
       }
     },
     {
@@ -2238,6 +6190,17 @@
       }
     },
     {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2212.0,
+      "args": {
+        "memory_mb": 4300.8
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -2271,6 +6234,83 @@
       }
     },
     {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2218.0,
+      "args": {
+        "memory_mb": 4262.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2222.0,
+      "args": {
+        "memory_mb": 4185.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2222.0,
+      "args": {
+        "memory_mb": 4556.8
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2228.0,
+      "args": {
+        "memory_mb": 4134.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2228.0,
+      "args": {
+        "memory_mb": 4268.8
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2232.0,
+      "args": {
+        "memory_mb": 4416.0
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2234.0,
+      "args": {
+        "memory_mb": 2470.4
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -2290,6 +6330,28 @@
       "ts": 2242.0,
       "args": {
         "memory_mb": 3782.4
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2244.0,
+      "args": {
+        "memory_mb": 2329.6
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2244.0,
+      "args": {
+        "memory_mb": 2457.6
       }
     },
     {
@@ -2392,6 +6454,17 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2334.0,
+      "args": {
+        "memory_mb": 2201.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -2411,6 +6484,17 @@
       "ts": 2342.0,
       "args": {
         "memory_mb": 4556.8
+      }
+    },
+    {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2344.0,
+      "args": {
+        "memory_mb": 2073.6
       }
     },
     {
@@ -2458,6 +6542,39 @@
       }
     },
     {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2364.0,
+      "args": {
+        "memory_mb": 4000.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2370.0,
+      "args": {
+        "memory_mb": 4275.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2374.0,
+      "args": {
+        "memory_mb": 3865.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -2466,6 +6583,39 @@
       "ts": 2378.0,
       "args": {
         "memory_mb": 3513.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2380.0,
+      "args": {
+        "memory_mb": 4134.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2380.0,
+      "args": {
+        "memory_mb": 4262.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2380.0,
+      "args": {
+        "memory_mb": 3993.6
       }
     },
     {
@@ -2488,6 +6638,17 @@
       "ts": 2388.0,
       "args": {
         "memory_mb": 3212.8
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2390.0,
+      "args": {
+        "memory_mb": 4134.4
       }
     },
     {
@@ -2590,6 +6751,17 @@
       }
     },
     {
+      "name": "zerobubble_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 3,
+      "ts": 2474.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -2598,6 +6770,17 @@
       "ts": 2488.0,
       "args": {
         "memory_mb": 3520.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 2492.5,
+      "args": {
+        "memory_mb": 3769.6
       }
     },
     {
@@ -2612,6 +6795,50 @@
       }
     },
     {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 2502.5,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 2502.5,
+      "args": {
+        "memory_mb": 3980.8
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2504.0,
+      "args": {
+        "memory_mb": 3763.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2510.0,
+      "args": {
+        "memory_mb": 4006.4
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -2620,6 +6847,61 @@
       "ts": 2512.0,
       "args": {
         "memory_mb": 2982.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 2512.5,
+      "args": {
+        "memory_mb": 3865.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2514.0,
+      "args": {
+        "memory_mb": 3648.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2514.0,
+      "args": {
+        "memory_mb": 3788.8
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2520.0,
+      "args": {
+        "memory_mb": 3878.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2520.0,
+      "args": {
+        "memory_mb": 3500.8
       }
     },
     {
@@ -2733,6 +7015,39 @@
       }
     },
     {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2656.0,
+      "args": {
+        "memory_mb": 3232.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2662.0,
+      "args": {
+        "memory_mb": 3507.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2666.0,
+      "args": {
+        "memory_mb": 3097.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -2741,6 +7056,39 @@
       "ts": 2670.0,
       "args": {
         "memory_mb": 2470.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2672.0,
+      "args": {
+        "memory_mb": 3366.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2672.0,
+      "args": {
+        "memory_mb": 3225.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2672.0,
+      "args": {
+        "memory_mb": 2956.8
       }
     },
     {
@@ -2821,6 +7169,61 @@
       }
     },
     {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2758.0,
+      "args": {
+        "memory_mb": 2726.4
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2762.0,
+      "args": {
+        "memory_mb": 2969.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2768.0,
+      "args": {
+        "memory_mb": 2611.2
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2768.0,
+      "args": {
+        "memory_mb": 2752.0
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2772.0,
+      "args": {
+        "memory_mb": 2841.6
+      }
+    },
+    {
       "name": "1f1b_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -2865,6 +7268,17 @@
       }
     },
     {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2870.0,
+      "args": {
+        "memory_mb": 2470.4
+      }
+    },
+    {
       "name": "gpipe_total_memory_mb",
       "cat": "memory",
       "ph": "C",
@@ -2882,6 +7296,1348 @@
       "pid": 100,
       "tid": 1,
       "ts": 2880.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2880.0,
+      "args": {
+        "memory_mb": 2329.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2880.0,
+      "args": {
+        "memory_mb": 2457.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2970.0,
+      "args": {
+        "memory_mb": 2201.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 2980.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "dualpipev_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 6,
+      "ts": 3020.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 3252.5,
+      "args": {
+        "memory_mb": 3750.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 3262.5,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 3262.5,
+      "args": {
+        "memory_mb": 4057.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 3272.5,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 3272.5,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 3758.0,
+      "args": {
+        "memory_mb": 4038.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 4012.5,
+      "args": {
+        "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 4022.5,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 4022.5,
+      "args": {
+        "memory_mb": 4019.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 4032.5,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 4274.0,
+      "args": {
+        "memory_mb": 3769.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 4284.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 4284.0,
+      "args": {
+        "memory_mb": 3980.8
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 4294.0,
+      "args": {
+        "memory_mb": 3865.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 4772.5,
+      "args": {
+        "memory_mb": 3763.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 4782.5,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 5034.0,
+      "args": {
+        "memory_mb": 3750.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 5044.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 5044.0,
+      "args": {
+        "memory_mb": 4057.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 5054.0,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 5054.0,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 5539.5,
+      "args": {
+        "memory_mb": 4038.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 5794.0,
+      "args": {
+        "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 5804.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 5804.0,
+      "args": {
+        "memory_mb": 4019.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 5814.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 6055.5,
+      "args": {
+        "memory_mb": 3769.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 6065.5,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 6065.5,
+      "args": {
+        "memory_mb": 3980.8
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 6075.5,
+      "args": {
+        "memory_mb": 3865.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 6554.0,
+      "args": {
+        "memory_mb": 3763.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 6564.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 6815.5,
+      "args": {
+        "memory_mb": 3750.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 6825.5,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 6825.5,
+      "args": {
+        "memory_mb": 4057.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 6835.5,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 6835.5,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 7321.0,
+      "args": {
+        "memory_mb": 4038.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 7575.5,
+      "args": {
+        "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 7585.5,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 7585.5,
+      "args": {
+        "memory_mb": 4019.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 7595.5,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 7837.0,
+      "args": {
+        "memory_mb": 3769.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 7847.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 7847.0,
+      "args": {
+        "memory_mb": 3980.8
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 7857.0,
+      "args": {
+        "memory_mb": 3865.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 8335.5,
+      "args": {
+        "memory_mb": 3763.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 8345.5,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 8597.0,
+      "args": {
+        "memory_mb": 3750.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 8607.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 8607.0,
+      "args": {
+        "memory_mb": 4057.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 8617.0,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 8617.0,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 9102.5,
+      "args": {
+        "memory_mb": 4038.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 9357.0,
+      "args": {
+        "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 9367.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 9367.0,
+      "args": {
+        "memory_mb": 4019.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 9377.0,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 9618.5,
+      "args": {
+        "memory_mb": 3769.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 9628.5,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 9628.5,
+      "args": {
+        "memory_mb": 3980.8
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 9638.5,
+      "args": {
+        "memory_mb": 3865.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 10117.0,
+      "args": {
+        "memory_mb": 3763.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 10127.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 10378.5,
+      "args": {
+        "memory_mb": 3750.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 10388.5,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 10388.5,
+      "args": {
+        "memory_mb": 4057.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 10398.5,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 10398.5,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 10884.0,
+      "args": {
+        "memory_mb": 4038.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 11138.5,
+      "args": {
+        "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 11148.5,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 11148.5,
+      "args": {
+        "memory_mb": 4019.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 11158.5,
+      "args": {
+        "memory_mb": 3891.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 11400.0,
+      "args": {
+        "memory_mb": 3769.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 11410.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 11410.0,
+      "args": {
+        "memory_mb": 3980.8
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 11420.0,
+      "args": {
+        "memory_mb": 3865.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 11898.5,
+      "args": {
+        "memory_mb": 3763.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 11908.5,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 12160.0,
+      "args": {
+        "memory_mb": 3750.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 12170.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 12170.0,
+      "args": {
+        "memory_mb": 4057.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 12180.0,
+      "args": {
+        "memory_mb": 3916.8
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 12180.0,
+      "args": {
+        "memory_mb": 3904.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 12665.5,
+      "args": {
+        "memory_mb": 4038.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 12920.0,
+      "args": {
+        "memory_mb": 3776.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 12930.0,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 12930.0,
+      "args": {
+        "memory_mb": 3763.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 13181.5,
+      "args": {
+        "memory_mb": 3769.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 13191.5,
+      "args": {
+        "memory_mb": 3635.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 13191.5,
+      "args": {
+        "memory_mb": 3724.8
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 13201.5,
+      "args": {
+        "memory_mb": 3609.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 13440.0,
+      "args": {
+        "memory_mb": 3507.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 13450.0,
+      "args": {
+        "memory_mb": 3379.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 13941.5,
+      "args": {
+        "memory_mb": 3494.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 13951.5,
+      "args": {
+        "memory_mb": 3379.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 13951.5,
+      "args": {
+        "memory_mb": 3520.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 13961.5,
+      "args": {
+        "memory_mb": 3366.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 14447.0,
+      "args": {
+        "memory_mb": 3500.8
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 14479.5,
+      "args": {
+        "memory_mb": 3238.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 14489.5,
+      "args": {
+        "memory_mb": 3097.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 14489.5,
+      "args": {
+        "memory_mb": 3225.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 14963.0,
+      "args": {
+        "memory_mb": 3232.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 14973.0,
+      "args": {
+        "memory_mb": 3097.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 14973.0,
+      "args": {
+        "memory_mb": 2956.8
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 14999.5,
+      "args": {
+        "memory_mb": 2969.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 15009.5,
+      "args": {
+        "memory_mb": 2841.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 15477.0,
+      "args": {
+        "memory_mb": 2726.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 15487.0,
+      "args": {
+        "memory_mb": 2611.2
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 15487.0,
+      "args": {
+        "memory_mb": 2752.0
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 16015.0,
+      "args": {
+        "memory_mb": 2470.4
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 16025.0,
+      "args": {
+        "memory_mb": 2329.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 16025.0,
+      "args": {
+        "memory_mb": 2457.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 16535.0,
+      "args": {
+        "memory_mb": 2201.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 16545.0,
+      "args": {
+        "memory_mb": 2073.6
+      }
+    },
+    {
+      "name": "moe_bad_overlap_1f1b_total_memory_mb",
+      "cat": "memory",
+      "ph": "C",
+      "pid": 100,
+      "tid": 4,
+      "ts": 16545.0,
       "args": {
         "memory_mb": 2073.6
       }

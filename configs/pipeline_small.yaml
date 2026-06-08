@@ -1,7 +1,7 @@
 experiment:
   name: pipeline_small
-  purpose: Compare GPipe flushing with 1F1B steady-state scheduling for a small pipeline.
-  expected_trace: GPipe has a full-forward barrier before backward; 1F1B overlaps forward and backward after warmup.
+  purpose: Compare GPipe, 1F1B, ZeroBubble 1F1B, a deliberately bad MoE 1F1B overlap, DualPipe, and DualPipeV scheduling for a small pipeline.
+  expected_trace: GPipe has a full-forward barrier; 1F1B alternates after warmup; ZeroBubble moves weight-gradient work into idle slots; bad MoE overlap shows long all-to-all tails as bubbles; DualPipe and DualPipeV expose paired forward/backward overlap and mirrored-stage rank lanes.
 
 assumptions:
   timing_scope: Synthetic event latency from a CPU-only discrete-event model, not measured framework or GPU time.
@@ -12,10 +12,15 @@ assumptions:
   scheduling_prior:
     - gpipe uses all-forward then all-backward flushing with a full-forward barrier.
     - 1f1b uses per-stage warmup, forward/backward alternation, and backward cooldown.
+    - zerobubble_1f1b splits backward into input-gradient B and delayed weight-gradient W. B stays on the pipeline critical path; W is queued and used to fill idle slots before the optimizer step.
+    - moe_bad_overlap_1f1b uses the same 1F1B microbatch order but tries a naive MoE component overlap: forward attn/alltoall/mlp/alltoall against backward alltoallB/mlpB/alltoallB/attnB. Long all-to-all tails are counted as exposed pipeline bubbles.
+    - dualpipe uses two boundary-fed directions, mirrored local stages, paired forward/backward overlap, and delayed weight-gradient chunks.
+    - dualpipev folds the logical pipeline into a V shape on half as many physical rank lanes and uses the same paired-overlap and delayed-weight abstractions.
   not_modeled:
     - activation memory pressure
     - optimizer step timing
     - tensor-parallel or data-parallel collectives
+    - MoE expert-parallel all-to-all kernels and their communication/computation overlap details
     - NCCL protocol details
     - framework graph capture and kernel launch overhead
 
@@ -34,7 +39,15 @@ timing:
   forward_send_us: 10.0
   backward_recv_us: 10.0
   backward_compute_us: 120.0
+  backward_input_compute_us: 80.0
+  backward_weight_compute_us: 40.0
   backward_send_us: 10.0
+  moe_attn_us: 40.0
+  moe_alltoall_us: 180.0
+  moe_mlp_us: 70.0
+  moe_backward_alltoall_us: 190.0
+  moe_backward_mlp_us: 70.0
+  moe_backward_attn_us: 50.0
 
 memory:
   static_mb_per_stage: 512.0
@@ -50,6 +63,10 @@ simulation:
   modes:
     - gpipe
     - 1f1b
+    - zerobubble_1f1b
+    - moe_bad_overlap_1f1b
+    - dualpipe
+    - dualpipev
   trace_unit: us
   emit_flow_events: true
   emit_memory_counters: true

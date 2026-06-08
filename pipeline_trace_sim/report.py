@@ -48,6 +48,7 @@ def write_report(path: str | Path, cfg: Config, summaries: list[PipelineSummary]
     )
     experiment = _format_mapping(cfg.experiment)
     assumptions = _format_mapping(cfg.assumptions)
+    mode_files = ", ".join(f"`{s.mode}_trace.json`" for s in summaries)
     text = f"""# Pipeline Trace Simulation Report
 
 ## Experiment Setting
@@ -59,6 +60,9 @@ def write_report(path: str | Path, cfg: Config, summaries: list[PipelineSummary]
 - stage_compute_scale: {cfg.pipeline.stage_compute_scale or "uniform"}
 - forward recv/compute/send us: {cfg.timing.forward_recv_us} / {cfg.timing.forward_compute_us} / {cfg.timing.forward_send_us}
 - backward recv/compute/send us: {cfg.timing.backward_recv_us} / {cfg.timing.backward_compute_us} / {cfg.timing.backward_send_us}
+- backward input/weight compute us: {cfg.timing.backward_input_compute_us} / {cfg.timing.backward_weight_compute_us}
+- MoE forward attn/alltoall/mlp us: {cfg.timing.moe_attn_us} / {cfg.timing.moe_alltoall_us} / {cfg.timing.moe_mlp_us}
+- MoE backward alltoallB/mlpB/attnB us: {cfg.timing.moe_backward_alltoall_us} / {cfg.timing.moe_backward_mlp_us} / {cfg.timing.moe_backward_attn_us}
 - static memory MB per stage: {cfg.memory.static_mb_per_stage}
 - activation memory MB per microbatch: {cfg.memory.activation_mb_per_microbatch}
 - gradient memory MB per microbatch: {cfg.memory.gradient_mb_per_microbatch}
@@ -75,11 +79,15 @@ def write_report(path: str | Path, cfg: Config, summaries: list[PipelineSummary]
 ## Findings
 1. `gpipe` runs all forward microbatches first, then flushes backward work after a full-forward barrier.
 2. `1f1b` warms up each stage with forward work, alternates forward/backward tasks in steady state, then drains remaining backward work.
-3. Pipeline bubbles are visible as gaps on stage lanes; lower `bubble_us` generally means better stage occupancy under this synthetic timing model.
-4. Memory counters show retained activation growth and release timing. `memory_trace.json` keeps only total memory curves so GPipe and 1F1B can be compared without aligning separate files by hand.
+3. `zerobubble_1f1b` splits backward into input-gradient `B` and delayed weight-gradient `W`; `B` stays on the dependency path while `weight.compute` fills idle slots before optimizer time.
+4. `moe_bad_overlap_1f1b` keeps 1F1B microbatch ordering but tries to hide forward attention/all-to-all/MLP/all-to-all against backward all-to-all/MLP/all-to-all/attention; long all-to-all tails are emitted as `moe_bad_overlap.bubble`.
+5. `dualpipe` splits microbatches into two boundary-fed directions, maps each rank to a normal and mirrored stage, and models paired forward/backward chunks with componentwise overlap.
+6. `dualpipev` folds an even number of logical stages onto half as many physical rank lanes, forming a V-shaped forward path and reverse backward path.
+7. Pipeline bubbles are visible as gaps on rank lanes; lower `bubble_us` generally means better physical-lane occupancy under this synthetic timing model.
+8. Memory counters show retained activation growth, transient gradient buffers, and static memory for the logical stages hosted by each lane.
 
 ## How to View
-Open `gpipe_trace.json`, `1f1b_trace.json`, and `memory_trace.json` in Perfetto UI or Chrome trace viewer.
+Open {mode_files}, and `memory_trace.json` in Perfetto UI or Chrome trace viewer.
 
 This is a teaching simulator, not a framework benchmark. All timings come from the configured abstract event model.
 """

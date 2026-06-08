@@ -21,7 +21,7 @@ def main() -> None:
 
     summaries = []
     traces = []
-    pid_map = {"gpipe": 1, "1f1b": 2}
+    pid_map = {"gpipe": 1, "1f1b": 2, "zerobubble_1f1b": 3, "moe_bad_overlap_1f1b": 4, "dualpipe": 5, "dualpipev": 6}
     for mode in cfg.simulation.modes:
         trace, summary = schedule(mode, cfg, pid_map.get(mode, len(summaries) + 1))
         trace.write(out / f"{mode}_trace.json")

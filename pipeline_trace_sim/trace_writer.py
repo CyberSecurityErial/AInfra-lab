@@ -75,11 +75,19 @@ class CounterEvent:
 
 
 class Trace:
-    def __init__(self, mode: str, pid: int, stage_count: int, extra_threads: dict[int, str] | None = None):
+    def __init__(
+        self,
+        mode: str,
+        pid: int,
+        stage_count: int,
+        extra_threads: dict[int, str] | None = None,
+        thread_names: dict[int, str] | None = None,
+    ):
         self.mode = mode
         self.pid = pid
         self.stage_count = stage_count
         self.extra_threads = extra_threads or {}
+        self.thread_names = thread_names
         self.events: list[CompleteEvent | FlowEvent | CounterEvent] = []
 
     def emit(self, tid: int, name: str, cat: str, start: float, dur: float, **args: Any) -> None:
@@ -108,14 +116,18 @@ class Trace:
         metadata = [
             {"ph": "M", "name": "process_name", "pid": self.pid, "args": {"name": self.mode}},
         ]
-        for stage in range(self.stage_count):
+        if self.thread_names is None:
+            thread_names = {stage + 1: f"stage_{stage}" for stage in range(self.stage_count)}
+        else:
+            thread_names = self.thread_names
+        for tid, name in sorted(thread_names.items()):
             metadata.append(
                 {
                     "ph": "M",
                     "name": "thread_name",
                     "pid": self.pid,
-                    "tid": stage + 1,
-                    "args": {"name": f"stage_{stage}"},
+                    "tid": tid,
+                    "args": {"name": name},
                 }
             )
         for tid, name in sorted(self.extra_threads.items()):
